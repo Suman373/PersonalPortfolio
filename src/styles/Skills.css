@@ -1,0 +1,43 @@
+
+:root{
+    --bigtitles : white;
+    --violet : #6019b1;
+    --light-green :#9CE37D;
+    --asparagus:#87B37A;
+    --xanadu:#77867F;
+    --helio-gray:#B4AAC5;
+    --golden : #e6990a;
+}
+
+.skills-wrapper{
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+    background: var(--asparagus);
+    position: relative;
+}
+.title-container{
+    margin-top: 4rem;
+    width:100%;
+    text-align: center;
+}
+.title-container h2{
+    font-size: 3rem;
+    background: -webkit-linear-gradient( var(--golden) 60%, var(--light-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    filter: drop-shadow(2px 2px 2px var(--black));
+}
+.cards-container{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .cards{
+    height:30rem;
+    width:30rem;
+    background:linear-gradient(red,blue,yellow,orange);
+} */

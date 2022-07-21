@@ -1,0 +1,185 @@
+/* import fonts */
+
+
+:root{
+    --bigtitles : white;
+    --violet : #6019b1;
+    --light-green :#9CE37D;
+    --asparagus:#87B37A;
+    --xanadu:#77867F;
+    --helio-gray:#B4AAC5;
+    --hover:#29b347;
+    --black: #1f2020;
+    --pinkish:rgb(207, 34, 77);
+    --golden : #f7ac23;
+    --light-yellow:rgb(253, 253, 103);
+}
+
+.banner-wrapper{
+    font-family: 'Roboto',serif;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+/* ######################################################################### */
+/* Left portion */
+
+.banner-left{
+    width:70%;
+    text-align: center;
+}
+.banner-left h2{
+    font-size: 4rem;
+    margin:1rem;
+    background: -webkit-linear-gradient( var(--golden) 60%, var(--light-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    filter: drop-shadow(2px 2px 2px var(--black));
+}
+
+.banner-left p{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    padding:5px 1rem;
+    font-weight: 300;
+    text-shadow: 0 0 1px black;
+    color:var(--violet);
+}
+.banner-left img{
+    text-align: center;
+    height:6rem;
+    width:80%;
+    user-select: none;
+}
+.banner-left button{
+    height:max-content;
+    width:max-content;
+    padding:10px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--violet);
+    color:white;
+    margin:1rem 1rem;
+    box-shadow: 0 3px 5px black;
+    cursor: pointer;
+}
+.banner-left button:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+
+/* ###################################################################### */
+/* Right portion */
+.banner-right{
+    width:50%;
+}
+
+.image-container{
+    margin-bottom: 10rem;
+    height:35rem;
+    width:35rem;
+    position: relative;
+    background: url('../assets/myphoto.png') no-repeat center center/cover;
+    /* background:black; */
+}
+.bg-blob{
+    z-index: -1;
+    position: absolute;
+    top:2rem;
+    left:2rem;
+}
+
+
+/* ########################################## */
+/* medium large */
+@media screen and (max-width:900px){
+    .banner-wrapper{
+        font-family: 'Roboto',serif;
+        height:100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* ###### LEFT ####*/
+    .banner-left{
+        height: 30rem;
+        text-align: center;
+    }
+    .banner-left h2{
+        font-size: 2.5rem;
+    }
+    .banner-left img{
+        width:70%;
+    }
+
+    .banner-left button{
+        font-size: 1rem;
+    }
+
+    /* #### RIGHT ##### */
+    .image-container{
+        margin:1rem auto;
+        height:25rem;
+        width:25rem;
+        position: relative;
+        background: url('../assets/myphoto.png') no-repeat center center/cover;
+        /* background:black; */
+    }
+    .bg-blob{
+        z-index: -1;
+        position: absolute;
+        top:2rem;
+    }
+    
+}
+
+
+@media screen and (max-width:500px){
+    /* ----left portion---- */
+    .banner-left{
+        height:20rem;
+        width:100vw;
+    }
+    .banner-left h2{
+        font-size: 2.2rem;
+    }
+
+    .banner-left img{
+        transform: scale(1.3);
+        margin-left:4rem;
+    }
+
+    /* --right portion---- */
+
+    .banner-right{
+        width:100vw;
+       
+    }
+    .image-container{
+        /* margin:1rem auto; */
+        height:25rem;
+        width:100%;
+    }
+    .bg-blob{
+        height:25rem;
+        /* left:rem; */
+        top:3rem;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    .bg-blob{
+        top:1rem;
+        left:0.5rem;
+    }
+}
