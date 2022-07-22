@@ -8,7 +8,7 @@
     --asparagus:#87B37A;
     --xanadu:#77867F;
     --helio-gray-transp:#b4aac5ce;
-    --hover:#29b347;
+    --hoverlink:rgb(197, 30, 147);
     --black: #1f2020;
     --pinkish:rgb(207, 34, 77);
     --golden : #f7ac23;
@@ -61,12 +61,13 @@
     color:var(--violet);
 }
 .right .navbar-link:hover{
-    color:var(--hover);
+    color:var(--hoverlink);
     text-decoration: underline;
 }
 /* active link */
 .right .active{
-    color:var(--hover);
+    /* color:var(--golden); */
+    color:var(--golden);
 }
 
 /* brand social media icons */
@@ -78,7 +79,7 @@
 }
 .fa-brands:hover{
     transform: scale(1.05);
-    color:var(--hover);
+   color:var(--hoverlink);
 }
 
 /* button */
@@ -200,9 +201,11 @@
         flex-direction: column;
         align-items: center;
         z-index:400;
-        background: #1f2020;
+        justify-content:flex-start;
+        background:#c5c2c2e5;
     }
     .right.open .navbar-link, .right.open .social-btn{
         display: block;
+        margin:1rem auto;
     }
 }

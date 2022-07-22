@@ -1,0 +1,12 @@
+/* primary palette */
+:root{
+    --bigtitles : white;
+    --violet : #6019b1;
+    --light-green :#9CE37D;
+    --asparagus:#87B37A;
+    --xanadu:#77867F;
+    --helio-gray:#B4AAC5;
+    --golden : #e6990a;
+    --skills-background:#4748a0fa;
+    --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
+}
