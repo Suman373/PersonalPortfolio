@@ -18,7 +18,7 @@ import firebase from '../assets/firebase.png';
 import c from '../assets/c.png';
 import git from '../assets/git.png';
 import github from '../assets/github.png';
-import SupermanKid from '../assets/SupermanKid.png';
+import rocketimage from '../assets/rocketimage.png';
 
 const Skills = () => {
 
@@ -57,7 +57,7 @@ const Skills = () => {
                     <span className="emojis">
                         <img src={database} alt="database" />
                     </span>
-                    <p>I build server configs , RESTful apis and database for the backend of web applications</p>
+                    <p>I am also familiar with backend development, RESTful APIS, databases and deployment</p>
                 </div>
                 </Tilt>
             </div>
@@ -85,7 +85,8 @@ const Skills = () => {
                             <img src={python} alt="python" />
                         </div>
                         <div className="right-side">
-                            <img src={SupermanKid} alt="pic" />
+                          <p>These are the programming languages, scripting language, technology, tools , etc I use while making projects. I am skilled in most of them,  won't say master, as it takes time. I am currently learning more about backend implementation.</p>
+                          <img src={rocketimage} />
                         </div>
                     </div>
             </div>

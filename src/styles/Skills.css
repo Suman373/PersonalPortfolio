@@ -13,8 +13,6 @@
 .skills-wrapper{
     min-height:100vh;
     width:100vw;
-    border-top-left-radius: 4%;
-    border-top-right-radius: 4%;
     overflow: hidden;
     background: var(--skills-background);
     position: relative;
@@ -92,7 +90,7 @@
 
 /* ------------Tech stack -------- */
 .stack-container{
-    min-height:100vh;
+    min-height:80vh;
     width:100vw;
     padding-top:4rem;
     overflow:hidden;
@@ -110,11 +108,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 5rem;
 }
 /* tech container */
 /* common */
-.big-flex-box .left-side , .big-flex-box .right-side{
-    height:20rem;
+.big-flex-box .left-side{
+    height:18rem;
     width:30rem;
     margin: 1rem;
     padding:1rem;
@@ -136,28 +135,17 @@
 /* some more info */
 .big-flex-box .right-side{
     height: 30rem;
+    margin: 1rem;
     text-align: center;
+    border:2px solid red;
+    font-size:1.5rem;
+    text-shadow:0 0 1px black;
+    color:var(--violet);
 }
 .right-side img{
-    height:28rem;
-    animation:dropper 700ms linear infinite;
-    /* filter: drop-shadow(0 5px 10px  rgb(97, 91, 91) ); */
+    height:18rem;
+    margin:0 auto;
 }
-@keyframes dropper {
-    0%{
-        filter: drop-shadow(-6px -6px 12px grey);
-    }
-    25%{
-        filter: drop-shadow(0 -6px 12px grey);
-    }
-    50%{
-        filter: drop-shadow(0 6px 12px grey);
-    }
-    100%{
-        filter: drop-shadow(6px 6px 12px grey);
-    }
-}
-
 
 
 /* --- medium screens----- */
@@ -189,20 +177,24 @@
     .left-side{
         height:25rem;
     }
+    .big-flex-box{
+        margin-top: 1rem;
+    }
     .big-flex-box .left-side img{
         height:3.5rem;
         width:3.5rem;
     }
-    .big-flex-box .right-side img{
+    .big-flex-box .right-side{
+        height:26rem;
+        margin-top: -10rem;
+    }
+    .right-side img{
         height:15rem;
     }
 }
 
-
 @media screen and (max-width:480px){
-    .skills-wrapper{
-        border-radius: 10px;
-    }
+
     .title-container h2 , .stack-container h2{
         font-size:2.1rem;
     }
@@ -215,7 +207,7 @@
         margin:10px auto;
         padding:0.5rem;
     }
-    .Tilt-inner p{
+    .Tilt-inner p , .right-side p{
         font-size:1rem;
         padding:0 10px;
     }
@@ -223,12 +215,18 @@
     .left-side{
         height:20rem;
     }
+    .big-flex-box{
+        margin-top:0;
+    }
     .big-flex-box .left-side img{
         height:2.5rem;
         width:2.5rem;
         filter: drop-shadow(0 1px 1px black);
     }
+    .big-flex-box .right-side{
+        height:18rem;
+    }
     .big-flex-box .right-side img{
-        height:10rem;
+        height:8rem;
     }
 }

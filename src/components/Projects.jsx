@@ -3,9 +3,12 @@ import '../styles/Projects.css';
 const Projects = ()=>{
     return(
         <div className="projects-wrapper">
-                <div className="project-title-container">
+                <div className="project-title-container" id="projects">
                     <h2>My projects</h2>
-                    <p>Here are my projects which I have build using my knowledge and skills</p>
+                    <p>Here are the projects I made 💣</p>
+                </div>
+                <div className="carousel-container">
+                    
                 </div>
         </div>
     )

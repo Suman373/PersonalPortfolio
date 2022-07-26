@@ -10,3 +10,38 @@
     --skills-background:#4748a0fa;
     --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
 }
+
+/* main wrapper */
+.projects-wrapper{
+    margin-top:-5rem;
+    min-height:100vh;
+    width:100vw;
+    overflow:hidden;
+    /* background:#87B37A; */
+}
+.project-title-container{
+    width:100%;
+    text-align: center;
+}
+.project-title-container h2{
+    font-size: 3rem;
+    color:var(--golden);
+    filter: drop-shadow(2px 2px 2px var(--black));
+}
+
+
+@media screen and (max-width:800px){
+    .projects-wrapper{
+        margin-top:0rem;
+    }
+    .project-title-container h2{
+        font-size:2.6rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .project-title-container h2{
+        font-size: 2.1rem;
+    }
+}
+
