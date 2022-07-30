@@ -18,7 +18,6 @@ import firebase from '../assets/firebase.png';
 import c from '../assets/c.png';
 import git from '../assets/git.png';
 import github from '../assets/github.png';
-import rocketimage from '../assets/rocketimage.png';
 
 const Skills = () => {
 
@@ -86,7 +85,6 @@ const Skills = () => {
                         </div>
                         <div className="right-side">
                           <p>These are the programming languages, scripting language, technology, tools , etc I use while making projects. I am skilled in most of them,  won't say master, as it takes time. I am currently learning more about backend implementation.</p>
-                          <img src={rocketimage} />
                         </div>
                     </div>
             </div>

@@ -11,7 +11,7 @@
 }
 
 .skills-wrapper{
-    min-height:100vh;
+    min-height:100vw;
     width:100vw;
     overflow: hidden;
     background: var(--skills-background);
@@ -90,7 +90,7 @@
 
 /* ------------Tech stack -------- */
 .stack-container{
-    min-height:80vh;
+    min-height:fit-content;
     width:100vw;
     padding-top:4rem;
     overflow:hidden;
@@ -113,17 +113,14 @@
 /* tech container */
 /* common */
 .big-flex-box .left-side{
-    height:18rem;
-    width:30rem;
-    margin: 1rem;
-    padding:1rem;
-}
-.big-flex-box .left-side{
+    height:30rem;
     display: flex;
+    width:20rem;
     flex-wrap: wrap;
     justify-content: center;
     padding:1rem;
-    gap:2rem;
+    margin:1rem;
+    gap:1rem;
 }
 .big-flex-box .left-side img{
     height: 4.5rem;
@@ -136,17 +133,13 @@
 .big-flex-box .right-side{
     height: 30rem;
     margin: 1rem;
+    width:20rem;
     text-align: center;
-    border:2px solid red;
-    font-size:1.5rem;
+    font-size:1.7rem;
     text-shadow:0 0 1px black;
+    line-height: 2;
     color:var(--violet);
 }
-.right-side img{
-    height:18rem;
-    margin:0 auto;
-}
-
 
 /* --- medium screens----- */
 @media screen and (max-width:800px){
@@ -174,7 +167,7 @@
         font-size: 1.9rem;
     }
 
-    .left-side{
+    .big-flex-box .left-side{
         height:25rem;
     }
     .big-flex-box{
@@ -185,16 +178,12 @@
         width:3.5rem;
     }
     .big-flex-box .right-side{
-        height:26rem;
-        margin-top: -10rem;
-    }
-    .right-side img{
-        height:15rem;
+        height:20rem;
+        font-size:1.2rem;
     }
 }
 
 @media screen and (max-width:480px){
-
     .title-container h2 , .stack-container h2{
         font-size:2.1rem;
     }
@@ -212,11 +201,11 @@
         padding:0 10px;
     }
     /* tech part  */
-    .left-side{
-        height:20rem;
-    }
-    .big-flex-box{
-        margin-top:0;
+    .stack-container{height:40rem;}
+    .big-flex-box {display:block; height:11rem;}
+    .big-flex-box .left-side{
+        height:12rem;
+        margin:0 auto;
     }
     .big-flex-box .left-side img{
         height:2.5rem;
@@ -224,9 +213,8 @@
         filter: drop-shadow(0 1px 1px black);
     }
     .big-flex-box .right-side{
-        height:18rem;
-    }
-    .big-flex-box .right-side img{
-        height:8rem;
+        height:12rem;
+        margin:0 auto;
+        font-size:1rem;
     }
 }

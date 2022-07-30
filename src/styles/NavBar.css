@@ -173,28 +173,7 @@
         top:1rem;
         right:1rem;
     }
-     .right.open .fa-solid{
-        animation:rotate 500ms infinite;
-    }
-    @keyframes rotate{
-        0%{
-            color:var(--hover);
-            transform: rotate(25deg);
-        }
-        25%{
-            color:var(--golden);
-            transform:rotate(50deg);
-        }
-        50%{
-            color:var(--light-green);
-            transform: rotate(75deg);
-        }
-        100%{
-            color:var(--asparagus);
-            transform: rotate(100deg);
-        }
 
-    }
     .right.open{
         height:100vh;
         display: flex;
