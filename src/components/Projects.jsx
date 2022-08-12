@@ -9,9 +9,15 @@ const handleDragStart = (e) => e.preventDefault();
 const Projects = ()=>{
     // image object
     const items = [
-       <div className=""><img src={taskmanager} onDragStart={handleDragStart} role="presentation" /></div>,
-       <div className=""><img src={taskmanager} onDragStart={handleDragStart} role="presentation" /></div>,
-       <div className=""><img src={taskmanager} onDragStart={handleDragStart} role="presentation" /></div>,
+       <div className="projects">
+        <h2> A task management application </h2>
+        <img src={taskmanager} onDragStart={handleDragStart} role="presentation" />
+        <div className="overlay">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus!
+        </div>
+        </div>,
+       <div className="projects"><img src={taskmanager} onDragStart={handleDragStart} role="presentation" /></div>,
+       <div className="projects"><img src={taskmanager} onDragStart={handleDragStart} role="presentation" /></div>,
       ];
 
     return(

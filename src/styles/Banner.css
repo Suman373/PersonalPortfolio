@@ -35,10 +35,19 @@
 .banner-left h2{
     font-size: 4rem;
     margin:1rem;
-    background: -webkit-linear-gradient( var(--golden) 20%, var(--light-yellow));
+ 
+    background: linear-gradient(to right,#da5214,#d1d13f);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    filter: drop-shadow(2px 2px 2px var(--black));
+	-webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+	animation: animated 4000ms infinite alternate;
+     filter: drop-shadow(0px 2px 1px black);
+}
+@keyframes animated {
+    to{
+        background-position: 100%;
+      }
 }
 
 .banner-left p{
@@ -51,15 +60,14 @@
 }
 .banner-left img{
     text-align: center;
-    height:6rem;
+    height:5rem;
     width:80%;
     user-select: none;
 }
 .banner-left button{
-    height:max-content;
-    width:max-content;
-    padding:12px;
-    font-size: 1.5rem;
+   
+    padding:10px;
+    font-size: 1.3rem;
     border: none;
     border-radius: 10px;
     background: var(--violet);
@@ -75,6 +83,7 @@
 
 
 /* ###################################################################### */
+
 /* Right portion */
 .banner-right{
     width:50%;
@@ -86,17 +95,25 @@
     width:35rem;
     position: relative;
     background: url('../assets/myphoto.png') no-repeat center center/cover;
-    /* background:black; */
 }
 .bg-blob{
-    z-index: -1;
+    z-index: -100;
     position: absolute;
     top:2rem;
     left:2rem;
+    transition:animation 400ms;
+    animation:mover 2000ms infinite alternate;
+}
+@keyframes mover {
+    0%,50%{
+       transform: translateX(1px) translateY(-1px) scale(1.008);
+    }
+    25%,100%{
+        transform:translateY(1px) translateX(-1px) scale(0.99);
+    }
 }
 
 
-/* ########################################## */
 /* medium large */
 @media screen and (max-width:900px){
     .banner-wrapper{
@@ -122,7 +139,7 @@
     }
 
     .banner-left button{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* #### RIGHT ##### */
@@ -144,10 +161,15 @@
 
 
 @media screen and (max-width:500px){
+
     /* ----left portion---- */
     .banner-left{
         height:20rem;
         width:100vw;
+    }
+    .banner-left button{
+        font-size: 1.1rem;
+        padding:8px;
     }
     .banner-left h2{
         font-size: 2.2rem;
@@ -165,13 +187,12 @@
        
     }
     .image-container{
-        /* margin:1rem auto; */
         height:25rem;
         width:100%;
+        
     }
     .bg-blob{
         height:25rem;
-        /* left:rem; */
         top:3rem;
     }
     

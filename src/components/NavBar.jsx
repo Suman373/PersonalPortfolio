@@ -69,13 +69,12 @@ const NavBar = ()=>{
                  onClick={()=>console.log("social connected")}>
                     Let's Connect
                 </button>
-
-                <button
+              </div>
+              <button
                 onClick={()=> setHamburgerOpen(!hamburgeropen)}
                 className="hamburger-icon">
                     <i className="fa-solid fa-bars"></i>
                 </button>
-              </div>
 
         </div> // parent wrapper div
       );

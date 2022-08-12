@@ -17,6 +17,7 @@
     min-height:100vh;
     width:100vw;
     overflow:hidden;
+    background: var(--skills-background);
 }
 .project-title-container{
     width:100%;
@@ -24,14 +25,33 @@
 }
 .project-title-container h2{
     font-size: 3rem;
+    margin-top:2rem;
     color:var(--golden);
     filter: drop-shadow(2px 2px 2px var(--black));
 }
 .project-title-container p{
     font-size:1.7rem;
     margin:1rem;
-    color:var(--violet);
+    padding:10px;
+    color:white;
     text-shadow: 0 0 1px black;
+}
+
+.carousel-container{
+    /* height:40rem; */
+    width:40rem;
+    background: black;
+    margin:0 auto;
+}
+
+.projects{
+    height:25rem;
+    width:40rem;
+    /* background:white; */
+}
+.projects img{
+    height:20rem;
+    width:20rem;
 }
 
 

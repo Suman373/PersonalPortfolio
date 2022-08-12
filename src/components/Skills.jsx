@@ -10,7 +10,11 @@ import js from '../assets/js.png';
 import react from '../assets/react.png';
 import mui from '../assets/mui.png';
 import sass from '../assets/sass.png';
+import nodejs from '../assets/nodejs.png';
+import express from '../assets/express.png';
 import netlify from '../assets/netlify.png';
+import herokuhost from '../assets/herokuhost.png';
+import mongodb from '../assets/mongodb.png';
 import java from '../assets/java.png';
 import python from '../assets/python.png';
 import npm from '../assets/npm.png';
@@ -73,8 +77,11 @@ const Skills = () => {
                             <img src={js} alt="js" />
                             <img src={react} alt="react" />
                             <img src={mui} alt="mui" />
-                            <img src={sass} alt="sass" />
+                            <img src={nodejs} alt="node" />
+                            <img src={express} alt="express"/>
+                            <img src={mongodb} alt="mongo"/>                            
                             <img src={netlify} alt="netlify" />
+                            <img src={herokuhost} alt="heroku" />
                             <img src={firebase} alt='firebase' />
                             <img src={git} alt="git" />
                             <img src={github} alt="github" />

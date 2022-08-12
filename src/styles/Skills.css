@@ -11,7 +11,7 @@
 }
 
 .skills-wrapper{
-    min-height:100vw;
+    min-height:100vh;
     width:100vw;
     overflow: hidden;
     background: var(--skills-background);
@@ -90,7 +90,7 @@
 
 /* ------------Tech stack -------- */
 .stack-container{
-    min-height:fit-content;
+    height:fit-content;
     width:100vw;
     padding-top:4rem;
     overflow:hidden;
@@ -123,8 +123,11 @@
     gap:1rem;
 }
 .big-flex-box .left-side img{
-    height: 4.5rem;
-    width:4.5rem;
+    height: 5rem;
+    width:5rem;
+    box-shadow: 0 0 5px var(--helio-gray);
+    border-radius: 50%;
+    padding:10px;
     filter:drop-shadow(0 2px 4px var(--light-black) );
 }
 
@@ -135,7 +138,7 @@
     margin: 1rem;
     width:20rem;
     text-align: center;
-    font-size:1.7rem;
+    font-size:1.5rem;
     text-shadow:0 0 1px black;
     line-height: 2;
     color:var(--violet);
