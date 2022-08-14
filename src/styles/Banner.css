@@ -168,8 +168,9 @@
         width:100vw;
     }
     .banner-left button{
-        font-size: 1.1rem;
-        padding:8px;
+        font-size: 1rem;
+        padding:10px;
+        box-shadow: 0 1px 4px black;
     }
     .banner-left h2{
         font-size: 2.2rem;

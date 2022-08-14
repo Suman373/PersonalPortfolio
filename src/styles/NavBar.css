@@ -149,8 +149,8 @@
 /* mobiles */
 @media screen and (max-width:500px){
     .right .navbar-link{
-        font-size: 1rem;
-        padding:0 5px;
+        font-size: 1.1rem;
+        padding: 5px;
     }
     .left .logo-container h2{
         font-size: 1.5rem;
@@ -199,14 +199,25 @@
     .right.open .navbar-link, .right.open .social-btn{
         display: block;
         margin-top:2rem;
+        margin-bottom: 0.6rem;
     }
     .social-btn{
+        font-size:1.2rem;
         padding:10px;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:412px){
     .right .social-icon{
-        left:-93%;
-        width:3rem;
+        left:-81%;
+    }
+}
+@media screen and (max-width:340px){
+    .right .social-icon{
+        left:-87%;
+    }
+}
+@media screen and (max-width:300px){
+    .right .social-icon{
+        left:-92%;
     }
 }

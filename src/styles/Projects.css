@@ -42,12 +42,17 @@
     width:40rem;
     background: black;
     margin:0 auto;
+
 }
 
 .projects{
     height:25rem;
     width:40rem;
-    /* background:white; */
+    background:red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .projects img{
     height:20rem;
@@ -63,6 +68,18 @@
     .project-title-container p{
         font-size: 1.6rem;
     }
+
+
+    .carousel-container{
+        width:35rem;
+    }
+    .projects{
+        height:20rem;
+    }
+    .projects img{
+        height:18rem;
+        width:18rem;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -71,6 +88,17 @@
     }
     .project-title-container p{
         font-size: 1.2rem;
+    }
+
+
+    .projects{
+        height:20rem;
+        width:20rem;
+        margin:0 auto;
+    }
+    .projects img{
+        height:12rem;
+        width:12rem;
     }
 
 }
