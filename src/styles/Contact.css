@@ -1,0 +1,131 @@
+/* contact page */
+/* primary palette */
+:root{
+    --bigtitles : white;
+    --violet : #6019b1;
+    --light-green :#9CE37D;
+    --asparagus:#87B37A;
+    --xanadu:#77867F;
+    --helio-gray:#B4AAC5;
+    --golden : #e6990a;
+    --skills-background:#4748a0fa;
+    --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
+}
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.topLine{
+    position:absolute;
+    top:0;
+    height:2rem;
+    padding:5px;
+    background: var(--violet);
+    color:white;
+    width:100vw;
+}
+.form-container{
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    /* background:#ffffff; */
+    display:grid;
+    place-content: center;
+}
+.form-container h1{
+    color:var(--violet);
+    font-size: 2.2rem;
+    margin:1rem auto;
+}
+.form-container .wave{
+    transition: animation 100ms ;
+    display: inline-block;
+    animation:waving 2000ms  infinite;
+}
+@keyframes waving {
+    0%{
+        transform: rotate(10deg) ;
+    }
+}
+form{
+    height:28rem;
+    width:28rem;
+    padding:10px;
+    background: var(--violet);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+form label{
+    font-size: 1.2rem;
+    color:white;
+    margin:10px 4rem;
+    text-align: left;
+}
+form input{
+    height:3rem;
+    width:68%;
+    margin:5px auto;
+}
+form input:focus, form textarea:focus{
+    border:2px solid  #e6990a;
+}
+form input, form textarea{
+    padding:10px;
+    font-size: 1.1rem;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+    font-family: 'Roboto,sans-serif';
+}
+form textarea{
+    width:67%;
+    margin:5px auto;
+    height:12rem;
+}
+.submit-btn{
+    font-size: 1.2rem;
+    padding:8px;
+    width:max-content;
+    margin:1rem auto;
+    border:none;
+    cursor: pointer;
+    color:white;
+    border-radius:3px;
+    background:var(--golden)
+}
+.submit-btn:hover{
+    opacity: 0.9;
+    transform:scale(1.06);
+}
+
+@media screen and (max-width:600px){
+    .form-container h1{
+        font-size: 2rem;
+    }
+    form{
+        width:26rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .form-container h1{
+        font-size: 1.7rem;
+    }
+    form{
+        width:20rem;
+    }
+    form label{
+        margin:12px 3rem;
+        font-size: 1.1rem;
+    }
+    form input{
+        height:2.6rem;
+    }
+    .submit-btn{
+        font-size: 1rem;
+        padding:6px;
+    }
+}

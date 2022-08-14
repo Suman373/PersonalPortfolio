@@ -9,8 +9,8 @@ const Banner = ()=>{
             <h2>Hi! I am Suman Roy</h2>
             <img src="https://readme-typing-svg.herokuapp.com/?font=Helvetica&size=30&color=29b347&background=7FFCFF00&width=450&height=69&lines=I+am+a+web+developer;I+am+a+CSE+undergrad;I+love+creating+awesome+SPAs;" alt="typing-svg"/>
             <div>
-            <button>Hire me</button>
-            <button>Contact me</button></div>    
+            <button>Hire me <i className="fa fa-rocket"></i></button>
+            <button>Resume <i className="fa fa-download"></i></button></div>    
           </div>
           <div className="banner-right">
             <div className="image-container">

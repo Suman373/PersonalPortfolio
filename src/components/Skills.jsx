@@ -76,13 +76,13 @@ const Skills = () => {
                             <img src={css} alt="css" />
                             <img src={js} alt="js" />
                             <img src={react} alt="react" />
-                            <img src={mui} alt="mui" />
                             <img src={nodejs} alt="node" />
                             <img src={express} alt="express"/>
                             <img src={mongodb} alt="mongo"/>                            
                             <img src={netlify} alt="netlify" />
                             <img src={herokuhost} alt="heroku" />
                             <img src={firebase} alt='firebase' />
+                            <img src={mui} alt="mui" />
                             <img src={git} alt="git" />
                             <img src={github} alt="github" />
                             <img src={npm} alt="npm" />

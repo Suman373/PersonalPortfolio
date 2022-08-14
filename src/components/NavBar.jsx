@@ -1,6 +1,7 @@
 import React from "react";
 import {useState,useEffect} from 'react';
 import '../styles/NavBar.css';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = ()=>{
 
@@ -10,6 +11,15 @@ const NavBar = ()=>{
     // for hamburger menu
     const [ hamburgeropen , setHamburgerOpen] = useState(false);
 
+    // for navigation
+    const navigate = useNavigate();
+
+    // viewer want's to connect with me 
+    const handleLetsConnect=(e)=>{
+        e.preventDefault();
+        navigate('/contact');
+        console.log("Lets connect cliked");
+    }
     
     return (
         <div className="navbar-wrapper">
@@ -66,7 +76,7 @@ const NavBar = ()=>{
                 {/* contact form */}
                 <button
                  className="social-btn"
-                 onClick={()=>console.log("social connected")}>
+                 onClick={(e)=> handleLetsConnect(e)}>
                     Let's Connect
                 </button>
               </div>
