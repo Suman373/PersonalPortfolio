@@ -91,7 +91,7 @@ const Skills = () => {
                             <img src={python} alt="python" />
                         </div>
                         <div className="right-side">
-                          <p>These are the programming languages, scripting language,cloud hosting technologies, tools , etc I use while making projects. I am skilled in most of them and trying to get better at them via building projects. I am currently learning more about backend development.Stack I prefer is MERN.</p>
+                          <p>These are the programming languages, scripting language,cloud hosting technologies, tools , etc I use while making cool products. I am skilled in most of them and trying to get better at them via building projects. I am currently learning more about backend development.Stack I prefer is MERN.</p>
                         </div>
                     </div>
             </div>

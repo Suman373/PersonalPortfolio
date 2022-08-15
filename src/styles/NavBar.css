@@ -27,7 +27,6 @@
     align-items: center;
     justify-content: space-evenly;
     width:30%;
-    /* background:khaki; */
 }
 /* logo */
 .left .logo-container h2{   
@@ -42,6 +41,7 @@
     margin:auto 10px;
     font-size:2.8rem;
     cursor: pointer;
+    transition: all 1000ms;
 }
 
 .right{
@@ -50,9 +50,7 @@
     align-items:center;
     justify-content: space-evenly;
     width:70%;
-    /* background:burlywood; */
 }
-
 
 /* menu items */
 .right .navbar-link{
@@ -183,6 +181,9 @@
         position: fixed;
         top:1rem;
         right:1rem;
+    }
+    .hamburger-icon i{
+        color:var(--violet);
     }
 
     .right.open{

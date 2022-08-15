@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
@@ -7,9 +7,15 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+export const ThemeContext = createContext(null);
+
+function App() { 
+
+  const [theme, setTheme] = useState("light");
+
   return (
-    <div className="App">
+    <ThemeContext.Provider value={{theme, setTheme}}>
+      <div className="App" id={theme}>
       <BRouter>
       <Routes>
         <Route path="/" element={
@@ -30,6 +36,7 @@ function App() {
       </Routes>
       </BRouter>
     </div>
+    </ThemeContext.Provider>
   );
 }
 

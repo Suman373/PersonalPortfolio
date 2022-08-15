@@ -1,8 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import imageholder from '../assets/imageholder.svg';
 import '../styles/Banner.css'; 
 
 const Banner = ()=>{
+  const  [appTheme , setAppTheme] = useState(false);
+
+
+
     return(
         <div id="home" className="banner-wrapper">
           <div className="banner-left">

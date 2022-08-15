@@ -16,6 +16,8 @@
     --xanadu:#77867F;
     --helio-gray:#B4AAC5;
     --golden : #e6990a;
+    --body-bg:#cfcdcd;
+    --dark-theme:#150d16;
 }
 html{
     scroll-behavior: smooth;
@@ -27,8 +29,7 @@ a,button{
 }
 body{
     overflow-x: hidden;
-    background:#cfcdcd;
-    /* position:relative; */
+    background:var(--body-bg);
     font-family: 'Roboto', sans-serif;
 }
 /* default styling for the headings */
@@ -42,4 +43,13 @@ h1,h2,h3,h4,h5{
     min-height: 100vh;
     width:100vw;
     overflow-x: hidden;
+    background:black;
+    position: absolute;
+    z-index: -200;
+}
+#light{
+    background:var(--body-bg);
+}
+#dark{
+    background:var(--dark-theme);
 }

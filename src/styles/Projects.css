@@ -38,7 +38,6 @@
 }
 
 .carousel-container{
-    /* height:40rem; */
     width:40rem;
     background: black;
     margin:0 auto;
@@ -54,20 +53,11 @@
     justify-content: center;
     align-items: center;
 }
-.projects img{
-    height:20rem;
-    width:20rem;
-}
+
 
 
 @media screen and (max-width:800px){
 
-    .project-title-container h2{
-        font-size:2.6rem;
-    }
-    .project-title-container p{
-        font-size: 1.6rem;
-    }
 
 
     .carousel-container{
@@ -76,30 +66,18 @@
     .projects{
         height:20rem;
     }
-    .projects img{
-        height:18rem;
-        width:18rem;
-    }
+ 
 }
 
 @media screen and (max-width:500px){
-    .project-title-container h2{
-        font-size: 2.1rem;
-    }
-    .project-title-container p{
-        font-size: 1.2rem;
-    }
-
+    
 
     .projects{
         height:20rem;
         width:20rem;
         margin:0 auto;
     }
-    .projects img{
-        height:12rem;
-        width:12rem;
-    }
+   
 
 }
 

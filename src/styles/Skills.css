@@ -14,12 +14,12 @@
     min-height:100vh;
     width:100vw;
     overflow: hidden;
-    background: var(--skills-background);
     position: relative;
     font-family: 'Roboto',serif;
 }
 .title-container{
     margin-top: 4rem;
+    background: var(--skills-background);
     width:100%;
     text-align: center;
 }
@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+     background: var(--skills-background);
 }
 
 .Tilt{
@@ -95,7 +96,7 @@
     padding-top:4rem;
     overflow:hidden;
     position: relative;
-    background: var(--body-bg);
+    background: transparent;
 }
 .stack-container h3{
     font-size: 2rem;
@@ -134,7 +135,6 @@
     animation:spin 2000ms infinite alternate;
     border-radius: 50%;
     padding:12px;
-    animation:
 }
 @keyframes  spin {
     to{
