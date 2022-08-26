@@ -39,7 +39,7 @@
 
 .carousel-container{
     width:40rem;
-    background: black;
+    box-shadow: 0 0 10px white;
     margin:0 auto;
 
 }
@@ -47,12 +47,34 @@
 .projects{
     height:25rem;
     width:40rem;
-    background:red;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
+.project1{
+    height:20rem;
+    width:30rem;
+    margin:1rem auto;
+    background:url('../assets/CryptoCatalogue.png') no-repeat center/cover;
+    overflow: hidden;
+}
+.overlay{
+    height:20rem;
+    width:100%;
+    background:#000000e5;
+    color:var(--golden);
+    display:grid;
+    place-content: center;
+    transition:500ms ;
+    transform:translateY(-20rem);
+}
+.project1:hover .overlay{
+    transform:translateY(0rem);
+}
+
 
 
 

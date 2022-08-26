@@ -28,8 +28,6 @@ const Contact = () => {
             </a>
             </div>
             <h1>Say hello to Suman! <span className="wave">👋</span></h1>
-            <div className="other-socials">
-            </div>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">
                     Name
