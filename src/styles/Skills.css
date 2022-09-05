@@ -1,15 +1,4 @@
 
-:root{
-    --bigtitles : white;
-    --violet : #6019b1;
-    --light-green :#9CE37D;
-    --body-bg:#cfcdcd;
-    --helio-gray:#B4AAC5;
-    --golden : #e6990a;
-    --skills-background:#4748a0fa;
-    --light-black:rgb(76, 69, 69);
-}
-
 .skills-wrapper{
     min-height:100vh;
     width:100vw;

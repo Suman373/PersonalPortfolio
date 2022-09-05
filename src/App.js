@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import About from './components/About';
 import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
 
 export const ThemeContext = createContext(null);
@@ -24,6 +25,7 @@ function App() {
           <Banner/>
           <Skills/>
           <Projects/>
+          <About/>
           </>
         }>
         </Route>

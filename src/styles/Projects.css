@@ -128,10 +128,12 @@
     .carousel-container{
         width:22rem;
     }
-
     .projects{
         height:20rem;
         width:120%;
+    }
+    .overlay button{
+        transform: translateX(-2rem);
     }
    
 
