@@ -1,141 +1,160 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
+
 /* primary palette */
-:root{
-    --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
+:root {
+    --light-black: radial-gradient(circle, #161515 60%, #252323 80%, #c2b9b9);
 }
 
 /* main wrapper */
-.projects-wrapper{
-    min-height:100vh;
-    width:100vw;
-    overflow:hidden;
+.projects-wrapper {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     background: var(--skills-background);
 }
-.project-title-container{
-    width:100%;
+
+.project-title-container {
+    width: 100%;
     text-align: center;
 }
-.project-title-container h2{
+
+.project-title-container h2 {
     font-size: 3rem;
-    margin-top:2rem;
-    color:var(--golden);
+    margin-top: 2rem;
+    color: var(--golden);
     filter: drop-shadow(2px 2px 2px var(--black));
 }
-.project-title-container p{
-    font-size:1.7rem;
-    margin:1rem;
-    padding:10px;
-    color:white;
+
+.project-title-container p {
+    font-size: 1.7rem;
+    margin: 1rem;
+    padding: 10px;
+    color: white;
     text-shadow: 0 0 1px black;
 }
 
-.carousel-container{
-    width:40rem;
+.carousel-container {
+    width: 40rem;
     /* box-shadow: 0 0 10px white; */
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.projects{
-    height:25rem;
-    width:40rem;
+.projects {
+    height: 25rem;
+    width: 40rem;
     display: grid;
     place-content: center;
     overflow: hidden;
 }
 
 /* grouping */
-.project1, .project2, .project3{
-    height:20rem;
-    width:30rem;
-    margin:1rem auto;
+.project1,
+.project2,
+.project3 {
+    height: 20rem;
+    width: 30rem;
+    margin: 1rem auto;
     overflow: hidden;
-    position:relative;
+    position: relative;
     border-radius: 1rem;
 }
+
 /* individual banner */
-.project1{
-    background:url('../assets/CryptoCatalogue.png') no-repeat center center/cover;
+.project1 {
+    background: url('../assets/CryptoCatalogue.png') no-repeat center center/cover;
 }
-.project2{
+
+.project2 {
     background: url('../assets/Plogify_banner.png') no-repeat center/cover;
 }
-.project3{
+
+.project3 {
     background: url('../assets/travel_companion.png') no-repeat center/cover;
 }
-.project1::before,.project2::before, .project3::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background:#000000;
-    opacity:0.4;
+
+.project1::before,
+.project2::before,
+.project3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.4;
 }
 
-.overlay{
-    height:20rem;
-    width:100%;
-    background:#ffffff69;
-    color:var(--golden);
-    display:grid;
+.overlay {
+    height: 20rem;
+    width: 100%;
+    background: #ffffff69;
+    color: var(--golden);
+    display: grid;
     place-content: center;
-    transition:500ms ;
-    transform:translateY(-20rem);
+    transition: 500ms;
+    transform: translateY(-20rem);
 }
-.overlay button{
+
+.overlay button {
     font-size: 1.3rem;
-    padding:10px 1.5rem;
+    padding: 10px 1.5rem;
     border-radius: 10px;
     background: var(--violet);
-    color:#ffffff;
-    border:none;
-    width:fit-content;
+    color: #ffffff;
+    border: none;
+    width: fit-content;
     cursor: pointer;
 }
-.overlay button:hover{
-    transform:scale(1.04);
+
+.overlay button:hover {
+    transform: scale(1.04);
 }
+
 .project1:hover .overlay,
 .project2:hover .overlay,
-.project3:hover .overlay
-{
-    transform:translateY(0rem);
+.project3:hover .overlay {
+    transform: translateY(0rem);
 }
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
 
-    .project-title-container h2{
+    .project-title-container h2 {
         font-size: 2.6rem;
     }
 
-    .carousel-container{
-        width:30rem;
+    .project-title-container p {
+        font-size: 1.5rem;
     }
-    .projects{
-        width:100%;
-        height:25rem;
+
+    .carousel-container {
+        width: 30rem;
     }
- 
+
+    .projects {
+        width: 100%;
+        height: 25rem;
+    }
+
 }
 
-@media screen and (max-width:500px){
-    .project-title-container h2{
-        font-size: 2.2rem;
+@media screen and (max-width:500px) {
+    .project-title-container h2 {
+        font-size: 2.4rem;
     }
-    .carousel-container{
-        width:22rem;
+    .project-title-container p{
+        font-size: 1.2rem;
     }
-    .projects{
-        height:20rem;
-        width:120%;
+    .carousel-container {
+        width: 22rem;
     }
-    .overlay button{
+    .projects {
+        height: 20rem;
+        width: 120%;
+    }
+    .overlay button {
         transform: translateX(-2rem);
     }
-   
-
 }
-
