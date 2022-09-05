@@ -60,9 +60,9 @@
     background: url('../assets/Plogify_banner.png') no-repeat center/cover;
 }
 .project3{
-    background: url('../assets/Plogify_banner.png') no-repeat center/cover;
+    background: url('../assets/travel_companion.png') no-repeat center/cover;
 }
-.project1::before,.project2::before{
+.project1::before,.project2::before, .project3::before{
     content:"";
     position:absolute;
     top:0;
@@ -77,7 +77,6 @@
     height:20rem;
     width:100%;
     background:#ffffff69;
-    border-bottom: 2px solid white;
     color:var(--golden);
     display:grid;
     place-content: center;
@@ -98,7 +97,8 @@
     transform:scale(1.04);
 }
 .project1:hover .overlay,
-.project2:hover .overlay
+.project2:hover .overlay,
+.project3:hover .overlay
 {
     transform:translateY(0rem);
 }
@@ -126,7 +126,7 @@
         font-size: 2.2rem;
     }
     .carousel-container{
-        width:25rem;
+        width:22rem;
     }
 
     .projects{

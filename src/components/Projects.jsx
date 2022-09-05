@@ -22,7 +22,7 @@ const Projects = ()=>{
        <main className="projects">
         <div className="project2">
         <div className="overlay">
-           <a href="https://github.com/Suman373/CryptoCatalogue/" target="_blank">
+           <a href="https://github.com/Suman373/Plogify/" target="_blank">
             <button>
                 Visit
             </button>
@@ -34,7 +34,7 @@ const Projects = ()=>{
        <main className="projects">
         <div className="project3">
         <div className="overlay">
-           <a href="https://github.com/Suman373/CryptoCatalogue/" target="_blank">
+           <a href="https://github.com/Suman373/travel-companion/" target="_blank">
             <button>
                 Visit
             </button>
@@ -58,8 +58,8 @@ const Projects = ()=>{
                 <AliceCarousel
                 animationType="fadeout"
                 // disableButtonsControls
-                // autoPlay
-                autoPlayInterval={4000}
+                autoPlay
+                autoPlayInterval={2000}
                 infinite
                  mouseTracking items={items} />
                 </div>
