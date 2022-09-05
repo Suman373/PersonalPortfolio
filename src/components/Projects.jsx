@@ -7,10 +7,9 @@ const Projects = ()=>{
 
     // image object
     const items = [
-       <div className="projects">
-        <div className="project1">
+       <main className="projects">
+        <div className="project1 ">
         <div className="overlay">
-          <h4> A catalogue for trending cryptocurrencies.</h4>
            <a href="https://github.com/Suman373/CryptoCatalogue/" target="_blank">
             <button>
                 Visit
@@ -18,17 +17,33 @@ const Projects = ()=>{
             </a>
         </div>
         </div>
-        </div>,
-       <div className="projects">
-            <div className="overlay">
+        </main>,
 
-            </div>
-        </div>,
-       <div className="projects">
-            <div className="overlay">
+       <main className="projects">
+        <div className="project2">
+        <div className="overlay">
+           <a href="https://github.com/Suman373/CryptoCatalogue/" target="_blank">
+            <button>
+                Visit
+            </button>
+            </a>
+        </div>
+        </div>
+        </main>,
 
-            </div>
-       </div>,
+       <main className="projects">
+        <div className="project3">
+        <div className="overlay">
+           <a href="https://github.com/Suman373/CryptoCatalogue/" target="_blank">
+            <button>
+                Visit
+            </button>
+            </a>
+        </div>
+        </div>
+        </main>,
+
+
       ];
 
     return(
@@ -36,12 +51,13 @@ const Projects = ()=>{
         <div className="projects-wrapper">
                 <div className="project-title-container" id="projects">
                     <h2>My projects</h2>
+                    <div className="underline"></div>
                     <p>Here are my projects 💣</p>
                 </div>
                 <div className="carousel-container">
                 <AliceCarousel
                 animationType="fadeout"
-                disableButtonsControls
+                // disableButtonsControls
                 // autoPlay
                 autoPlayInterval={4000}
                 infinite

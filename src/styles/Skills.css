@@ -18,8 +18,8 @@
     font-family: 'Roboto',serif;
 }
 .title-container{
-    background: var(--skills-background);
     padding-top:1rem;
+    background: var(--skills-background);
     width:100%;
     text-align: center;
 }
@@ -29,6 +29,7 @@
     filter: drop-shadow(2px 2px 2px var(--black));
 }
 .cards-container{
+    margin-top: -10.2px;
     height: 100%;
     width:100%;
     position: relative;

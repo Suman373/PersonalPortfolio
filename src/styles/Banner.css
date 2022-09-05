@@ -35,8 +35,8 @@
 .banner-left h2{
     font-size: 4rem;
     margin:1rem;
- 
-    background: linear-gradient(to right,#da5214,#d1d13f);
+    /* background: linear-gradient(to right,#da5214,#d1d13f); */
+    background: linear-gradient(to right, var(--violet),var(--hover));
     background-clip: text;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -73,14 +73,13 @@
     background: var(--violet);
     color:white;
     margin:1rem 1rem;
-    box-shadow: 0 3px 5px black;
+    box-shadow: 0 0px 5px #2c2a2a;
     cursor: pointer;
 }
 .banner-left button:hover{
     opacity: 0.8;
     transform: scale(1.02);
 }
-
 
 /* ###################################################################### */
 

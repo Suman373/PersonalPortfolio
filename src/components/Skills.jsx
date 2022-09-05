@@ -31,9 +31,9 @@ const Skills = () => {
         <div className="skills-wrapper">
             <header className="title-container" id="skills">
                 <h2>My Skills and Services</h2>
+            <div className="underline" ></div>
             </header>
             <div className="cards-container" >
-
                 <Tilt className="Tilt one" >
                 <div className="Tilt-inner">
                     <h3>Website Design</h3>
@@ -67,7 +67,7 @@ const Skills = () => {
 
             <div className="stack-container">
                 <h2>Techs I use</h2>
-                
+                <div className="underline"></div>
                     <h3>Languages | Libraries | Framework | Hosting</h3>
                     <div className="big-flex-box">
                         <div className="left-side">
