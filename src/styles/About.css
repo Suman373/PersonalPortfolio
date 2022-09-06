@@ -8,7 +8,7 @@
     padding:1rem;
     text-align: center;
 }
-.about-title h2{
+.about-title h2, .about-description h3{
     font-size: 3rem;
     margin-top:2rem;
     color:var(--golden);
@@ -26,19 +26,20 @@
     padding:1rem;
     min-height: max-content;
 }
-.about-description p{
+.about-description p,.about-description li{
     font-size: 1.6rem;
     color:var(--violet);
     line-height: 1.5;
     padding:1rem 0;
     text-shadow: 0 0 1px black;
 }
+
 #dark .about-description p,
 #dark .about-title p{
     color:#ffffff;
 }
 @media screen and (max-width:700px){
-    .about-title h2{
+    .about-title h2, .about-description h3{
         font-size: 2.6rem;
     }
     .about-title p{
@@ -47,12 +48,12 @@
     .about-description{
         width:70vw;
     }
-    .about-description p{
+    .about-description p, .about-description li{
         font-size: 1.4rem;
     }
 }
 @media screen and (max-width:500px){
-    .about-title h2{
+    .about-title h2, .about-description h3{
         font-size: 2.2rem;
     }
     .about-title p{
@@ -61,7 +62,7 @@
     .about-description{
         width: 80vw;
     }
-    .about-description  p{
+    .about-description  p, .about-description li{
         font-size: 1.1rem;
     }   
 }
