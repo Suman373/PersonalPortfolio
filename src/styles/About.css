@@ -35,7 +35,8 @@
 }
 
 #dark .about-description p,
-#dark .about-title p{
+#dark .about-title p,
+#dark .about-description li{
     color:#ffffff;
 }
 @media screen and (max-width:700px){
