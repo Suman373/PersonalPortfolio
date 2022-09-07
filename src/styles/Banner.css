@@ -1,13 +1,4 @@
-/* import fonts */
-
-
 :root{
-    --bigtitles : white;
-    --violet : #6019b1;
-    --light-green :#9CE37D;
-    --asparagus:#87B37A;
-    --xanadu:#77867F;
-    --helio-gray:#B4AAC5;
     --hover:#29b347;
     --black: #1f2020;
     --pinkish:rgb(207, 34, 77);
@@ -25,7 +16,6 @@
     overflow: hidden;
 }
 
-/* ######################################################################### */
 /* Left portion */
 
 .banner-left{
@@ -80,8 +70,6 @@
     opacity: 0.8;
     transform: scale(1.02);
 }
-
-/* ###################################################################### */
 
 /* Right portion */
 .banner-right{

@@ -14,11 +14,10 @@ const NavBar = () => {
     // for navigation
     const navigate = useNavigate();
 
-    // viewer want's to connect with me 
     const handleLetsConnect = (e) => {
         e.preventDefault();
         navigate('/contact');
-        console.log("Lets connect cliked");
+        console.log("Lets connect clicked");
     }
 
     const {theme,setTheme} = useContext(ThemeContext);
@@ -73,12 +72,10 @@ const NavBar = () => {
                 </a>
 
                 {/* social callouts  */}
-
-                {/* social icon container */}
                 <div className="social-icon">
-                    <a href="https://" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                    <a href="https://" target="_blank"><i className="fa-brands fa-github-alt"></i></a>
-                    <a href="https://" target="_blank"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/sumanroy369" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Suman373" target="_blank"><i className="fa-brands fa-github-alt"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>
                 </div>
 
                 {/* contact form */}

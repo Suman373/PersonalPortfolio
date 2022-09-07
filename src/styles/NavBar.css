@@ -1,13 +1,6 @@
-/* styling of the NavBar component */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/* global variables */
 :root{
-    --bigtitles : white;
-    --violet : #6019b1;
-    --light-green :#9CE37D;
-    --asparagus:#87B37A;
-    --xanadu:#77867F;
-    --helio-gray-transp:#b4aac5ce;
+    --helio-gray-transp:#cac5d3ce;
     --hoverlink:rgb(197, 30, 147);
     --black: #1f2020;
     --pinkish:rgb(207, 34, 77);

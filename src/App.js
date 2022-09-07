@@ -1,12 +1,14 @@
 import React, { createContext, useEffect, useState } from 'react';
 import './App.css';
+import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
-import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Misc from './components/Misc';
 
 export const ThemeContext = createContext(null);
 
@@ -34,6 +36,8 @@ function App() {
           <Skills/>
           <Projects/>
           <About/>
+          <Misc/>
+          <Footer/>
           </>
         }>
         </Route>
