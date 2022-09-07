@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
@@ -12,7 +12,15 @@ export const ThemeContext = createContext(null);
 
 function App() { 
 
-  const [theme, setTheme] = useState("light");
+    const getTheme = ()=>{
+      return localStorage.getItem('theme') || 'light'; // default is light
+    }
+
+  const [theme, setTheme] = useState(getTheme());
+
+  useEffect(()=>{
+      localStorage.setItem('theme',theme);
+  },[theme]);
 
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>

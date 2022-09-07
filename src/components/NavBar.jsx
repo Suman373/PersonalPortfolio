@@ -22,11 +22,11 @@ const NavBar = () => {
     }
 
     const {theme,setTheme} = useContext(ThemeContext);
-
-
+    
     const toggleTheme = () => {
         setTheme((th) => (th === "light" ? "dark" : "light"));
     }
+    
 
     return (
         <div className="navbar-wrapper">

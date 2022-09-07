@@ -81,14 +81,14 @@ const Skills = () => {
                             <img src={mongodb} alt="mongo"/>                            
                             <img src={netlify} alt="netlify" />
                             <img src={herokuhost} alt="heroku" />
-                            <img src={firebase} alt='firebase' />
+                            {/* <img src={firebase} alt='firebase' /> */}
                             <img src={mui} alt="mui" />
                             <img src={git} alt="git" />
                             <img src={github} alt="github" />
-                            <img src={npm} alt="npm" />
-                            <img src={c} alt="c" />
-                            <img src={java} alt="java" />
-                            <img src={python} alt="python" />
+                            {/* <img src={npm} alt="npm" /> */}
+                            {/* <img src={c} alt="c" /> */}
+                            {/* <img src={java} alt="java" /> */}
+                            {/* <img src={python} alt="python" /> */}
                         </div>
                         <div className="right-side">
                           <p>These are the programming languages, scripting language,cloud hosting technologies, tools , etc I use while making cool products. I am skilled in most of them and trying to get better at them via building projects. I am currently learning more about backend development.Stack I prefer is MERN.</p>
