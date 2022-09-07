@@ -57,8 +57,7 @@
 }
 /* active link */
 .right .active{
-    /* color:var(--golden); */
-    color:var(--golden);
+    color:var(--hoverlink);
 }
 
 /* brand social media icons */
@@ -188,7 +187,7 @@
         transition:transform 400ms;
         transform: translateX(0);
         justify-content:flex-start;
-        background:#c5c2c2f6;
+        background:#ece8e8ef;
     }
     .right.open .navbar-link, .right.open .social-btn{
         display: block;

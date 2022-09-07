@@ -57,7 +57,7 @@ const Projects = ()=>{
                 <div className="carousel-container">
                 <AliceCarousel
                 animationType="fadeout"
-                // disableButtonsControls
+                disableButtonsControls
                 autoPlay
                 autoPlayInterval={2000}
                 infinite

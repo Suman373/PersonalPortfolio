@@ -142,7 +142,7 @@
     color:var(--violet);
 }
 #dark .big-flex-box .right-side{
-    color:#c2bcbc;
+    color:white;
 }
 
 /* --- medium screens----- */
@@ -218,6 +218,6 @@
     .big-flex-box .right-side{
         min-height:12rem;
         margin:1rem auto;
-        font-size:1.1rem;
+        font-size:1rem;
     }
 }
