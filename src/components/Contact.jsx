@@ -21,7 +21,7 @@ const Contact = () => {
     return (
         <div className="form-container">
             <div className="topLine"> 
-            Your email and name are being handled securely. Go back to  
+            Will get back to you soon. Go back to  
             <a href="/" 
             style={{color:'gold',padding:'4px'}}>
                  home page

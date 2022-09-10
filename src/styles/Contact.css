@@ -103,7 +103,7 @@ form textarea{
 
 @media screen and (max-width:480px) {
     .topLine{ 
-        height:2.5rem;
+        height:2.6rem;
        margin-bottom: 10px;
     }
     .form-container h1{

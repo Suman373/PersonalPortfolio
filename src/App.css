@@ -3,62 +3,88 @@
 /* font-family: 'Roboto', sans-serif; */
 
 /* reset */
-*,*::after, *::before{
-    margin:0;
-    padding:0;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --bigtitles : white;
-    --violet : #6019b1;
-    --skills-background:#3f3f8f;
-    --light-green :#9CE37D;
-    --asparagus:#87B37A;
-    --xanadu:#77867F;
-    --helio-gray:#B4AAC5;
-    --golden : #e6990a;
-    --body-bg:#cfcdcd;
-    --dark-theme:#150d16;
+
+:root {
+    --bigtitles: white;
+    --violet: #6019b1;
+    --skills-background: #3f3f8f;
+    --light-green: #9CE37D;
+    --asparagus: #87B37A;
+    --xanadu: #77867F;
+    --helio-gray: #B4AAC5;
+    --golden: #e6990a;
+    --body-bg: #cfcdcd;
+    --dark-theme: #150d16;
 }
-html{
+
+html {
     scroll-behavior: smooth;
-    scroll-padding-top:60px;
+    scroll-padding-top: 60px;
 }
-a,button{
-    cursor:pointer;
+
+a,
+button {
+    cursor: pointer;
     text-decoration: none;
 }
-body{
+
+body {
     overflow-x: hidden;
-    background:var(--body-bg);
+    background: var(--body-bg);
     font-family: 'Roboto', sans-serif;
 }
+
 /* default styling for the headings */
-h1,h2,h3,h4,h5{
-    margin:0;
-    padding:0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
 }
+
 /* For the App div  */
-.App{
+.App {
     text-align: center;
     min-height: 100vh;
-    width:100vw;
+    width: 100vw;
     overflow-x: hidden;
-    background:black;
+    background: black;
     position: absolute;
     z-index: -200;
 }
-#light{
-    background:var(--body-bg);
-}
-#dark{
-    background:var(--dark-theme);
+
+#light {
+    background: var(--body-bg);
 }
 
-.underline{
-    height:5px;
-    width:10rem;
+#dark {
+    background: var(--dark-theme);
+}
+
+.underline {
+    height: 5px;
+    width: 10rem;
     border-radius: 1rem;
-    margin:10px auto;
+    margin: 10px auto;
     background: #449fbb;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+::-webkit-scrollbar-track{
+    background:var(--helio-gray);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--golden);
+    border-radius: 10px;
 }

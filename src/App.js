@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
+import Scroller from './components/Scroller';
 import Misc from './components/Misc';
 
 export const ThemeContext = createContext(null);
@@ -38,6 +39,7 @@ function App() {
           <About/>
           <Misc/>
           <Footer/>
+          <Scroller/>
           </>
         }>
         </Route>

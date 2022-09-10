@@ -1,0 +1,32 @@
+.scroller-btn{
+    outline:none;
+    border:none;
+    position:fixed;
+    bottom:0.6rem;
+    right:0.5rem;
+    padding:1rem 0.2rem;
+    border-radius: 10px;
+    background:var(--golden);
+    transition: animation 200ms alternate;
+    animation:jump 1000ms infinite;
+}
+.scroller-btn:hover{
+    transform: scale(1.02);
+}
+@keyframes jump {
+    from{
+        transform:translateY(5px);
+    }to{
+        transform:translateY(0px);
+    }
+}
+.scroller-btn i{
+    font-size: 1.1rem;
+    color:var(--violet);
+}
+#light .scroller-btn:hover{
+    box-shadow: 0 0 4px #000000;
+}
+#dark .scroller-btn:hover{
+    box-shadow: 0 0 4px #ffffff;
+}
