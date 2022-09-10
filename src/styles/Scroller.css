@@ -30,3 +30,12 @@
 #dark .scroller-btn:hover{
     box-shadow: 0 0 4px #ffffff;
 }
+
+@media screen and (max-width:500px){
+    .scroller-btn{
+        padding:0.7rem 0.2rem;
+    }
+    .scroller-btn i{
+        font-size: 0.9rem;
+    }
+}

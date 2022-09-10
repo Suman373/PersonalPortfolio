@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width:500px){
-    .footer-container P{
+    .footer-container p{
         font-size: 1.2rem;
     }
 }
