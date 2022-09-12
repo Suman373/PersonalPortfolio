@@ -20,7 +20,7 @@ const Scroller = ()=>{
         onClick={scrollTop}
         style={showScroll ? {display:'block'} : {display:'none'}}
         className="scroller-btn">
-           <i class="fa-solid fa-arrow-up"></i>
+           <i className="fa-solid fa-arrow-up"></i>
         </button>
     );
 }
