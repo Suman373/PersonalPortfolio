@@ -10,11 +10,10 @@ const About =()=>{
                     <p>A brief bio📌</p>
                 </div>
                 <div className="about-description">
-                    <p>Hi! My name is Suman Roy and I am from India currently pursuing my bachelors in computer science. I have keen interest and a passion for the web, so I started learning web development few months ago. With time I kept on honing my skills, moved onto frameworks and other tools. </p>
-                    <p>I have always fancied hackathons. It is a great way of letting like minded people from different aspects and domains like dev, designer ,manager, speaker,etc come together to brainstorm ideas and turn them into reality. I have participated in few online hackathons, made it to top teams in one.</p>
-                    <p>Open source is something I like. A developer can excel if they start contributing to open source by any means. I have contributed to few projects on github too!</p>
-
-                    <p>Apart from things related to tech, I love to play outdoor games, online games, occasionally sketch, read books and spend quality time with friends and family.</p>
+                    <p>Hi! My name is Suman Roy and I am from India currently pursuing my bachelors in computer science. I have keen interest and a passion for the web development. </p>
+                    <p>I have always fancied hackathons.Thus, participated in few online hackathons with a team and solo too!</p>
+                    <p>I also contribute to open source projects occasionally as per the skills and features required!</p>
+                    <p>Apart from things related to tech, in my leisure (if any) I spend playing outdoor game, or online games, sketch (seldom) and spend quality time with friends and family.</p>
 
                     <h3>My achievements</h3>
                     <div className="underline"></div>
