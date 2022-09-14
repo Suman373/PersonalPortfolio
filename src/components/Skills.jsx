@@ -40,7 +40,7 @@ const Skills = () => {
                     <span className="emojis"> 
                     <img src={palette} alt="palette"/>
                     </span>
-                    <p>I design modern webpages using tools like CSS, Mui, Figma,etc which are loved by everyone </p>
+                    <p>I design modern webpages, landing pages which are loved by everyone </p>
                 </div>
                 </Tilt>
 
@@ -50,7 +50,7 @@ const Skills = () => {
                     <span className="emojis">
                         <img src={frontend} alt="frontend" />
                     </span>
-                    <p>I develop the UI of SPAs and webapps using Reactjs library </p>
+                    <p>I develop the UI of SPAs and webapps using React </p>
                 </div>
                 </Tilt>
 
@@ -60,7 +60,7 @@ const Skills = () => {
                     <span className="emojis">
                         <img src={database} alt="database" />
                     </span>
-                    <p>I am also familiar with backend development, RESTful APIS, databases and deployment</p>
+                    <p>I am also familiar with backend development with REST</p>
                 </div>
                 </Tilt>
             </div>
@@ -91,7 +91,7 @@ const Skills = () => {
                             {/* <img src={python} alt="python" /> */}
                         </div>
                         <div className="right-side">
-                          <p>These are the programming languages, scripting language,cloud hosting technologies, tools , etc I use while making cool products. I am skilled in most of them and trying to get better at them via building projects. I am currently learning more about backend development.Stack I prefer is MERN.</p>
+                          <p>These are the scripting language,cloud hosting technologies, tools , etc I use while making my projects. I am skilled in them and always learning something new about them. I use MERN stack, although I have plans to explore FIRE stack for smaller serverless projects.</p>
                         </div>
                     </div>
             </div>

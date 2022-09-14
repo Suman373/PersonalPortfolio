@@ -14,8 +14,13 @@ const Banner = ()=>{
             <h2>Hey there! I am Suman Roy, welcome to my portfolio.</h2>
             <img src="https://readme-typing-svg.herokuapp.com/?font=Helvetica&size=30&color=29b347&background=7FFCFF00&width=480&height=69&lines=I+am+a+web+developer;I+am+a+CSE+undergrad;I+love+creating+awesome+SPAs;I+love+collaboration+and+community;I+am+fond+of+hackathons" alt="typing-svg"/>
             <div>
-            <button>Hire me <i className="fa fa-rocket"></i></button>
-            <button>Resume <i className="fa fa-download"></i></button></div>    
+            <button>
+              Hire me <i className="fa fa-rocket"></i>
+            </button>
+            <button>
+              Resume <i className="fa fa-download"></i>
+              </button>
+            </div>    
           </div>
           <div className="banner-right">
             <div className="image-container">
