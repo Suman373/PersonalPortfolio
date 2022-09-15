@@ -11,15 +11,6 @@ const NavBar = () => {
     // for hamburger menu
     const [hamburgeropen, setHamburgerOpen] = useState(false);
 
-    // for navigation
-    const navigate = useNavigate();
-
-    const handleLetsConnect = (e) => {
-        e.preventDefault();
-        navigate('/contact');
-        console.log("Lets connect clicked");
-    }
-
     const {theme,setTheme} = useContext(ThemeContext);
     
     const toggleTheme = () => {
@@ -51,6 +42,13 @@ const NavBar = () => {
                 </a>
 
                 <a
+                    href="#about"
+                    className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => setActiveLink('about')}>
+                    About
+                </a>
+
+                <a
                     href="#skills"
                     className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => setActiveLink('skills')}>
@@ -65,10 +63,24 @@ const NavBar = () => {
                 </a>
 
                 <a
-                    href="#about"
-                    className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => setActiveLink('about')}>
-                    About Me
+                    href="#tech"
+                    className={activeLink === 'tech' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => setActiveLink('tech')}>
+                    Tech
+                </a>
+
+                <a
+                    href="#achievements"
+                    className={activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => setActiveLink('achievements')}>
+                    Achievements
+                </a>
+
+                <a
+                    href="#contact"
+                    className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => setActiveLink('contact')}>
+                    Contact
                 </a>
 
                 {/* social callouts  */}
@@ -77,13 +89,6 @@ const NavBar = () => {
                     <a href="https://github.com/Suman373" target="_blank"><i className="fa-brands fa-github-alt"></i></a>
                     <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>
                 </div>
-
-                {/* contact form */}
-                <button
-                    className="social-btn"
-                    onClick={(e) => handleLetsConnect(e)}>
-                    Let's Connect
-                </button>
             </div>
             <button
                 onClick={() => setHamburgerOpen(!hamburgeropen)}

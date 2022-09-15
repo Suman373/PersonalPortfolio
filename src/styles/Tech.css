@@ -1,0 +1,102 @@
+.stack-container{
+    height:fit-content;
+    width:100vw;
+    overflow:hidden;
+    position: relative;
+    background: transparent;
+}
+.stack-container h3{
+    font-size: 2rem;
+    margin:1rem auto;
+    color:var(--bigtitles);
+}
+#dark .stack-container h3{
+    color:white;
+}
+.big-flex-box{
+    min-height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+/* tech container */
+/* common */
+.big-flex-box .left-side{
+    height:30rem;
+    display: flex;
+    width:20rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:1rem;
+    margin:1rem;
+    gap:1rem;
+}
+.big-flex-box .left-side img{
+    height: 5rem;
+    width:5rem;
+    border-radius: 50%;
+    background:var(--white-bg);
+    padding:0.9rem;
+    box-shadow:  0 0 3px black;
+}
+#dark .big-flex-box .left-side img{
+    box-shadow: 0 0 3px #ffffff;
+    /* background:var(--helio-gray); */
+}
+/* some more info */
+.big-flex-box .right-side{
+    height: 30rem;
+    margin: 1rem;
+    width:20rem;
+    text-align: center;
+    font-size:1.5rem;
+    line-height: 2;
+    color:var(--bigtitles);
+}
+#dark .big-flex-box .right-side{
+    color:white;
+}
+
+@media screen and (max-width:800px){
+    /* the tech part */
+    .stack-container h2{
+        font-size:2.6rem;
+    }
+    .stack-container h3{
+        font-size: 1.9rem;
+    }
+
+    .big-flex-box .left-side{
+        height:25rem;
+    }
+    .big-flex-box{
+        margin-top: 1rem;
+    }
+    .big-flex-box .left-side img{
+        height:3.5rem;
+        width:3.5rem;
+    }
+    .big-flex-box .right-side{
+        height:20rem;
+        font-size:1.2rem;
+    }
+}
+@media screen and (max-width:480px){
+    .stack-container{min-height:40rem;}
+    .big-flex-box {display:block; min-height:30rem;}
+    .big-flex-box .left-side{
+        min-height:20rem;
+        margin:0 auto;
+    }
+    .big-flex-box .left-side img{
+        height:3rem;
+        width:3rem;
+    }
+    .big-flex-box .right-side{
+        min-height:12rem;
+        margin:1rem auto;
+        font-size:1rem;
+    }
+}

@@ -19,43 +19,24 @@
 /* Left portion */
 
 .banner-left{
-    width:70%;
-    text-align: center;
+    width:50%;
+    margin-left:10%;
+    text-align: left;
 }
 .banner-left h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin:1rem;
-    /* background: linear-gradient(to right,#da5214,#d1d13f); */
-    background: linear-gradient(to right, var(--violet),var(--hover));
-    background-clip: text;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-	animation: animated 4000ms infinite alternate;
-     filter: drop-shadow(0px 2px 1px black);
+    color:var(--bigtitles);
 }
-@keyframes animated {
-    to{
-        background-position: 100%;
-      }
+#dark .banner-left h2,#dark .banner-left p{
+    color:var(--helio-gray);
 }
-
 .banner-left p{
-    margin:0 1rem;
+    margin:1rem;
     font-size: 1.6rem;
-    padding:5px 1rem;
-    font-weight: 300;
-    text-shadow: 0 0 1px black;
-    color:var(--violet);
+    font-weight: 600;
 }
-.banner-left img{
-    text-align: center;
-    height:5rem;
-    width:80%;
-    user-select: none;
-}
-.banner-left button{
-   
+.banner-left button{  
     padding:10px;
     font-size: 1.3rem;
     border: none;
@@ -78,8 +59,8 @@
 
 .image-container{
     margin-bottom: 10rem;
-    height:35rem;
-    width:35rem;
+    height:40rem;
+    width:40rem;
     position: relative;
     background: url('../assets/myphoto.png') no-repeat center center/cover;
 }
@@ -90,14 +71,6 @@
     left:2rem;
     transition:animation 400ms;
     animation:mover 2000ms infinite alternate;
-}
-@keyframes mover {
-    0%,50%{
-       transform: translateX(1px) translateY(-1px) scale(1.008);
-    }
-    25%,100%{
-        transform:translateY(1px) translateX(-1px) scale(0.99);
-    }
 }
 
 
@@ -116,13 +89,15 @@
     /* ###### LEFT ####*/
     .banner-left{
         height: 30rem;
+        width:60vw;
+        margin-left: 0%;
         text-align: center;
     }
     .banner-left h2{
         font-size: 2.5rem;
     }
-    .banner-left img{
-        width:70%;
+    .banner-left p{
+        font-size: 1.4rem;
     }
 
     .banner-left button{
@@ -136,7 +111,6 @@
         width:25rem;
         position: relative;
         background: url('../assets/myphoto.png') no-repeat center center/cover;
-        /* background:black; */
     }
     .bg-blob{
         z-index: -1;

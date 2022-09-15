@@ -12,14 +12,17 @@
 }
 
 :root {
-    --bigtitles: white;
+    --navbar-bg:#efecf388;
+    --bigtitles: #131212;
     --violet: #6019b1;
     --skills-background: #3f3f8f;
     --light-green: #9CE37D;
     --asparagus: #87B37A;
     --xanadu: #77867F;
     --helio-gray: #B4AAC5;
+    --white-bg:#f0ebeb;
     --golden: #e6990a;
+    --pink:#fd4592;
     --body-bg: #cfcdcd;
     --dark-theme: #1f1d1f;
     --red:#ca1a1a;
@@ -75,17 +78,33 @@ h5 {
     height: 5px;
     width: 10rem;
     border-radius: 1rem;
-    margin: 10px auto;
+    margin: 0.2rem auto;
     background: #449fbb;
 }
+/* highlighting headings */
+.heading-highlight{
+    color:var(--violet);
+}
 
-::-webkit-scrollbar {
-    width: 0.8rem;
+/* heading styles */
+.component-headings{
+    font-size: 2.8rem;
+    padding: 1rem;
 }
-::-webkit-scrollbar-track{
-    background:var(--helio-gray);
+/* heading styles for light theme */
+#light .component-headings{
+    color:var(--bigtitles);
 }
-::-webkit-scrollbar-thumb {
-    background: var(--golden);
-    border-radius: 10px;
+
+#dark .component-headings{
+    color:var(--helio-gray);
 }
+@media screen and (max-width:800px){
+
+}
+@media screen and (max-width:500px){
+
+}
+
+
+/* heading styles for dark theme */

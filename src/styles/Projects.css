@@ -1,160 +1,61 @@
-@import "react-alice-carousel/lib/alice-carousel.css";
-
-/* primary palette */
-:root {
-    --light-black: radial-gradient(circle, #161515 60%, #252323 80%, #c2b9b9);
-}
-
-/* main wrapper */
-.projects-wrapper {
-    min-height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background: var(--skills-background);
-}
-
-.project-title-container {
-    width: 100%;
-    text-align: center;
-}
-
-.project-title-container h2 {
-    font-size: 3rem;
-    margin-top: 2rem;
-    color: var(--golden);
-    filter: drop-shadow(2px 2px 2px var(--black));
-}
-
-.project-title-container p {
-    font-size: 1.7rem;
-    margin: 1rem;
-    padding: 10px;
-    color: white;
-    text-shadow: 0 0 1px black;
-}
-
-.carousel-container {
-    width: 40rem;
-    /* box-shadow: 0 0 10px white; */
-    margin: 0 auto;
-}
-
-.projects {
-    height: 25rem;
-    width: 40rem;
-    display: grid;
-    place-content: center;
-    overflow: hidden;
-}
-
-/* grouping */
-.project1,
-.project2,
-.project3 {
-    height: 20rem;
-    width: 30rem;
-    margin: 1rem auto;
-    overflow: hidden;
+.project-wrapper{
+    min-height: 110vh;
+    width:100vw;
     position: relative;
+    background:var(--white-bg);
+}
+.project-container{
+    width:65rem;
+    min-height: 120vh;
+    margin:2rem auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    flex-wrap: wrap;
+}
+.project-card{
+    height:21rem;
+    width:21rem;
+    background:var(--body-bg);
+    box-shadow: 0 0 5px var(--bigtitles);
     border-radius: 1rem;
-}
-
-/* individual banner */
-.project1 {
-    background: url('../assets/CryptoCatalogue.png') no-repeat center center/cover;
-}
-
-.project2 {
-    background: url('../assets/Plogify_banner.png') no-repeat center/cover;
-}
-
-.project3 {
-    background: url('../assets/travel_companion.png') no-repeat center/cover;
-}
-
-.project1::before,
-.project2::before,
-.project3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000000;
-    opacity: 0.4;
-}
-
-.overlay {
-    height: 20rem;
-    width: 100%;
-    background: #ffffff69;
-    color: var(--golden);
+    position:relative;
     display: grid;
     place-content: center;
-    transition: 500ms;
-    transform: translateY(-20rem);
 }
-
-.overlay button {
-    font-size: 1.3rem;
-    padding: 10px 1.5rem;
-    border-radius: 10px;
-    background: var(--violet);
-    color: #ffffff;
-    border: none;
-    width: fit-content;
+.project-title-container{
+    height:3rem;
+    position:absolute;
+    top:0.7rem;
+    text-align: center;
+    width:100%;
+}
+.project-card h3{
+    color:var(--bigtitles);
+    background:var(--body-bg);
+    width:fit-content;
+    /* font-size: 1.3rem; */
+    margin: 0 auto;
+    border:none;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+.banner-container img{
+    padding:0.4rem;
+    height:13rem;
+    width:100%;
+    border-radius: 1rem;
     cursor: pointer;
 }
-
-.overlay button:hover {
-    transform: scale(1.04);
-}
-
-.project1:hover .overlay,
-.project2:hover .overlay,
-.project3:hover .overlay {
-    transform: translateY(0rem);
-}
-
-
-
-@media screen and (max-width:800px) {
-
-    .project-title-container h2 {
-        font-size: 2.6rem;
-    }
-
-    .project-title-container p {
-        font-size: 1.5rem;
-    }
-
-    .carousel-container {
-        width: 30rem;
-    }
-
-    .projects {
-        width: 100%;
-        height: 25rem;
-    }
-
-}
-
-@media screen and (max-width:500px) {
-    .project-title-container h2 {
-        font-size: 2.4rem;
-    }
-    .project-title-container p{
-        font-size: 1.2rem;
-    }
-    .carousel-container {
-        width: 22rem;
-    }
-    .projects {
-        height: 20rem;
-        width: 120%;
-    }
-    .overlay button {
-        transform: translateX(-2rem);
-    }
+.info-container{
+    padding:0.5rem;
+    width:95%;
+    border-radius: 0.5rem;
+    margin:0 auto;
+    text-align: left;
+    font-size: 1.1rem;
+    color:var(--bigtitles);
+    background: var(--white-bg);
+    position:relative;
 }

@@ -7,9 +7,10 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
+import Tech from './components/Tech';
 import Footer from './components/Footer';
 import Scroller from './components/Scroller';
-import Misc from './components/Misc';
+import Achievements from './components/Achievements';
 
 export const ThemeContext = createContext(null);
 
@@ -34,18 +35,14 @@ function App() {
           <>
           <NavBar/>
           <Banner/>
+          <About/>
           <Skills/>
           <Projects/>
-          <About/>
-          <Misc/>
+          <Tech/>
+          <Achievements/>
+          <Contact/>
           <Footer/>
           <Scroller/>
-          </>
-        }>
-        </Route>
-        <Route path="/contact" element={
-          <>
-           <Contact/>
           </>
         }>
         </Route>

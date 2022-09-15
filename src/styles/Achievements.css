@@ -1,0 +1,17 @@
+.achievements-wrapper{
+    height:100vh;
+    width:100%;
+    background:var(--white-bg);
+}
+.list-wrapper ul{
+    text-align: left;
+}
+.list-wrapper{
+    height:100%;
+    width:30rem;
+    margin:2rem auto;
+    font-size: 1.4rem;
+}
+.list-wrapper li{
+    margin:1rem 0;
+}

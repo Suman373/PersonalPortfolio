@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root{
-    --helio-gray-transp:#cac5d3ce;
     --hoverlink:rgb(197, 30, 147);
     --black: #1f2020;
     --pinkish:rgb(207, 34, 77);
@@ -12,18 +11,17 @@
     width:100%;
     display: flex;
     z-index:9998;
-    background: var(--helio-gray-transp);
+    background: var(--navbar-bg);
+    backdrop-filter: blur(10px);
 }
-
 .left{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width:30%;
+    width:20%;
 }
 /* logo */
 .left .logo-container h2{   
-    font-family: 'Pacifico', cursive;
     font-size: 2rem;
     color:var(--golden);
     text-shadow: 0 2px 4px var(--black);
@@ -41,15 +39,17 @@
     display: flex;
     position:relative;
     align-items:center;
-    justify-content: space-evenly;
-    width:70%;
+    justify-content: flex-end;
+    gap:0.6rem;
+    width:80%;
 }
 
 /* menu items */
 .right .navbar-link{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color:var(--violet);
+    margin:0 1rem;
+    color:var(--bigtitles);
 }
 .right .navbar-link:hover{
     color:var(--hoverlink);
@@ -72,68 +72,46 @@
    color:var(--hoverlink);
 }
 
-/* button */
-.social-btn{
-    height:max-content;
-    width:max-content;
-    font-size: 1rem;
-    padding:8px;
-    color:white;
-    border:none;
-    border-radius: 10px;
-    background:var(--violet);
-    box-shadow:  0 2px 5px var(--violet);
-    cursor: pointer;
-    
-}
-.social-btn:hover{
-    opacity: 0.8;
-    transform:scale(1.03);
-}
-
 /* the hamburger for navbar collapse */
 .hamburger-icon{
-    background:transparent;
     border:none;
     outline:none;
     display: none;
+    background: transparent;
     z-index:9999;
 }
 
 
 /* large medium */
-@media screen and (max-width:900px){
+@media screen and (max-width:930px){
 
     .left .logo-container h2{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .left .fa-solid{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 
     /* right side */
     .right .navbar-link{
-        font-size: 1rem;
-        padding:0;
+        font-size: 1.1rem;
+        margin: 0.5rem;
     }
     .right .social-icon{
         position: absolute;
         display: flex;
         flex-direction: column;
         top:20rem;
-        left:-42%;
+        left:-25%;
         z-index: 30;
         transform: scale(1.1);
         background:rgba(202, 194, 194, 0.473);
     }
     .right .fa-brands{
+        font-size: 1.5rem;
         padding:4px;
     }
-    .social-btn{
-        padding:6px;
-        transform:scale(0.8);
-    }
-
+ 
 }
 
 /* mobiles */
@@ -189,14 +167,10 @@
         justify-content:flex-start;
         background:#ece8e8ef;
     }
-    .right.open .navbar-link, .right.open .social-btn{
+    .right.open .navbar-link{
         display: block;
         margin-top:2rem;
         margin-bottom: 0.6rem;
-    }
-    .social-btn{
-        font-size:1.2rem;
-        padding:10px;
     }
 }
 @media screen and (max-width:412px){

@@ -1,22 +1,17 @@
 
 .skills-wrapper{
     min-height:100vh;
+    font-family:'Roboto' ;
     width:100vw;
     overflow: hidden;
     position: relative;
-    font-family: 'Roboto',serif;
 }
 .title-container{
     padding-top:1rem;
-    background: var(--skills-background);
     width:100%;
     text-align: center;
 }
-.title-container h2 ,.stack-container h2{
-    font-size: 3rem;
-    color:var(--golden);
-    filter: drop-shadow(2px 2px 2px var(--black));
-}
+
 .cards-container{
     margin-top: -10.2px;
     height: 100%;
@@ -26,51 +21,32 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-     background: var(--skills-background);
+    background: var(--white);
 }
 
-.Tilt{
+.Card{
     margin:3rem;
     height:20rem;
     width:20rem;
+    border:3px solid var(--violet);
     border-radius: 20px;
     text-align: center;
-    filter: drop-shadow(2px 7px 10px black);
+    background: var(--white-bg);
+    box-shadow:0 0 4px var(--bigtitles);
 }
-.one{
-    background: radial-gradient(circle, #e33941, #a82626, #7a090f);
-    color:white;
-}
-.one h3{
-   
-    color: #e2df17;
-}
-.two{
-    background:radial-gradient(circle, #e2df17 , #f5e23a , #eec12f);
-    color:black;
-}
-.two h3{
-    color:#e33941;
-}
-.three{
-    background: radial-gradient(circle, #1f9c1f ,#258811 ,#0a5c0a);
-    color:white;
-}
-.three h3{
-    color: #e2df17;
-}
+
 
 /* all h3  */
 
-.Tilt-inner h3{
+.Card-inner h3{
     font-size:1.5rem;
     margin:10px 1rem;
     padding:1rem;
     border-radius: 10px;
 }
-.Tilt-inner p{
+.Card-inner p{
     font-size:1.2rem;
-    text-shadow: 0 0 1px black;
+    font-weight: 500;
     padding:0 1rem;
 }
 
@@ -79,82 +55,16 @@
     width:5rem;
 }
 
-/* ------------Tech stack -------- */
-.stack-container{
-    height:fit-content;
-    width:100vw;
-    padding-top:4rem;
-    overflow:hidden;
-    position: relative;
-    background: transparent;
-}
-.stack-container h3{
-    font-size: 2rem;
-    margin:1rem auto;
-    color:var(--violet);
-}
-#dark .stack-container h3{
-    color:white;
-}
-.big-flex-box{
-    min-height:100vh;
-    width:100vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-}
-/* tech container */
-/* common */
-.big-flex-box .left-side{
-    height:30rem;
-    display: flex;
-    width:20rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding:1rem;
-    margin:1rem;
-    gap:1rem;
-}
-.big-flex-box .left-side img{
-    height: 5rem;
-    width:5rem;
-    border-radius: 50%;
-    padding:12px;
-    box-shadow:  0 0 4px black;
-}
-#dark .big-flex-box .left-side img{
-    box-shadow: 0 0 2px #ffffff;
-    background:var(--body-bg);
-}
-
-
-
-/* some more info */
-.big-flex-box .right-side{
-    height: 30rem;
-    margin: 1rem;
-    width:20rem;
-    text-align: center;
-    font-size:1.5rem;
-    text-shadow:0 0 1px black;
-    line-height: 2;
-    color:var(--violet);
-}
-#dark .big-flex-box .right-side{
-    color:white;
-}
-
 /* --- medium screens----- */
 @media screen and (max-width:800px){
     .title-container h2{
         font-size: 2.6rem;
     }
-    .Tilt{
+    .Card{
         height:17rem;
         width:17rem
     }
-    .Tilt-inner h3{
+    .Card-inner h3{
         margin:8px 1rem;
         padding:8px;
     }
@@ -163,61 +73,25 @@
         width:4rem;
     }
 
-    /* the tech part */
-    .stack-container h2{
-        font-size:2.6rem;
-    }
-    .stack-container h3{
-        font-size: 1.9rem;
-    }
-
-    .big-flex-box .left-side{
-        height:25rem;
-    }
-    .big-flex-box{
-        margin-top: 1rem;
-    }
-    .big-flex-box .left-side img{
-        height:3.5rem;
-        width:3.5rem;
-    }
-    .big-flex-box .right-side{
-        height:20rem;
-        font-size:1.2rem;
-    }
 }
 
 @media screen and (max-width:480px){
     .title-container h2 , .stack-container h2{
         font-size:2.1rem;
     }
-    .Tilt{
+    .Card{
         height:15rem;
         width:15rem;
     }
-    .Tilt-inner h3 , .stack-container h3{
+    .Card-inner h3 , .stack-container h3{
         font-size:1.2rem;
         margin:10px auto;
         padding:0.5rem;
     }
-    .Tilt-inner p , .right-side p{
+    .Card-inner p , .right-side p{
         font-size:1.1rem;
         padding:0 10px;
     }
     /* tech part  */
-    .stack-container{min-height:40rem;}
-    .big-flex-box {display:block; min-height:30rem;}
-    .big-flex-box .left-side{
-        min-height:20rem;
-        margin:0 auto;
-    }
-    .big-flex-box .left-side img{
-        height:3rem;
-        width:3rem;
-    }
-    .big-flex-box .right-side{
-        min-height:12rem;
-        margin:1rem auto;
-        font-size:1rem;
-    }
+    
 }

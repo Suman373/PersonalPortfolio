@@ -3,47 +3,19 @@
 :root{
     --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
 }
-*,*::after,*::before{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-.topLine{
-    position:fixed;
-    top:0;
-    height:2rem;
-    padding:5px;
-    background: var(--violet);
-    color:white;
-    width:100vw;
-}
+
 .form-container{
-    height:100vh;
+    min-height:100vh;
     width:100vw;
     overflow:hidden;
-    display:grid;
-    place-content: center;
-}
-.form-container h1{
-    color:var(--violet);
-    font-size: 2.2rem;
-    margin:1rem auto;
-}
-.form-container .wave{
-    transition: animation 100ms ;
-    display: inline-block;
-    animation:waving 2000ms  infinite;
-}
-@keyframes waving {
-    0%{
-        transform: rotate(10deg) ;
-    }
 }
 form{
-    height:28rem;
-    width:28rem;
+    height:35rem;
+    width:35rem;
     padding:10px;
-    background: var(--violet);
+    margin:2rem auto;
+    background: var(--navbar-bg);
+    color:var(--violet);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -51,17 +23,17 @@ form{
 }
 form label{
     font-size: 1.2rem;
-    color:white;
+    font-weight: 600;
     margin:10px 4rem;
-    text-align: left;
+    text-align: justify;
 }
 form input{
-    height:3rem;
-    width:68%;
+    height:3.2rem;
+    width:80%;
     margin:5px auto;
 }
 form input:focus, form textarea:focus{
-    border:2px solid  #e6990a;
+    box-shadow: 0 0 4px var(--violet);
 }
 form input, form textarea{
     padding:10px;
@@ -72,7 +44,7 @@ form input, form textarea{
     font-family: 'Roboto,sans-serif';
 }
 form textarea{
-    width:67%;
+    width:80%;
     margin:5px auto;
     height:12rem;
 }
@@ -84,8 +56,8 @@ form textarea{
     border:none;
     cursor: pointer;
     color:white;
-    border-radius:1rem;
-    background:var(--golden)
+    border-radius:0.6rem;
+    background:var(--violet)
 }
 .submit-btn:hover{
     opacity: 0.9;
@@ -102,15 +74,11 @@ form textarea{
 }
 
 @media screen and (max-width:480px) {
-    .topLine{ 
-        height:2.6rem;
-       margin-bottom: 10px;
-    }
     .form-container h1{
         font-size: 1.7rem;
     }
     form{
-        width:20rem;
+        width:24rem;
     }
     form label{
         margin:12px 3rem;
