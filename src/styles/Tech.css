@@ -75,7 +75,7 @@
     }
     .big-flex-box .right-side{
         height:20rem;
-        font-size:1.2rem;
+        font-size:1.3rem;
     }
 }
 @media screen and (max-width:480px){
@@ -100,6 +100,6 @@
     .big-flex-box .right-side{
         min-height:12rem;
         margin:1rem auto;
-        font-size:1.1rem;
+        font-size:1.2rem;
     }
 }
