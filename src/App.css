@@ -111,11 +111,21 @@ h5 {
     background: var(--dark-theme);
 }
 @media screen and (max-width:800px){
-
+    .underline{
+        height:4px;
+    }
+    .component-headings{
+        font-size: 2.4rem;
+    }
 }
 @media screen and (max-width:500px){
-
-}
+    .underline{
+        height:3px;
+    }
+    .component-headings{
+        font-size: 2rem;
+    }
+}   
 
 
 /* heading styles for dark theme */

@@ -19,3 +19,17 @@
 #dark .list-wrapper li{
     color:var(--helio-gray);
 }
+
+@media screen and(max-width:700px) {
+    .list-wrapper{
+        width:28rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .list-wrapper{
+        width:18rem;
+        font-size: 1.1rem;
+    }
+}

@@ -60,14 +60,9 @@
 }
 
 @media screen and (max-width:800px){
-    /* the tech part */
-    .stack-container h2{
-        font-size:2.6rem;
-    }
     .stack-container h3{
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
-
     .big-flex-box .left-side{
         height:25rem;
     }
@@ -84,8 +79,16 @@
     }
 }
 @media screen and (max-width:480px){
-    .stack-container{min-height:40rem;}
-    .big-flex-box {display:block; min-height:30rem;}
+    .stack-container{
+        min-height:40rem;
+    }
+    .stack-container h3{
+        font-size: 1.4rem;
+    }
+    .big-flex-box {
+        display:block; 
+        min-height:30rem;
+    }
     .big-flex-box .left-side{
         min-height:20rem;
         margin:0 auto;
@@ -97,6 +100,6 @@
     .big-flex-box .right-side{
         min-height:12rem;
         margin:1rem auto;
-        font-size:1rem;
+        font-size:1.1rem;
     }
 }

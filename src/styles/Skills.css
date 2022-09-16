@@ -13,21 +13,22 @@
 }
 
 .cards-container{
-    margin-top: -10.2px;
+    margin:2rem auto;
     height: 100%;
     width:100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:1.5rem;
     flex-wrap: wrap;
     background: var(--white);
 }
 
 .Card{
-    margin:3rem;
-    height:20rem;
-    width:20rem;
+    margin:1rem;
+    height:21rem;
+    width:21rem;
     /* border:3px solid var(--violet); */
     display: grid;
     place-content: center;
@@ -61,8 +62,8 @@
         font-size: 2.6rem;
     }
     .Card{
-        height:17rem;
-        width:17rem
+        height:19rem;
+        width:19rem
     }
     .Card-inner h3{
         margin:8px 1rem;
@@ -80,8 +81,8 @@
         font-size:2.1rem;
     }
     .Card{
-        height:15rem;
-        width:15rem;
+        height:14rem;
+        width:14rem;
     }
     .Card-inner h3 , .stack-container h3{
         font-size:1.2rem;
@@ -89,7 +90,7 @@
         padding:0.5rem;
     }
     .Card-inner p , .right-side p{
-        font-size:1.1rem;
+        font-size:1rem;
         padding:0 10px;
     }
     /* tech part  */

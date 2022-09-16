@@ -155,9 +155,11 @@
     }
 
     .right.open{
+        padding-top:2rem;
         height:100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         z-index:400;
         transition:transform 400ms;
@@ -166,9 +168,7 @@
         background:#ece8e8ef;
     }
     .right.open .navbar-link{
-        display: block;
-        margin-top:2rem;
-        margin-bottom: 0.6rem;
+        display: inline-block;
     }
 }
 /* socials */
