@@ -1,6 +1,6 @@
 import React from "react";
 import CryptoCatalogue from '../assets/CryptoCatalogue.png';
-import travel_companion from '../assets/travel_companion.png';
+import TravelCompanion from '../assets/TravelCompanion.png';
 import '../styles/Projects.css';
 
 
@@ -36,7 +36,7 @@ const Projects = () => {
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
                             target="_blank">
-                               <img src={travel_companion} 
+                               <img src={TravelCompanion} 
                                alt="Banner for project" />
                             </a>
                         </div>
@@ -52,12 +52,12 @@ const Projects = () => {
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
                             target="_blank">
-                                <img src={travel_companion} 
+                                <img src={TravelCompanion} 
                                 alt="" />
                             </a>
                         </div>
                         <div className="info-container">
-                            <p>Money Buddy helps you to track your money use for maximum savings!</p>
+                            <p>Money Buddy is your personal finance tracking application to help you save more.</p>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@ const Projects = () => {
                         <div className="banner-container">
                              <a href="https://github.com/Suman373"
                             target="_blank">
-                                <img src={travel_companion} 
+                                <img src={TravelCompanion} 
                                 alt="Project banner" />
                             </a>
                         </div>

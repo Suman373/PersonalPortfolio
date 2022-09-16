@@ -15,7 +15,6 @@
     --navbar-bg:#efecf388;
     --bigtitles: #131212;
     --violet: #6019b1;
-    --skills-background: #3f3f8f;
     --light-green: #9CE37D;
     --asparagus: #87B37A;
     --xanadu: #77867F;
@@ -41,6 +40,7 @@ button {
 
 body {
     overflow-x: hidden;
+    width:100rem;
     background: var(--body-bg);
     font-family: 'Roboto', sans-serif;
 }
@@ -98,6 +98,17 @@ h5 {
 
 #dark .component-headings{
     color:var(--helio-gray);
+}
+
+
+/* background for components */
+#dark .form-container, 
+#dark .project-wrapper,
+#dark .skills-wrapper,
+#dark .about-wrapper,
+#dark .stack,
+#dark .achievements-wrapper{
+    background: var(--dark-theme);
 }
 @media screen and (max-width:800px){
 

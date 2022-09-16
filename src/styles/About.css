@@ -20,7 +20,7 @@
     font-size: 1.5rem;
     color:var(--bigtitles);
     padding:1rem 0;
-    text-align: justify;
+    text-align: left;
 }
 
 #dark .about-description p{

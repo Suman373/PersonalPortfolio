@@ -115,7 +115,7 @@
 }
 
 /* mobiles */
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .right .navbar-link{
         font-size: 1.1rem;
         padding: 5px;
@@ -128,8 +128,6 @@
         font-size:2rem;
         cursor: pointer;
     }
-
-
     /* display none for showing only toggle btn */
 
     .right .social-icon{
@@ -173,6 +171,7 @@
         margin-bottom: 0.6rem;
     }
 }
+/* socials */
 @media screen and (max-width:412px){
     .right .social-icon{
         left:-81%;

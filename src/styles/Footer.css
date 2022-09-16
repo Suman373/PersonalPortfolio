@@ -9,6 +9,7 @@
 .footer-container p{
     font-size: 1.3rem;
     text-shadow:0 0 1px black;
+    margin:0.2rem;
     color:var(--violet);
 }
 #dark .footer-container p{

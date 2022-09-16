@@ -11,7 +11,7 @@
     color:var(--bigtitles);
 }
 #dark .stack-container h3{
-    color:white;
+    color:var(--helio-gray);
 }
 .big-flex-box{
     min-height:100vh;
@@ -50,13 +50,13 @@
     height: 30rem;
     margin: 1rem;
     width:20rem;
-    text-align: center;
+    text-align: left;
     font-size:1.5rem;
     line-height: 2;
     color:var(--bigtitles);
 }
 #dark .big-flex-box .right-side{
-    color:white;
+    color:var(--helio-gray);
 }
 
 @media screen and (max-width:800px){

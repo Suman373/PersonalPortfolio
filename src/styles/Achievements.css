@@ -14,4 +14,8 @@
 }
 .list-wrapper li{
     margin:1rem 0;
+    color:var(--bigtitles);
+}
+#dark .list-wrapper li{
+    color:var(--helio-gray);
 }

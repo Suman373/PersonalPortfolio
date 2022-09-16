@@ -9,6 +9,7 @@
     width:100vw;
     overflow:hidden;
 }
+
 form{
     height:35rem;
     width:35rem;
@@ -22,7 +23,7 @@ form{
     border-radius: 8px;
 }
 form label{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin:10px 4rem;
     text-align: justify;

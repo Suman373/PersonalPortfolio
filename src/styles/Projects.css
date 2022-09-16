@@ -5,9 +5,10 @@
     background:var(--white-bg);
 }
 .project-container{
-    width:65rem;
+    max-width:65rem;
     min-height: 120vh;
     margin:2rem auto;
+    padding:1rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +16,11 @@
     flex-wrap: wrap;
 }
 .project-card{
-    height:21rem;
+    height:22rem;
     width:21rem;
-    background:var(--body-bg);
-    box-shadow: 0 0 5px var(--bigtitles);
-    border-radius: 1rem;
+    background:#ffffff;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 2px var(--bigtitles);
     position:relative;
     display: grid;
     place-content: center;
@@ -33,9 +34,9 @@
 }
 .project-card h3{
     color:var(--bigtitles);
-    background:var(--body-bg);
+    background: #ffffff;
     width:fit-content;
-    /* font-size: 1.3rem; */
+    font-size: 1.2rem;
     margin: 0 auto;
     border:none;
     padding:0.5rem;
@@ -43,19 +44,19 @@
 }
 .banner-container img{
     padding:0.4rem;
-    height:13rem;
-    width:100%;
+    height:14rem;
+    width:80%;
     border-radius: 1rem;
     cursor: pointer;
 }
 .info-container{
-    padding:0.5rem;
-    width:95%;
+    padding:1rem;
+    width:80%;
     border-radius: 0.5rem;
     margin:0 auto;
     text-align: left;
     font-size: 1.1rem;
     color:var(--bigtitles);
-    background: var(--white-bg);
+    background: #ffffff;
     position:relative;
 }

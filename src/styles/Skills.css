@@ -28,7 +28,9 @@
     margin:3rem;
     height:20rem;
     width:20rem;
-    border:3px solid var(--violet);
+    /* border:3px solid var(--violet); */
+    display: grid;
+    place-content: center;
     border-radius: 20px;
     text-align: center;
     background: var(--white-bg);
@@ -40,9 +42,7 @@
 
 .Card-inner h3{
     font-size:1.5rem;
-    margin:10px 1rem;
     padding:1rem;
-    border-radius: 10px;
 }
 .Card-inner p{
     font-size:1.2rem;
@@ -51,8 +51,8 @@
 }
 
 .emojis img{
-    height:5rem;
-    width:5rem;
+    height:8rem;
+    width:8rem;
 }
 
 /* --- medium screens----- */
