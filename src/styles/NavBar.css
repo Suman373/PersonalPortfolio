@@ -131,7 +131,7 @@
     /* display none for showing only toggle btn */
 
     .right .social-icon{
-        left:-75%;
+        left:-45%;
     }
     .right .fa-brands{
         padding:5px;
@@ -172,18 +172,18 @@
     }
 }
 /* socials */
-@media screen and (max-width:412px){
+@media screen and (max-width:500px){
     .right .social-icon{
-        left:-81%;
+        left:-54%;
     }
 }
-@media screen and (max-width:340px){
+@media screen and (max-width:400px){
     .right .social-icon{
-        left:-87%;
+        left:-62%;
     }
 }
 @media screen and (max-width:300px){
     .right .social-icon{
-        left:-92%;
+        left:-81%;
     }
 }
