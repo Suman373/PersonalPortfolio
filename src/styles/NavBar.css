@@ -47,7 +47,7 @@
 /* menu items */
 .right .navbar-link{
     font-size: 1.3rem;
-    font-weight: 600;
+    text-shadow: 0 0 1px grey;
     margin:0 1rem;
     color:var(--bigtitles);
 }
@@ -159,7 +159,7 @@
         height:100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         z-index:9998;
         transition:transform 400ms;
