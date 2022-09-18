@@ -20,7 +20,7 @@
     width:21rem;
     background:#ffffff;
     border-radius: 0.7rem;
-    box-shadow: 0 0 2px var(--bigtitles);
+    box-shadow: 0 0 2px var(--bigtitles) inset;
     position:relative;
     display: grid;
     place-content: center;

@@ -1,8 +1,8 @@
 import React from "react";
 import '../styles/Skills.css'
-import palette from '../assets/palette.webp';
-import frontend from '../assets/frontend.webp';
-import database from '../assets/database.png';
+import illusFrontend from '../assets/illusFrontend.png';
+import illusBackend from '../assets/illusBackend.png';
+import illusDatabase from '../assets/illusDatabase.png';
 
 const Skills = () => {
     return (
@@ -15,19 +15,19 @@ const Skills = () => {
                 <div className="Card one" >
                 <div className="Card-inner">
                     <h3>Website Design</h3>
-                    <span className="emojis"> 
-                    <img src={palette} alt="palette"/>
-                    </span>
+                    <div className="emojis"> 
+                         <img src={illusFrontend} alt="palette"/>
+                    </div>
                     <p>I design modern webpages, landing pages which are loved by everyone </p>
                 </div>
                 </div>
 
                 <div className="Card two">
                 <div className="Card-inner" >
-                    <h3>Front-end Web Development</h3>
-                    <span className="emojis">
-                        <img src={frontend} alt="frontend" />
-                    </span>
+                    <h3>Frontend Development</h3>
+                    <div className="emojis">
+                        <img src={illusBackend} alt="frontend" />
+                    </div>
                     <p>I develop the UI of SPAs and webapps using React </p>
                 </div>
                 </div>
@@ -35,9 +35,9 @@ const Skills = () => {
                 <div className="Card three">
                 <div className="Card-inner" >
                     <h3>Backend Development</h3>
-                    <span className="emojis">
-                        <img src={database} alt="database" />
-                    </span>
+                    <div className="emojis">
+                        <img src={illusDatabase} alt="database" />
+                    </div>
                     <p>I am also familiar with backend development with REST</p>
                 </div>
                 </div>

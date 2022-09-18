@@ -39,7 +39,7 @@
     border-radius: 50%;
     background:var(--white-bg);
     padding:0.9rem;
-    box-shadow:  0 0 3px black;
+    box-shadow:  0 0 3px black inset;
 }
 #dark .big-flex-box .left-side img{
     box-shadow: 0 0 3px #ffffff;

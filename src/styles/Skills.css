@@ -29,13 +29,13 @@
     margin:1rem;
     height:21rem;
     width:21rem;
-    /* border:3px solid var(--violet); */
+    padding:0.5rem;
     display: grid;
     place-content: center;
     border-radius: 0.8rem;
     text-align: center;
-    background: var(--white-bg);
-    box-shadow:0 0 4px var(--bigtitles);
+    background: #ffffff;
+    box-shadow:0 0 4px var(--bigtitles) inset;
 }
 
 
@@ -43,7 +43,7 @@
 
 .Card-inner h3{
     font-size:1.5rem;
-    padding:1rem;
+    padding:0.5rem;
 }
 .Card-inner p{
     font-size:1.2rem;
@@ -52,8 +52,8 @@
 }
 
 .emojis img{
-    height:8rem;
-    width:8rem;
+    height:11rem;
+    width:11rem;
 }
 
 /* --- medium screens----- */
@@ -66,12 +66,12 @@
         width:19rem
     }
     .Card-inner h3{
-        margin:8px 1rem;
+        margin:7px 1rem;
         padding:8px;
     }
     .emojis img{
-        height:4rem;
-        width:4rem;
+        height:9rem;
+        width:9rem;
     }
 
 }
@@ -86,13 +86,16 @@
     }
     .Card-inner h3 , .stack-container h3{
         font-size:1.2rem;
-        margin:10px auto;
+        margin:5px auto;
         padding:0.5rem;
     }
     .Card-inner p , .right-side p{
         font-size:1rem;
         padding:0 10px;
     }
-    /* tech part  */
+    .emojis img{
+        height:7rem;
+        width:7rem;
+    }
     
 }

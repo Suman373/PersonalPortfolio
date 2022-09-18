@@ -105,7 +105,7 @@
         left:-25%;
         z-index: 30;
         transform: scale(1.1);
-        background:rgba(202, 194, 194, 0.473);
+        background:var(--navbar-bg);
     }
     .right .fa-brands{
         font-size: 1.5rem;
@@ -161,11 +161,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index:400;
+        z-index:9998;
         transition:transform 400ms;
         transform: translateX(0);
-        justify-content:flex-start;
-        background:#ece8e8ef;
+        background: var(--white-bg);
     }
     .right.open .navbar-link{
         display: inline-block;
@@ -175,11 +174,12 @@
 @media screen and (max-width:500px){
     .right .social-icon{
         left:-54%;
+        top:15rem;
     }
 }
 @media screen and (max-width:400px){
     .right .social-icon{
-        left:-62%;
+        left:-60%;
     }
 }
 @media screen and (max-width:300px){
