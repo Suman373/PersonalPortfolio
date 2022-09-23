@@ -80,9 +80,9 @@
     height:fit-content;
     width:fit-content;
     color:var(--violet);
-    padding:1rem;
+    padding:1.5rem;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: var(--white-bg);
     box-shadow: 0 0 3px var(--violet);
 }
@@ -218,7 +218,18 @@
     }
     /* stickers */
     .stickers{
-        font-size:1.2rem;
+        font-size:1.1rem;
+        padding:1rem;
+        box-shadow: 0 0 5px black;
+        border-radius: 1rem;
+        border:2px solid;
+        border-image: linear-gradient(var(--violet),blue,var(--golden)) 1;
+        animation:borderMover 2000ms infinite;
+    }
+    @keyframes borderMover {
+        50%{
+           border-image: linear-gradient(var(--violet),var(--golden),blue) 1;
+        }
     }
     .stickers:nth-child(2){
         top:5rem;
@@ -238,5 +249,8 @@
     .bg-blob{
         top:1rem;
         left:0.5rem;
+    }
+    .stickers{
+        font-size: 1rem;
     }
 }
