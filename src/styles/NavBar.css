@@ -52,12 +52,12 @@
     color:var(--bigtitles);
 }
 .right .navbar-link:hover{
-    color:var(--hoverlink);
+    color:var(--hover);
     text-decoration: underline;
 }
 /* active link */
 .right .active{
-    color:var(--hoverlink);
+    color:var(--hover);
 }
 
 /* brand social media icons */

@@ -39,7 +39,7 @@
     border-radius: 50%;
     background:var(--white-bg);
     padding:0.9rem;
-    box-shadow:  0 0 3px black inset;
+    box-shadow:  0 0 10px var(--helio-gray) ;
 }
 #dark .big-flex-box .left-side img{
     box-shadow: 0 0 3px #ffffff;
@@ -90,12 +90,15 @@
         min-height:30rem;
     }
     .big-flex-box .left-side{
-        min-height:20rem;
+        height:15rem;
         margin:0 auto;
     }
     .big-flex-box .left-side img{
         height:3rem;
         width:3rem;
+        padding:0.6rem;
+        box-shadow: none;
+        border:1px solid var(--helio-gray);
     }
     .big-flex-box .right-side{
         min-height:12rem;

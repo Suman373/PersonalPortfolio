@@ -15,7 +15,7 @@ const Skills = () => {
                 <div className="Card one" >
                 <div className="Card-inner">
                     <h3>Website Design</h3>
-                    <div className="emojis"> 
+                    <div className="skills-images"> 
                          <img src={illusFrontend} alt="palette"/>
                     </div>
                     <p>I design modern webpages, landing pages which are loved by everyone </p>
@@ -25,7 +25,7 @@ const Skills = () => {
                 <div className="Card two">
                 <div className="Card-inner" >
                     <h3>Frontend Development</h3>
-                    <div className="emojis">
+                    <div className="skills-images">
                         <img src={illusBackend} alt="frontend" />
                     </div>
                     <p>I develop the UI of SPAs and webapps using React </p>
@@ -35,7 +35,7 @@ const Skills = () => {
                 <div className="Card three">
                 <div className="Card-inner" >
                     <h3>Backend Development</h3>
-                    <div className="emojis">
+                    <div className="skills-images">
                         <img src={illusDatabase} alt="database" />
                     </div>
                     <p>I am also familiar with backend development with REST</p>

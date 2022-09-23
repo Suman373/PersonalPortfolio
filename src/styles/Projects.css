@@ -20,7 +20,7 @@
     width:21rem;
     background:#ffffff;
     border-radius: 0.7rem;
-    box-shadow: 0 0 2px var(--bigtitles) inset;
+    box-shadow: 0 0 6px var(--helio-gray);
     position:relative;
     display: grid;
     place-content: center;
@@ -63,9 +63,12 @@
 @media screen and (max-width:700px){
     .project-card{
         transform: scale(0.9);
+        box-shadow: 0 0 5px var(--helio-gray);
     }
 }
 
-@media screen and (max-width:500px){
-   
+@media screen and (max-width:500px){    
+    .project-card{
+        box-shadow: 0 0 3px var(--helio-gray);
+    }
 }
