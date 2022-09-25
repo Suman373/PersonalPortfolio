@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <div className="skills-wrapper">
             <header className="title-container" id="skills">
-                <h2 className="component-headings"><span className="heading-highlight">Skills</span> that makes me a <span className="heading-highlight">good dev</span></h2>
+                <h2 className="component-headings"><span className="heading-highlight">Skills</span> that I have as a <span className="heading-highlight">good dev</span></h2>
             <div className="underline" ></div>
             </header>
             <div className="cards-container" >
@@ -18,7 +18,7 @@ const Skills = () => {
                     <div className="skills-images"> 
                          <img src={illusFrontend} alt="palette"/>
                     </div>
-                    <p>I design modern webpages, landing pages which are loved by everyone </p>
+                    <p>I design modern webpages, templates and landing pages </p>
                 </div>
                 </div>
 
@@ -28,7 +28,7 @@ const Skills = () => {
                     <div className="skills-images">
                         <img src={illusBackend} alt="frontend" />
                     </div>
-                    <p>I develop the UI of SPAs and webapps using React </p>
+                    <p>I develop the UI of SPAs and websites using React </p>
                 </div>
                 </div>
 
@@ -38,7 +38,7 @@ const Skills = () => {
                     <div className="skills-images">
                         <img src={illusDatabase} alt="database" />
                     </div>
-                    <p>I am also familiar with backend development with REST</p>
+                    <p>I am also familiar with backend development with REST apis and nosql databases</p>
                 </div>
                 </div>
             </div>

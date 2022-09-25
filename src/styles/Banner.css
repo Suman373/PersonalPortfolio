@@ -11,7 +11,6 @@
     min-height: 100vh;
     width: 100vw;
     margin: 0 auto;
-    /* background: black; */
     display: flex;
     align-items: center;
     position: relative;
@@ -108,13 +107,15 @@
     padding: 1.5rem;
     font-size: 1.3rem;
     border: 5px solid;
-    border-image: linear-gradient(var(--violet), #1d1df5, var(--golden),var(--hover)) 1;
+    /* border-image: linear-gradient(var(--violet), #1d1df5, var(--golden),var(--hover)) 1; */
+    border-image: linear-gradient(var(--violet),var(--helio-gray), var(--hover))1;
     animation: borderMover 2000ms infinite;
     box-shadow: 0 0 3px var(--violet);
 }
 @keyframes borderMover {
     50% {
-        border-image: linear-gradient(var(--violet), var(--golden), #1d1df5, var(--hover)) 1;
+        /* border-image: linear-gradient(var(--violet), var(--golden), #1d1df5, var(--hover)) 1; */
+        border-image: linear-gradient(var(--helio-gray), var(--hover), var(--violet)) 1;
     }
 }
 .stickers:nth-child(1) {
@@ -182,11 +183,6 @@
         font-size: 1.2rem;
     }
 
-    /* right*/
-    .banner-right {
-        /* background: black; */
-        /* width:fit-content; */
-    }
 
     .image-container {
         margin: 1rem auto;

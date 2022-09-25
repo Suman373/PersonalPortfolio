@@ -5,7 +5,7 @@ const About =()=>{
         <>
             <main className="about-wrapper" id="about">
                 <div className="about-title">
-                    <h2 className="component-headings">A brief <span className="heading-highlight">info about</span> me ?</h2>
+                    <h2 className="component-headings">A brief <span className="heading-highlight">info about</span> me</h2>
                     <div className="underline"></div>
                 </div>
                 <div className="about-description">
