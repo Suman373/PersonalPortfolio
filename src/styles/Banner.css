@@ -32,6 +32,20 @@
     margin-left: 10%;
     text-align: left;
 }
+.banner-left .resume-btn{
+    background:transparent;
+    border:2px solid var(--violet);
+    color:var(--violet);
+}
+#dark .banner-left .resume-btn{
+    border:2px solid var(--helio-gray);
+    color:var(--helio-gray);
+    box-shadow: 0 0 3px var(--helio-gray);
+}
+.banner-left button:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
 
 @media screen and (min-width:900px) {
     .banner-left {
@@ -39,6 +53,14 @@
         border-radius: 1rem;
         backdrop-filter: blur(10px);
     }
+    #dark  .banner-left{
+        background: none;
+    }
+}
+
+#dark .banner-left h2,
+#dark .banner-left p {
+    color: var(--helio-gray);
 }
 
 .banner-left h2 {
@@ -47,15 +69,11 @@
     color: var(--bigtitles);
 }
 
-#dark .banner-left h2,
-#dark .banner-left p {
-    color: var(--helio-gray);
-}
+
 
 .banner-left p {
     margin: 1rem;
     font-size: 1.6rem;
-    font-weight: 600;
 }
 
 .banner-left button {
@@ -70,10 +88,6 @@
     cursor: pointer;
 }
 
-.banner-left button:hover {
-    opacity: 0.8;
-    transform: scale(1.02);
-}
 
 /* Right portion */
 .banner-right {
@@ -93,7 +107,7 @@
     background:var(--white-bg);
     padding: 1.5rem;
     font-size: 1.3rem;
-    border: 3px solid;
+    border: 5px solid;
     border-image: linear-gradient(var(--violet), #1d1df5, var(--golden),var(--hover)) 1;
     animation: borderMover 2000ms infinite;
     box-shadow: 0 0 3px var(--violet);
@@ -251,7 +265,7 @@
     .stickers {
         font-size: 1.1rem;
         padding: 1rem;
-        box-shadow: 0 0 5px black;
+        border:4px solid;
 
     }
     .stickers:nth-child(2) {
@@ -278,5 +292,6 @@
 
     .stickers {
         font-size: 1rem;
+        border:3px solid ;
     }
 }

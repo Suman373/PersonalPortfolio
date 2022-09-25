@@ -78,7 +78,7 @@
         font-size:1.3rem;
     }
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:500px){
     .stack-container{
         min-height:40rem;
     }

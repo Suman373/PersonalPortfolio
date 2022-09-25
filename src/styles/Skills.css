@@ -31,11 +31,14 @@
     width:21rem;
     padding:0.5rem;
     display: grid;
-    place-content: center;
+    /* place-content: center; */
     border-radius: 0.8rem;
     text-align: center;
     background: #ffffff;
     box-shadow:0 0 3px var(--white-bg);
+}
+#dark .Card{
+    background: var(--white-bg);
 }
 
 

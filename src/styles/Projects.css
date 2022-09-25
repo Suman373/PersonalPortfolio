@@ -20,7 +20,7 @@
     width:21rem;
     background:#ffffff;
     border-radius: 0.7rem;
-    box-shadow: 0 0 6px var(--helio-gray);
+    box-shadow: 0 0 5px var(--helio-gray);
     position:relative;
     display: grid;
     place-content: center;
@@ -59,11 +59,14 @@
     color:var(--bigtitles);
     position:relative;
 }
-
+/* dark themed project card */
+#dark .project-card,
+#dark .project-card h3{
+    background: var(--white-bg);
+}
 @media screen and (max-width:700px){
     .project-card{
         transform: scale(0.9);
-        box-shadow: 0 0 5px var(--helio-gray);
     }
 }
 

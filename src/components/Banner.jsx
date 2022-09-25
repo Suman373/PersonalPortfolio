@@ -6,17 +6,6 @@ const Banner = ()=>{
 
     return(
         <div id="home" className="banner-wrapper">
-          {/* <div className="stickers"> 
-            <h4>Web dev <span style={{color:'var(--red)'}}>❤</span></h4>
-          </div>
-          <div className="stickers">
-            <h4>Let's build together 🚀</h4>
-          </div>
-
-          <div className="stickers">
-            <h4>Open Source 🌍</h4>
-          </div> */}
-
           <div className="banner-left">
             <h2>Hi! I am <span className="heading-highlight">Suman</span> , welcome to my <span className="heading-highlight">portfolio</span>.</h2>
             <p>A self-taught passionate web developer.</p>
@@ -24,7 +13,7 @@ const Banner = ()=>{
             <button>
               Hire me <i className="fa fa-rocket"></i>
             </button>
-            <button>
+            <button className="resume-btn">
               Resume <i className="fa fa-download"></i>
               </button>
             </div>    

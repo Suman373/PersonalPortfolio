@@ -59,6 +59,10 @@
 .right .active{
     color:var(--hover);
 }
+#dark .right .navbar-link:hover,
+#dark .right .active{
+    color:var(--golden);
+}
 
 /* brand social media icons */
 .fa-brands, .fa-solid{
