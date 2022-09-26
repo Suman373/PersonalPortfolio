@@ -35,7 +35,14 @@
     border-radius: 0.8rem;
     text-align: center;
     background: #ffffff;
+    transform:scale(0.5);
+    opacity:0;
     box-shadow:0 0 3px var(--white-bg);
+}
+.Card.show{
+    transition:all 800ms ;
+    opacity: 1;
+    transform:scale(1);
 }
 #dark .Card{
     background: var(--white-bg);

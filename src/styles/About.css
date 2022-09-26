@@ -14,7 +14,14 @@
     width:50vw;
     margin:0 auto;
     padding:1rem;
+    transform:translateX(-250px);
     min-height: max-content;
+    opacity:0;
+}
+.about-description.show{
+    transition: all 900ms;
+    opacity:1;
+    transform:translateX(0);
 }
 .about-description p{
     font-size: 1.5rem;

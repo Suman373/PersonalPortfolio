@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState, useRef } from 'react';
 import './App.css';
 import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
@@ -14,6 +14,7 @@ import Achievements from './components/Achievements';
 
 export const ThemeContext = createContext(null);
 
+
 function App() { 
 
     const getTheme = ()=>{
@@ -22,9 +23,13 @@ function App() {
 
   const [theme, setTheme] = useState(getTheme());
 
+ 
+
   useEffect(()=>{
       localStorage.setItem('theme',theme);
   },[theme]);
+
+
 
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
