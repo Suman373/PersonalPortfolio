@@ -1,19 +1,24 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import CryptoCatalogue from '../assets/CryptoCatalogue.png';
 import TravelCompanion from '../assets/TravelCompanion.png';
 import '../styles/Projects.css';
 
-
 const Projects = () => {
+
+    const {ref: myTitleRef, inView:titleVisible} = useInView();
+    const {ref: myCardRef, inView: cardVisible } = useInView();
 
     return (
         <>
             <main className="project-wrapper" id="projects">
-                <h2 className="component-headings">Few <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
+                <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}>Few <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
                 <div className="underline"></div>
-                <section className="project-container">
+                <section  
+                ref={myCardRef}
+                className="project-container">
 
-                    <div className="project-card">
+                    <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Crypto Catalogue</h3>
                         </div>
@@ -29,7 +34,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="project-card">
+                    <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Travel Companion</h3>
                         </div>
@@ -45,7 +50,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="project-card">
+                    <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Money Buddy</h3>
                         </div>
@@ -61,7 +66,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="project-card">
+                    <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Plogify</h3>
                         </div>

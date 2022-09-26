@@ -51,9 +51,16 @@
     margin: 1rem;
     width:20rem;
     text-align: left;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     line-height: 2;
     color:var(--bigtitles);
+    transform: translateX(200px);
+    opacity: 0;
+}
+.big-flex-box .right-side.show{
+    transition: all 1000ms ;
+    transform: translateX(0);
+    opacity: 1;
 }
 #dark .big-flex-box .right-side{
     color:var(--helio-gray);

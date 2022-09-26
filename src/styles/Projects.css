@@ -24,6 +24,13 @@
     position:relative;
     display: grid;
     place-content: center;
+    transform: scale(0.6);
+    opacity: 0;
+}
+.project-card.show{
+    transition: all 900ms;
+    opacity: 1;
+    transform: scale(1);
 }
 .project-title-container{
     height:3rem;

@@ -11,6 +11,13 @@
     width:30rem;
     margin:2rem auto;
     font-size: 1.4rem;
+    opacity: 0;
+    transform: translateX(-200px);
+}
+.list-wrapper.show{
+    transition: all 900ms;
+    transform: translateX(0);
+    opacity: 1;
 }
 .list-wrapper li{
     margin:1rem 0;
