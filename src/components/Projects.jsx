@@ -1,7 +1,10 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import CryptoCatalogue from '../assets/CryptoCatalogue.png';
+import Finance from '../assets/finance_banner.png';
 import TravelCompanion from '../assets/TravelCompanion.png';
+import HappyGirl from '../assets/happiness.webp';
+import EthereumPic from '../assets/ethbanner.png';
+
 import '../styles/Projects.css';
 
 const Projects = () => {
@@ -25,7 +28,7 @@ const Projects = () => {
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
                             target="_blank">
-                            <img src={CryptoCatalogue} 
+                            <img src={EthereumPic} 
                             alt="A banner for the project" />
                             </a>
                         </div>
@@ -46,18 +49,18 @@ const Projects = () => {
                             </a>
                         </div>
                         <div className="info-container">
-                                <p>Travel Companion is web app to help users review a place they visited in the map itself.</p>
+                                <p>Travel Companion is web app to help users review a place they visited in a map.</p>
                         </div>
                     </div>
 
                     <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
-                            <h3>Money Buddy</h3>
+                            <h3>Savee</h3>
                         </div>
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
                             target="_blank">
-                                <img src={TravelCompanion} 
+                                <img src={Finance} 
                                 alt="" />
                             </a>
                         </div>
@@ -73,7 +76,7 @@ const Projects = () => {
                         <div className="banner-container">
                              <a href="https://github.com/Suman373"
                             target="_blank">
-                                <img src={TravelCompanion} 
+                                <img src={HappyGirl} 
                                 alt="Project banner" />
                             </a>
                         </div>
@@ -81,13 +84,10 @@ const Projects = () => {
                                 <p>Plogify is the one stop for posting your picture blogs.It is under development.</p>
                         </div>
                     </div>
-
-                    
-
                 </section>
             </main>
         </>
-    )
+    );
 }
 
 export default Projects;

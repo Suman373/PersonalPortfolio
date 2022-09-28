@@ -104,8 +104,7 @@
         height:3rem;
         width:3rem;
         padding:0.6rem;
-        box-shadow: none;
-        border:1px solid var(--helio-gray);
+        box-shadow: 0 0 7px solid var(--helio-gray);
     }
     .big-flex-box .right-side{
         min-height:12rem;

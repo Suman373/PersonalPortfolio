@@ -23,7 +23,7 @@ const Skills = () => {
                     <div className="skills-images"> 
                          <img src={illusFrontend} alt="palette"/>
                     </div>
-                    <p>I design modern webpages, templates and landing pages </p>
+                    <p>I design modern webpages and landing pages using well researched UI/UX principles</p>
                 </div>
                 </div>
 
@@ -33,7 +33,7 @@ const Skills = () => {
                     <div className="skills-images">
                         <img src={illusBackend} alt="frontend" />
                     </div>
-                    <p>I develop the UI of SPAs and websites using React </p>
+                    <p>I develop the UI components of web apps and SPAs using React</p>
                 </div>
                 </div>
 
