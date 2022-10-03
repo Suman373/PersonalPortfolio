@@ -85,6 +85,9 @@ h5 {
 .heading-highlight{
     color:var(--violet);
 }
+#dark .heading-highlight{
+    color:var(--golden);
+}
 
 /* heading styles */
 .component-headings{
