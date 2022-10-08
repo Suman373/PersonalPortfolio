@@ -62,6 +62,10 @@
 /* active link */
 .right .active{
     color:var(--hover);
+    padding:0.4rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    background:var(--white-bg);
 }
 #dark .right .navbar-link:hover,
 #dark .right .active{
@@ -176,6 +180,9 @@
     }
     .right.open .navbar-link{
         display: inline-block;
+    }
+    .right.open .navbar-link.active{
+        background: var(--body-bg);
     }
 }
 /* socials */
