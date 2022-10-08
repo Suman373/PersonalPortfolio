@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useContext } from 'react';
 import '../styles/NavBar.css';
-import { useNavigate } from 'react-router-dom';
 import {ThemeContext} from '../App';
 
 const NavBar = () => {
@@ -87,7 +86,7 @@ const NavBar = () => {
                 <div className="social-icon">
                     <a href="https://linkedin.com/in/sumanroy369" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Suman373" target="_blank"><i className="fa-brands fa-github-alt"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/sumanroy369" target="_blank"><i className="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <button

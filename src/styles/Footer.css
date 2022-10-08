@@ -1,18 +1,20 @@
 .footer-container{
-    height:4rem;
+    height:fit-content;
     width:100vw;
-    margin-bottom: 2rem;
+    margin:0 auto;
+    padding:1rem;
     overflow: hidden;
     text-align: center;
+    background: var(--violet);
 }
-
+#dark .footer-container{
+    background:var(--rose-pink);
+}
 .footer-container p{
     font-size: 1.3rem;
+    padding:0.5rem;
     text-shadow:0 0 1px black;
-    margin:0.2rem;
-    color:var(--violet);
-}
-#dark .footer-container p{
+    margin:0 1rem;
     color:white;
 }
 @media screen and (max-width:700px){

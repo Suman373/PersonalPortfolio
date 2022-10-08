@@ -29,12 +29,12 @@ const Contact = () => {
                 <label htmlFor="email">
                     Email
                 </label>
-                <input type="email" placeholder="johndoe@gmail.com" required/>
+                <input type="email" placeholder="Your email" required/>
 
                 <label htmlFor="textarea">
                     Text
                 </label>
-                <textarea id="textarea" placeholder="Hey! I was just thinking..." required></textarea>
+                <textarea id="textarea" placeholder="Something you would like to say..." required></textarea>
 
                 <button
                     className="submit-btn"

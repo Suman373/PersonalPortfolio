@@ -15,9 +15,11 @@
     --navbar-bg:#efecf388;
     --bigtitles: #131212;
     --violet: #6019b1;
+    --light-violet:#9845cf;
     --light-green: #9CE37D;
     --asparagus: #87B37A;
     --xanadu: #77867F;
+    --rose-pink:#ca1c41;
     --helio-gray: #B4AAC5;
     --white-bg:#f0ebeb;
     --golden: #e6990a;
@@ -84,9 +86,12 @@ h5 {
 /* highlighting headings */
 .heading-highlight{
     color:var(--violet);
+    text-shadow: 1px 2px 3px var(--light-violet);
 }
+/* highlighting headings dark theme */
 #dark .heading-highlight{
-    color:var(--golden);
+    color:var(--rose-pink);
+    text-shadow: 1px 2px 3px var(--pink);
 }
 
 /* heading styles */
@@ -102,12 +107,14 @@ h5 {
     opacity:1;
 }
 /* heading styles for light theme */
-#light .component-headings{
+.component-headings{
     color:var(--bigtitles);
+    text-shadow: 1px 2px 3px grey;
 }
-
+/* heading styles for dark theme */
 #dark .component-headings{
     color:var(--helio-gray);
+    text-shadow: 1px 2px 2px white;
 }
 
 

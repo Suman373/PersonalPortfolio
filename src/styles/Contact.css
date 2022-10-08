@@ -1,5 +1,4 @@
 /* contact page */
-/* primary palette */
 :root{
     --light-black:radial-gradient(circle, #161515 60%,#252323 80%,#c2b9b9);
 }
@@ -22,6 +21,9 @@ form{
     justify-content: center;
     border-radius: 8px;
 }
+#dark form{
+    color:var(--rose-pink);
+}
 form label{
     font-size: 1.3rem;
     font-weight: 600;
@@ -33,15 +35,21 @@ form input{
     width:80%;
     margin:5px auto;
 }
-form input:focus, form textarea:focus{
+form input:focus,
+form textarea:focus{
     box-shadow: 0 0 4px var(--violet);
 }
+#dark form input:focus,
+#dark form textarea:focus{
+    box-shadow: 0 0 4px var(--rose-pink);
+}
+
 form input, form textarea{
-    padding:10px;
-    font-size: 1.1rem;
+    padding:0.5rem;
+    font-size: 1.3rem;
     border:none;
     outline:none;
-    border-radius: 4px;
+    border-radius: 0.3rem;
     font-family: 'Roboto,sans-serif';
 }
 form textarea{
@@ -51,7 +59,7 @@ form textarea{
 }
 .submit-btn{
     font-size: 1.2rem;
-    padding:8px;
+    padding:0.7rem;
     width:max-content;
     margin:1rem auto;
     border:none;
@@ -59,6 +67,9 @@ form textarea{
     color:white;
     border-radius:0.6rem;
     background:var(--violet)
+}
+#dark .submit-btn{
+    background: var(--rose-pink);
 }
 .submit-btn:hover{
     opacity: 0.9;
