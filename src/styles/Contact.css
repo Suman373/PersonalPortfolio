@@ -86,9 +86,12 @@ form textarea{
     .submit-btn{
         width:80%;
     }
+    form input,form textarea{
+        font-size:1.2rem;
+    }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:490px) {
     .form-container h1{
         font-size: 1.7rem;
     }
@@ -101,6 +104,9 @@ form textarea{
     }
     form input{
         height:2.6rem;
+    }
+    form input,form textarea{
+        font-size: 1.1rem;
     }
     .submit-btn{
         font-size: 1.1rem;

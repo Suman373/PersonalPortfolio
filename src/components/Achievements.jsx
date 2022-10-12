@@ -14,8 +14,10 @@ const Achievements=()=>{
                     <div ref={myDesRef}
                      className={despVisible ? "list-wrapper show" : "list-wrapper"}>
                     <ul>
-                        <li><p>Mentee at DSC KGEC Summer of Code 2022. Merged 2 successful PRs.</p></li>
-                        <li><p>Secured Top 14 position among 65+ teams in Error 404 hackathon organized by Micro.</p></li>
+                        <li><p>Open source contributor for Hacktoberfest 2022, merged 6 valid PRs with code contribution.(Oct 2022)</p></li>
+                        <li><p>Secured Top 14 position among 70+ teams in Error 404 hackathon organized by Micro.(Aug 2022)</p></li>
+                        <li><p>Mentee at DSC KGEC Summer of Code 2022. Merged 2 successful PRs in a web project Seat&Eat.(Jul-Aug 2022)</p></li>
+                        
                     </ul>
                     </div>
         </section>

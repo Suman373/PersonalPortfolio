@@ -83,11 +83,13 @@ h5 {
     margin: 0.2rem auto;
     background: #449fbb;
 }
+
 /* highlighting headings */
 .heading-highlight{
     color:var(--violet);
     text-shadow: 1px 2px 3px var(--light-violet);
 }
+
 /* highlighting headings dark theme */
 #dark .heading-highlight{
     color:var(--rose-pink);
@@ -139,8 +141,22 @@ h5 {
     .underline{
         height:3px;
     }
+
     .component-headings{
         font-size: 2rem;
+        text-shadow: 1px 1px 2px grey;
+    }
+
+    #dark .component-headings{
+        text-shadow: 1px 1px 2px white;
+    }
+
+    .heading-highlight{ 
+        text-shadow: 1px 1px 2px var(--light-violet);
+    }
+
+    #dark .heading-highlight{
+        text-shadow: 1px 1px 2px var(--pink);
     }
 }   
 

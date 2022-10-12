@@ -13,10 +13,20 @@
 .footer-container p{
     font-size: 1.3rem;
     padding:0.5rem;
-    text-shadow:0 0 1px black;
-    margin:0 1rem;
+    margin:0.5rema auto;
     color:white;
 }
+/* icons for footer */
+.footer-container .fa-heart{
+    color:#ca2222;
+}
+#dark .footer-container .fa-heart{
+    text-shadow: 0 0 4px white;
+}
+.footer-container .fa-react{
+    color:#1ec7c7;
+}
+
 @media screen and (max-width:700px){
     .footer-container p{
         font-size: 1.2rem;

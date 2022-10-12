@@ -174,6 +174,7 @@
         justify-content: flex-start;
         align-items: center;
         z-index:9998;
+        box-shadow: 0 0 10px grey;
         transition:transform 400ms;
         transform: translateX(0);
         background: var(--white-bg);
