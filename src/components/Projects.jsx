@@ -9,31 +9,47 @@ import '../styles/Projects.css';
 
 const Projects = () => {
 
-    const {ref: myTitleRef, inView:titleVisible} = useInView();
-    const {ref: myCardRef, inView: cardVisible } = useInView();
+    const { ref: myTitleRef, inView: titleVisible } = useInView();
+    const { ref: myCardRef, inView: cardVisible } = useInView();
 
     return (
         <>
             <main className="project-wrapper" id="projects">
-                <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}>Few <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
+                <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>Few <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
                 <div className="underline"></div>
-                <section  
-                ref={myCardRef}
-                className="project-container">
+                <section
+                    ref={myCardRef}
+                    className="project-container">
+
+                    <div className={cardVisible ? "project-card show" : "project-card"}>
+                        <div className="project-title-container">
+                            <h3>Saviee</h3>
+                        </div>
+                        <div className="banner-container">
+                            <a href="https://github.com/Suman373"
+                                target="_blank">
+                                <img src={Finance}
+                                    alt="" />
+                            </a>
+                        </div>
+                        <div className="info-container">
+                            <p>A savings tracking app to help you become disciplined with your income.</p>
+                        </div>
+                    </div>
 
                     <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Crypto Catalogue</h3>
                         </div>
                         <div className="banner-container">
-                            <a href="https://github.com/Suman373"
-                            target="_blank">
-                            <img src={EthereumPic} 
-                            alt="A banner for the project" />
+                            <a href="https://creepto69.netlify.app"
+                                target="_blank">
+                                <img src={EthereumPic}
+                                    alt="A banner for the project" />
                             </a>
                         </div>
                         <div className="info-container">
-                                <p>A catalogue of all the trending cryptocurrencies and information about them.</p> 
+                            <p>A catalogue of all the trending cryptocurrencies and real-time information about them.</p>
                         </div>
                     </div>
 
@@ -43,45 +59,31 @@ const Projects = () => {
                         </div>
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
-                            target="_blank">
-                               <img src={TravelCompanion} 
-                               alt="Banner for project" />
+                                target="_blank">
+                                <img src={TravelCompanion}
+                                    alt="Banner for project" />
                             </a>
                         </div>
                         <div className="info-container">
-                                <p>Travel Companion is web app to help users review a place they visited in a map.</p>
+                            <p>Travel Companion is web app to help review a place you visited in an integrated map.</p>
                         </div>
                     </div>
 
-                    <div className={cardVisible ? "project-card show" : "project-card"}>
-                        <div className="project-title-container">
-                            <h3>Savee</h3>
-                        </div>
-                        <div className="banner-container">
-                            <a href="https://github.com/Suman373"
-                            target="_blank">
-                                <img src={Finance} 
-                                alt="" />
-                            </a>
-                        </div>
-                        <div className="info-container">
-                            <p>Money Buddy is your personal finance tracking application to help you save more.</p>
-                        </div>
-                    </div>
+
 
                     <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Plogify</h3>
                         </div>
                         <div className="banner-container">
-                             <a href="https://github.com/Suman373"
-                            target="_blank">
-                                <img src={HappyGirl} 
-                                alt="Project banner" />
+                            <a href="https://github.com/Suman373"
+                                target="_blank">
+                                <img src={HappyGirl}
+                                    alt="Project banner" />
                             </a>
                         </div>
                         <div className="info-container">
-                                <p>Plogify is the one stop for posting your picture blogs.It is under development.</p>
+                            <p>Plogify is the one stop for posting your picture blogs.It is a free to use. </p>
                         </div>
                     </div>
                 </section>

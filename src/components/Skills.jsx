@@ -13,7 +13,7 @@ const Skills = () => {
     return (
         <div className="skills-wrapper">
             <header className="title-container" id="skills">
-                <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}><span className="heading-highlight">Skills</span> that I have as a <span className="heading-highlight">good dev</span></h2>
+                <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}><span className="heading-highlight">Skills</span> that I have as a <span className="heading-highlight">web dev</span></h2>
             <div className="underline" ></div>
             </header>
             <div ref={myCardRef} className="cards-container" >
@@ -23,7 +23,7 @@ const Skills = () => {
                     <div className="skills-images"> 
                          <img src={illusFrontend} alt="palette"/>
                     </div>
-                    <p>I design modern webpages and landing pages using well researched UI/UX principles</p>
+                    <p>Modern webpages and landing pages using well researched UI/UX principles</p>
                 </div>
                 </div>
 
@@ -33,7 +33,7 @@ const Skills = () => {
                     <div className="skills-images">
                         <img src={illusBackend} alt="frontend" />
                     </div>
-                    <p>I develop the UI components of web apps and SPAs using React</p>
+                    <p>Reusable components for SPAs and other web apps using React js</p>
                 </div>
                 </div>
 
@@ -43,7 +43,7 @@ const Skills = () => {
                     <div className="skills-images">
                         <img src={illusDatabase} alt="database" />
                     </div>
-                    <p>I am also familiar with backend development with REST apis and nosql databases</p>
+                    <p>Backend integration, REST apis and nosql database like MongoDb</p>
                 </div>
                 </div>
             </div>
