@@ -27,7 +27,7 @@ const Banner = ()=>{
           </div>
 
           <div className="stickers">
-            <h4>Open Source 🌍</h4>
+            <h4>Explorer 🔍</h4>
           </div>
             <div className="image-container">
                     <img className="bg-blob" src={imageholder} alt="blob"/>
