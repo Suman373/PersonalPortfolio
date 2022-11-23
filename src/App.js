@@ -11,6 +11,7 @@ import Tech from './components/Tech';
 import Footer from './components/Footer';
 import Scroller from './components/Scroller';
 import Achievements from './components/Achievements';
+import Experience from './components/Experience';
 
 export const ThemeContext = createContext(null);
 
@@ -26,8 +27,6 @@ function App() {
       localStorage.setItem('theme',theme);
   },[theme]);
 
-
-
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
       <div className="App" id={theme}>
@@ -41,6 +40,7 @@ function App() {
           <Skills/>
           <Projects/>
           <Tech/>
+          <Experience/>
           <Achievements/>
           <Contact/>
           <Footer/>
