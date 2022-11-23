@@ -7,6 +7,17 @@
     text-align: left;
 }
 
+.list-wrapper .organisation{
+    font-weight: 800;
+    margin:0.8rem 0;
+}
+.list-wrapper .position{
+    font-weight: 600;
+    color:var(--dark-theme);
+}
+.list-wrapper .work{
+    margin:0.6rem;
+}
 #dark .experience-wrapper{
     background: var(--dark-theme);
 }

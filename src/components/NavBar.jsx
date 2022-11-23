@@ -69,6 +69,13 @@ const NavBar = () => {
                 </a>
 
                 <a
+                    href="#experience"
+                    className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
+                    onClick={() => setActiveLink('experience')}>
+                    Experience
+                </a>
+
+                <a
                     href="#achievements"
                     className={activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => setActiveLink('achievements')}>

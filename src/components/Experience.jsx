@@ -8,7 +8,7 @@ const Experience = () => {
     const {ref: myexpRef, inView: expVisible} = useInView();
 
   return (
-    <section className="experience-wrapper">
+    <section className="experience-wrapper" id="experience">
         <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}>
                 My <span className="heading-highlight">work experience</span>
              </h2>
@@ -19,11 +19,11 @@ const Experience = () => {
                     <ul>
                         <li>
                             <p className="organisation">
-                                Symstech IT
+                                Symstech IT and Consulting Services (Oct 2022 - Present)
                             </p>
                             <p className="position">Full-stack developer</p>
                             <p className="work">
-                                
+    
                             </p>
                         </li>
                         <li>
