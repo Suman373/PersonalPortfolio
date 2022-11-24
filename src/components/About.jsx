@@ -14,12 +14,9 @@ const About =()=>{
                     <div className="underline"></div>
                 </div>
                 <div ref={myDesRef} className={despVisible ? "about-description show" : "about-description"}>
-                    <p>Hey! This is Suman Roy, a passionate web developer from India. I am currently a sophomore, pursuing my bachelors in CSE.</p>
-                    <p>I participate in online hackathons with team and sometimes solo too. A great team can execute great ideas, thus, I am currently looking for enthusiastic teammates.</p>
-                    <p>I also contribute to open source projects according to the feature requests and issues submitted.</p>
-                    <p>Apart from things related to tech, in my leisure (if any) I spend playing outdoor game or online games, sketch (seldom) and socialise with people. </p>
-
-                   
+                    <p>Hey! I am Suman Roy, a passionate web developer from India. I am a sophomore, currently pursuing my bachelors in Computer Science.</p>
+                    <p>I am interested in development of web sites and web apps.</p>
+                    <p>I am open for remote opportunites as a collaborator, freelancer or an intern.</p>
                 </div>
             </main>
         </>

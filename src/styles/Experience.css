@@ -5,19 +5,16 @@
 }
 .list-wrapper ul{
     text-align: left;
-}
-
-.list-wrapper .organisation{
-    font-weight: 800;
-    margin:0.8rem 0;
+    padding:0.8rem;
 }
 .list-wrapper .position{
-    font-weight: 600;
-    color:var(--dark-theme);
+    font-weight: 800;
 }
-.list-wrapper .work{
-    margin:0.6rem;
+.list-wrapper .organisation{
+    margin:0.8rem 0;
+    font-style: oblique;
 }
+
 #dark .experience-wrapper{
     background: var(--dark-theme);
 }

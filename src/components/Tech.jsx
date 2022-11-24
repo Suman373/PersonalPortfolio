@@ -9,11 +9,8 @@ import express from '../assets/express.png';
 import netlify from '../assets/netlify.png';
 import herokuhost from '../assets/herokuhost.png';
 import mongodb from '../assets/mongodb.png';
-import java from '../assets/java.png';
-import python from '../assets/python.png';
 import npm from '../assets/npm.png';
 import firebase from '../assets/firebase.png';
-import c from '../assets/c.png';
 import git from '../assets/git.png';
 import github from '../assets/github.png';
 import '../styles/Tech.css';
@@ -41,16 +38,11 @@ const Tech=()=>{
                             <img src={nodejs} alt="node" />
                             <img src={express} alt="express"/>
                             <img src={mongodb} alt="mongo"/>                            
-                            <img src={netlify} alt="netlify" />
-                            <img src={herokuhost} alt="heroku" />
-                            {/* <img src={firebase} alt='firebase' /> */}
+                            <img src={sass} alt="sass" />
                             <img src={mui} alt="mui" />
+                            <img src={npm} alt="npm"/>
                             <img src={git} alt="git" />
                             <img src={github} alt="github" />
-                            {/* <img src={npm} alt="npm" /> */}
-                            {/* <img src={c} alt="c" /> */}
-                            {/* <img src={java} alt="java" /> */}
-                            {/* <img src={python} alt="python" /> */}
                         </div>
                         <div 
                             ref={myDesRef} 

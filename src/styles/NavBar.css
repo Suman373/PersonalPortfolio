@@ -50,9 +50,10 @@
 
 /* menu items */
 .right .navbar-link{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-shadow: 0 0 1px grey;
-    margin:0 1rem;
+    margin:0 0.7rem;
+    padding:0.2rem;
     color:var(--bigtitles);
 }
 .right .navbar-link:hover{
@@ -74,10 +75,10 @@
 
 /* brand social media icons */
 .fa-brands, .fa-solid{
-    font-size:1.7rem;
-    margin:0 1rem;
+    font-size:1.6rem;
+    margin:0 0.7rem;
     color:var(--violet);
-    padding:0 2px;
+    padding:0.2rem;
 }
 .fa-brands:hover{
     transform: scale(1.05);

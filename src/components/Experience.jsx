@@ -18,16 +18,20 @@ const Experience = () => {
                      className={expVisible ? "list-wrapper show" : "list-wrapper"}>
                     <ul>
                         <li>
-                            <p className="organisation">
-                                Symstech IT and Consulting Services (Oct 2022 - Present)
+                            <p className="position">
+                                Full-stack developer intern (Oct 2022 - Present)
                             </p>
-                            <p className="position">Full-stack developer</p>
-                            <p className="work">
-    
+                            <p className="organisation">
+                                Symstech IT and Consulting Services
                             </p>
                         </li>
                         <li>
-
+                            <p className="position">
+                                Open source mentee (Jul 2022 - Aug 2022)
+                             </p>
+                            <p className="organisation">
+                                GDSC Kalyani Government Engineering College 
+                            </p>
                         </li>                        
                     </ul>
                 </div>

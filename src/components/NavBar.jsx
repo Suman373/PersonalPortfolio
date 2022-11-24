@@ -94,6 +94,7 @@ const NavBar = () => {
                     <a href="https://linkedin.com/in/sumanroy369" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Suman373" target="_blank"><i className="fa-brands fa-github-alt"></i></a>
                     <a href="https://twitter.com/sumanroy369" target="_blank"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="https://dev.to/Suman373" target="_blank"><i className="fa-brands fa-dev"></i></a>
                 </div>
             </div>
             <button

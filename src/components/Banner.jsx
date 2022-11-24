@@ -10,11 +10,13 @@ const Banner = ()=>{
             <h2>Hi! I am <span className="heading-highlight">Suman</span> , welcome to my <span className="heading-highlight">portfolio</span>.</h2>
             <p>A self-taught passionate web developer.</p>
             <div>
+            <a href="#contact">
             <button>
               Hire me <i className="fa fa-rocket"></i>
             </button>
+            </a>
             <button className="resume-btn">
-              Resume <i className="fa fa-download"></i>
+              Resume <i className="fa fa-link"></i>
               </button>
             </div>    
           </div>
