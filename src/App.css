@@ -104,7 +104,7 @@ h5 {
     opacity:0;
 }
 .component-headings.show{
-    transition:all 100ms;
+    transition:all 800ms;
     transform: translateX(0) scale(1);
     opacity:1;
 }
@@ -120,7 +120,7 @@ h5 {
 }
 
 
-/* background for components */
+/* background for components in dark mode*/
 #dark .form-container, 
 #dark .project-wrapper,
 #dark .skills-wrapper,
@@ -163,5 +163,3 @@ h5 {
 .about-wrapper .show{
     transform:translateX(0);
 }
-
-/* heading styles for dark theme */
