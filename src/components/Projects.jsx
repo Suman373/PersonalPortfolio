@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <>
             <main className="project-wrapper" id="projects">
-                <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>Few <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
+                <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>The <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
                 <div className="underline"></div>
                 <section
                     ref={myCardRef}
@@ -42,7 +42,7 @@ const Projects = () => {
                             <h3>Crypto Catalogue</h3>
                         </div>
                         <div className="banner-container">
-                            <a href="https://creepto69.netlify.app"
+                            <a href="https://github.com/Suman373/CryptoCatalogue"
                                 target="_blank">
                                 <img src={EthereumPic}
                                     alt="A banner for the project" />
@@ -53,7 +53,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className={cardVisible ? "project-card show" : "project-card"}>
+                    {/* <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
                             <h3>Travel Companion</h3>
                         </div>
@@ -67,7 +67,7 @@ const Projects = () => {
                         <div className="info-container">
                             <p>Travel Companion is web app to help review a place you visited in an integrated map.</p>
                         </div>
-                    </div>
+                    </div> */}
 
 
 
