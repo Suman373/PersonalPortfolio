@@ -21,13 +21,13 @@
     width:20%;
 }
 /* logo */
-.left .logo-container h2{   
+.left .logo-container h1 a{   
     font-size: 2.2rem;
-    color:var(--hover);
+    color:var(--green);
     text-shadow:  1px 2px 3px var(--helio-gray);
 }
-#dark .left .logo-container h2{
-    color:Var(--rose-pink);
+#dark .left .logo-container h1 a{
+    color:var(--rose-pink);
     text-shadow: 1px 2px 3px var(--pink);
 }
 
@@ -98,7 +98,7 @@
 /* large medium */
 @media screen and (max-width:930px){
 
-    .left .logo-container h2{
+    .left .logo-container h1 a{
         font-size: 1.6rem;
     }
     .left .fa-solid{
@@ -133,9 +133,9 @@
         font-size: 1.1rem;
         padding: 5px;
     }
-    .left .logo-container h2{
-        font-size: 1.5rem;
-        margin-left:4rem;
+    .left .logo-container h1 a{
+        /* font-size: 1.4rem; */
+        margin-left: 2rem;
     }
     .left .fa-solid{
         font-size:2rem;

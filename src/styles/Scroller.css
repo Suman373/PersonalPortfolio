@@ -10,6 +10,9 @@
     transition: animation 200ms alternate;
     animation:jump 1000ms infinite;
 }
+#dark .scroller-btn{
+    background: var(--rose-pink);
+}
 .scroller-btn:hover{
     transform: scale(1.02);
 }

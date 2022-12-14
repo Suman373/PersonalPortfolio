@@ -68,7 +68,7 @@ form textarea{
     cursor: pointer;
     color:white;
     border-radius:0.6rem;
-    background:var(--violet)
+    background:var(--violet);
 }
 #dark .submit-btn{
     background: var(--rose-pink);

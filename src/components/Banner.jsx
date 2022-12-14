@@ -1,42 +1,41 @@
 import React from "react";
-import imageholder from '../assets/imageholder.svg';
-import '../styles/Banner.css'; 
+import mypic from '../assets/myphoto.png';
+import '../styles/Banner.css';
 
-const Banner = ()=>{
+const Banner = () => {
+  return (
+    <>
+      <div className="banner-wrapper" id="home">
 
-    return(
-        <div id="home" className="banner-wrapper">
-          <div className="banner-left">
-            <h2>Hi! I am <span className="heading-highlight">Suman</span> , welcome to my <span className="heading-highlight">portfolio</span>.</h2>
-            <p>A self-taught passionate web developer.</p>
-            <div>
-            <a href="#contact">
-            <button>
-              Hire me <i className="fa fa-rocket"></i>
-            </button>
-            </a>
-            <button className="resume-btn">
-              Resume <i className="fa fa-link"></i>
-              </button>
-            </div>    
-          </div>
-          <div className="banner-right">
-          <div className="stickers"> 
-            <h4>Web dev <span style={{color:'var(--red)'}}>❤</span></h4>
-          </div>
-          <div className="stickers">
-            <h4>Let's build together 🚀</h4>
-          </div>
-
-          <div className="stickers">
-            <h4>Explorer 🔍</h4>
-          </div>
-            <div className="image-container">
-                    <img className="bg-blob" src={imageholder} alt="blob"/>
-            </div>
-          </div>
+        <section className="banner-slogan-container">
+          <p className="bn-small-text">
+            Hi there,
+          </p>
+          <h1>I'm <span>Suman</span>, <span>welcome</span> to my <span>portfolio website</span></h1>
+          <p>
+            <i className="fa-solid fa-laptop-code"></i>
+            A passionate full-stack web developer.
+          </p>
+          <div className="banner-buttons-container">
+            <button><a href="#contact">Let's talk ✉</a></button>
+            <button id="resume-btn">Resume ↗</button>
         </div>
-    )
+        </section>
+
+        <section className="banner-image-container">
+          <div className="banner-sticker">
+            <p>Open for freelance projects</p>
+            <p>Not your ordinary dev guy</p>
+          </div>
+          <img src={mypic} alt="Profile banner" />
+          <div className="cover">
+              <p>Web developer</p>
+          </div>
+        </section>
+
+      </div>
+    </>
+  )
 }
 
 export default Banner;

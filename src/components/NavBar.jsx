@@ -22,7 +22,7 @@ const NavBar = () => {
             {/* the left portion  */}
             <div className="left">
                 <div className="logo-container">
-                    <h2>&lt;SR/&gt;</h2>
+                    <h1><a href="/">&lt;SR/&gt;</a></h1>
                 </div>
                 <div className="toggle-btn" >
                     <i onClick={toggleTheme} className={theme === "dark" ? "fa-solid fa-toggle-on" : "fa-solid fa-toggle-off"}
@@ -81,14 +81,6 @@ const NavBar = () => {
                     onClick={() => setActiveLink('achievements')}>
                     Achievements
                 </a>
-
-                <a
-                    href="#contact"
-                    className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => setActiveLink('contact')}>
-                    Contact
-                </a>
-
                 {/* social callouts  */}
                 <div className="social-icon">
                     <a href="https://linkedin.com/in/sumanroy369" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
