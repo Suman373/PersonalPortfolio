@@ -135,9 +135,6 @@
 }
 
 @media screen and (max-width:850px){
-    .banner-wrapper{
-        background:white;
-    }
     .banner-image-container{
         height:80vh;
     }
@@ -149,7 +146,7 @@
         font-size: 2.45rem;
     }
     .banner-slogan-container p{
-        font-size: 1.3rem;   
+        font-size: 1.4rem;   
     }
     .banner-buttons-container button{
         font-size: 1.1rem;
@@ -170,18 +167,22 @@
 }
 
 @media screen and (max-width:500px){
+    .banner-slogan-container{
+        padding:0.2rem 2rem;
+        margin:0.5rem 0;
+    }
     .banner-slogan-container h1{
         font-size: 2.2rem;
     }
     .banner-slogan-container p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .banner-buttons-container button{
         margin:1rem 0.5rem;
         padding:0.5rem 1.2rem;
     }
     .banner-image-container img{
-        transform: scale(1.1);
+        transform: scale(1);
     }
     .banner-sticker{
         display:none;
