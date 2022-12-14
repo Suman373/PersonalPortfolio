@@ -167,6 +167,7 @@
 }
 
 @media screen and (max-width:500px){
+
     .banner-slogan-container{
         padding:0.2rem 2rem;
         margin:0.5rem 0;
@@ -180,6 +181,11 @@
     .banner-buttons-container button{
         margin:1rem 0.5rem;
         padding:0.5rem 1.2rem;
+    }
+    .banner-image-container{
+        /* background:seagreen; */
+        height: fit-content;
+        margin-top: -2.7rem 0;
     }
     .banner-image-container img{
         transform: scale(1);
