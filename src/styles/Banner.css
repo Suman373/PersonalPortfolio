@@ -1,9 +1,10 @@
-:root{
-    --banner-translucent:#e9e9e9ea;
+:root {
+    --banner-translucent: #e9e9e9ea;
 }
-.banner-wrapper{
+
+.banner-wrapper {
     min-height: 100vh;
-    width:100vw;
+    width: 100vw;
     position: relative;
     margin-top: 4rem;
     overflow-x: hidden;
@@ -11,186 +12,235 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-    gap:0.5rem;
+    gap: 0.5rem;
     background: transparent;
 }
-.banner-wrapper a{ color:#ffffff;}
-
-.banner-slogan-container{
+.banner-wrapper a {
+    color: #ffffff;
+}
+.banner-slogan-container {
     display: grid;
     place-content: center;
-    height:100vh;
-    width:40rem;
+    height: 100vh;
+    width: 40rem;
     padding: 6rem;
     text-align: left;
 }
-.banner-slogan-container p{
+.banner-slogan-container p {
     font-size: 1.4rem;
-    color:var(--green);
-    margin:0.5rem 0;
+    color: var(--green);
+    margin: 0.5rem 0;
 }
-.banner-slogan-container h1{
+
+.banner-slogan-container h1 {
     font-size: 3rem;
-    color:var(--bigtitles);
+    color: var(--bigtitles);
     text-shadow: 1px 2px 3px grey;
 }
-#dark .banner-slogan-container h1{
-    color:var(--helio-gray);
+
+#dark .banner-slogan-container h1 {
+    color: var(--helio-gray);
 }
-.banner-slogan-container span{
-    color:var(--violet);
+
+.banner-slogan-container span {
+    color: var(--violet);
 }
-#dark .banner-slogan-container span{
-    color:var(--rose-pink);
+
+#dark .banner-slogan-container span {
+    color: var(--rose-pink);
 }
-.banner-buttons-container button{
+
+.banner-buttons-container button {
     font-size: 1.2rem;
-    padding:0.7rem 2rem;
-    width:max-content;
-    margin:1rem;
-    border:none;
+    padding: 0.7rem 2rem;
+    width: max-content;
+    margin: 1rem;
+    border: none;
     cursor: pointer;
-    color:#ffffff;
-    border-radius:0.6rem;
-    background:var(--violet);
+    color: #ffffff;
+    border-radius: 0.6rem;
+    background: var(--violet);
 }
-#dark .banner-buttons-container button{
+
+#dark .banner-buttons-container button {
     background: var(--rose-pink);
 }
-.banner-buttons-container button:hover{
+
+.banner-buttons-container button:hover {
     opacity: 0.9;
-    transform:scale(1.06);
+    transform: scale(1.06);
 }
-#resume-btn{
+
+#resume-btn {
     background: transparent;
-    color:var(--violet);
+    color: var(--violet);
     box-shadow: 0 0 4px var(--violet);
 }
-#dark #resume-btn{
+
+#dark #resume-btn {
     background: transparent;
-    color:#ffffff;
+    color: #ffffff;
     box-shadow: 0 0 4px var(--rose-pink);
 }
-
-.banner-image-container{
+.banner-image-container {
     position: relative;
-    height:100vh;
+    height: 100vh;
     width: 40rem;
-    transform-style: preserve-3d;
-    perspective: 10rem;
 }
-
-.banner-sticker p{
+.banner-sticker p {
     font-size: 1.2rem;
-    padding:1.2rem;
+    padding: 1.2rem;
     border-radius: 0.5rem;
     color: var(--bigtitles);
     position: absolute;
     border: 1px solid #ffffff;
     box-shadow: 0 0 2px #ffffff inset;
     background: var(--banner-translucent);
+    overflow: hidden;
 }
-.banner-sticker p:nth-child(1){
-    top:20vh;
-    left:0vw;
+.banner-sticker p:nth-child(1) {
+    top: 20vh;
+    left: 0vw;
 }
-.banner-sticker p:nth-child(2){
-    top:45vh;
-    right:3vw;
+.banner-sticker p:nth-child(2) {
+    top: 45vh;
+    right: 3vw;
 }
-.banner-image-container img{
-   transform: scale(1.3);
-   z-index: -1;
-   position: relative;
+
+.banner-sticker p::before,
+.cover p::before{
+    content:"";
+    position: absolute;
+    height:0.2rem;
+    width:10rem;
+    background-color:#ffffff;
+    top:50%;
+    left:0;
+    transition: animation 200ms;
+    animation: sticker-shine 3000ms alternate  infinite;
+    transform: translateX(-100%) skewY(30deg);
 }
-.cover p{
+@keyframes sticker-shine {
+    to{
+        transform:translateX(170%) skewY(30deg);
+    }
+}
+.banner-image-container img {
+    transform: scale(1.3);
+    z-index: -1;
+    position: relative;
+}
+
+.cover p {
     font-size: 1.2rem;
-    padding:1.2rem;
+    padding: 1.2rem;
     width: 17.5rem;
     border-radius: 0.5rem;
+    position: relative;
     color: var(--bigtitles);
-    margin:0 auto;
+    overflow: hidden;
+    margin: 0 auto;
     z-index: 14;
     background: var(--banner-translucent);
     border: 1px solid #ffffff;
     box-shadow: 0 0 2px #ffffff inset;
 }
-.banner-image-container::before{
+
+.banner-image-container::before {
     content: "";
-    left:0;
+    left: 0;
     position: absolute;
-    height:100%;
-    width:100%;
-    background:var(--violet);
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background: var(--violet);
     clip-path: circle(35% at 50% 50%);
-    z-index: -1;
 }
-#dark .banner-image-container::before{
+
+#dark .banner-image-container::before {
     background: var(--rose-pink);
 }
+
 .banner-image-container:hover .banner-sticker p,
-.banner-image-container:hover .cover p{
+.banner-image-container:hover .cover p {
     transition: all 600ms;
     transform: scale(1.12);
 }
 
-@media screen and (max-width:850px){
-    .banner-image-container{
-        height:80vh;
+@media screen and (max-width:850px) {
+    .banner-image-container {
+        height: 80vh;
     }
-    .banner-slogan-container{
-        height:fit-content;
-        padding:1rem 4rem;
+
+    .banner-slogan-container {
+        height: fit-content;
+        padding: 1rem 4rem;
     }
-    .banner-slogan-container h1{
+
+    .banner-slogan-container h1 {
         font-size: 2.45rem;
     }
-    .banner-slogan-container p{
-        font-size: 1.4rem;   
+    .banner-slogan-container p {
+        font-size: 1.4rem;
     }
-    .banner-buttons-container button{
+    .banner-buttons-container {
+        margin: 0 auto;
+    }
+    .banner-buttons-container button {
         font-size: 1.1rem;
     }
-    .banner-image-container img{
+    .banner-image-container img {
         transform: scale(1.2);
     }
-    .banner-sticker p{
+    .banner-sticker p {
         font-size: 1.1rem;
-        padding:1rem;
+        padding: 1rem;
     }
-    .banner-sticker p:nth-child(1){
-        left:7vw;
+    .banner-sticker p:nth-child(1) {
+        left: 7vw;
     }
-    .banner-sticker p:nth-child(2){
-        right:6vw;
+    .banner-sticker p:nth-child(2) {
+        right: 6vw;
     }
 }
 
-@media screen and (max-width:500px){
-
-    .banner-slogan-container{
-        padding:0.2rem 2rem;
-        margin:0.5rem 0;
+@media screen and (max-width:500px) {
+    .banner-wrapper {
+        margin-top: 1rem;
+        overflow: hidden;
     }
-    .banner-slogan-container h1{
+    .banner-slogan-container {
+        padding: 0.2rem 2rem;
+        margin: 0.5rem 0;
+    }
+    .banner-slogan-container h1 {
         font-size: 2.2rem;
     }
-    .banner-slogan-container p{
+    .banner-slogan-container p {
         font-size: 1.2rem;
     }
-    .banner-buttons-container button{
-        margin:1rem 0.5rem;
-        padding:0.5rem 1.2rem;
+    .banner-buttons-container button {
+        margin: 1rem 0.5rem;
+        padding: 0.5rem 1.2rem;
     }
-    .banner-image-container{
+    .banner-image-container {
         /* background:seagreen; */
         height: fit-content;
-        margin-top: -2.7rem 0;
+        /* margin-top: -3rem; */
     }
-    .banner-image-container img{
-        transform: scale(1);
+    .banner-image-container img {
+        transform: scale(0.9);
     }
-    .banner-sticker{
-        display:none;
+    .banner-image-container::before{
+        clip-path: circle(32% at 50% 50%);
+    }
+    .cover p {
+        font-size: 1.1rem;
+        padding: 1rem;
+        width: 15rem;
+        margin-top: -2.5rem;
+    }
+    .banner-sticker {
+        display: none;
     }
 }
