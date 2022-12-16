@@ -82,10 +82,12 @@
     color: #ffffff;
     box-shadow: 0 0 4px var(--rose-pink);
 }
+/* image part */
 .banner-image-container {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 40rem;
+    /* background: navajowhite; */
 }
 .banner-sticker p {
     font-size: 1.2rem;
@@ -99,12 +101,12 @@
     overflow: hidden;
 }
 .banner-sticker p:nth-child(1) {
-    top: 20vh;
-    left: 0vw;
+    top: 15%;
+    left: 5%;
 }
 .banner-sticker p:nth-child(2) {
-    top: 45vh;
-    right: 3vw;
+    top: 55%;
+    right: 10%;
 }
 
 .banner-sticker p::before,
@@ -196,12 +198,7 @@
         font-size: 1.1rem;
         padding: 1rem;
     }
-    .banner-sticker p:nth-child(1) {
-        left: 7vw;
-    }
-    .banner-sticker p:nth-child(2) {
-        right: 6vw;
-    }
+   
 }
 
 @media screen and (max-width:500px) {
@@ -235,12 +232,22 @@
         clip-path: circle(32% at 50% 50%);
     }
     .cover p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 1rem;
         width: 15rem;
         margin-top: -2.5rem;
     }
-    .banner-sticker {
-        display: none;
+    .banner-sticker p{
+        padding:1rem;
+        font-size: 1rem;
     }
+    .banner-sticker p:nth-child(1) {
+        left: 20%;
+        top:20%;
+    }
+    .banner-sticker p:nth-child(2) {
+        top:60%;
+        right: 20%;
+    }
+    
 }
