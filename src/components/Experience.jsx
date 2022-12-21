@@ -19,7 +19,7 @@ const Experience = () => {
                     <ul>
                         <li>
                             <p className="position">
-                                Full-stack developer intern (Oct 2022 - Present)
+                                Full-stack developer intern (Oct 2022 - Dec 2022)
                             </p>
                             <p className="organisation">
                                 Symstech IT and Consulting Services

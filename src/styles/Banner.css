@@ -242,12 +242,36 @@
         font-size: 1rem;
     }
     .banner-sticker p:nth-child(1) {
-        left: 20%;
         top:20%;
+        left:15%;
+        opacity: 1;
+        transition:animation 1000ms;
+        animation:moveright 2000ms ease ; 
+    }
+    @keyframes moveright{
+      from{
+        transform: translateX(-100%);
+        opacity: 0.4;
+    }to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
     }
     .banner-sticker p:nth-child(2) {
-        top:60%;
-        right: 20%;
+        top:62%;
+        right: 15%;
+        opacity: 1;
+        transition:animation 1000ms;
+        animation:moveleft 2000ms ease ; 
+    }
+    @keyframes moveleft{
+        from{
+            transform: translateX(100%);
+            opacity: 0.4;
+        }to{
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
     
 }

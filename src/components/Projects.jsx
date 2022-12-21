@@ -26,7 +26,7 @@ const Projects = () => {
                             <h3>Saviee</h3>
                         </div>
                         <div className="banner-container">
-                            <a href="https://github.com/Suman373"
+                            <a href="https://saviee-web.vercel.app"
                                 target="_blank">
                                 <img src={Finance}
                                     alt="" />
@@ -53,27 +53,9 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    {/* <div className={cardVisible ? "project-card show" : "project-card"}>
-                        <div className="project-title-container">
-                            <h3>Travel Companion</h3>
-                        </div>
-                        <div className="banner-container">
-                            <a href="https://github.com/Suman373"
-                                target="_blank">
-                                <img src={TravelCompanion}
-                                    alt="Banner for project" />
-                            </a>
-                        </div>
-                        <div className="info-container">
-                            <p>Travel Companion is web app to help review a place you visited in an integrated map.</p>
-                        </div>
-                    </div> */}
-
-
-
                     <div className={cardVisible ? "project-card show" : "project-card"}>
                         <div className="project-title-container">
-                            <h3>Plogify</h3>
+                            <h3>Pics-L</h3>
                         </div>
                         <div className="banner-container">
                             <a href="https://github.com/Suman373"
@@ -83,7 +65,7 @@ const Projects = () => {
                             </a>
                         </div>
                         <div className="info-container">
-                            <p>Plogify is the one stop for posting your picture blogs.It is a free to use. </p>
+                            <p>Pics-L lets user upload images to showcase in public gallery.</p>
                         </div>
                     </div>
                 </section>
