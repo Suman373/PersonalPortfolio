@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <section className="experience-wrapper" id="experience">
         <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}>
-                My <span className="heading-highlight">work experience</span>
+                My <span className="heading-highlight"> experience</span> so far
              </h2>
              <div className="underline"></div>
 

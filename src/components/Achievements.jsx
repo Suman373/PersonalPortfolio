@@ -8,7 +8,7 @@ const Achievements=()=>{
     return(
         <section className="achievements-wrapper" id="achievements">
              <h2 ref={myTitleRef} className={ titleVisible ? "component-headings show" : "component-headings"}>
-                My <span className="heading-highlight">achievements so far 🏆</span>
+                My <span className="heading-highlight">achievements </span>so far 🏆
              </h2>
                     <div className="underline"></div>
                     <div ref={myDesRef}

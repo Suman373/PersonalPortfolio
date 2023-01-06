@@ -116,6 +116,7 @@
     border:none;
     outline:none;
     display: none;
+    font-size: 1.5rem;
     background: transparent;
     z-index:9999;
 }
@@ -210,7 +211,10 @@
         display: inline-block;
     }
     .right.open .navbar-link.active{
-        background: var(--body-bg);
+        background: var(--violet);
+    }
+    #dark .right.open .navbar-link.active{
+        background:var(--dark-theme-vio);
     }
 }
 /* socials */

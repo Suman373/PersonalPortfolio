@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <>
             <main className="project-wrapper" id="projects">
-                <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>The <span className="heading-highlight">projects</span> I have <span className="heading-highlight">built</span></h2>
+                <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>Recent <span className="heading-highlight">projects</span></h2>
                 <div className="underline"></div>
                 <section
                     ref={myCardRef}
