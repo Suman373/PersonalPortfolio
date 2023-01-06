@@ -9,11 +9,16 @@
     overflow:hidden;
     background: var(--white-bg);
 }
+.form-container p{
+    font-size: 1.4rem;
+    margin: 1.5rem auto;
+    padding:0.5rem;
+}
 
 form{
-    height:35rem;
-    width:35rem;
-    padding:10px;
+    height:fit-content;
+    width:30rem;
+    padding:0.8rem;
     margin:2rem auto;
     background: var(--body-bg);
     color:var(--violet);
@@ -25,12 +30,6 @@ form{
 #dark form{
     color:var(--rose-pink);
     background: var(--navbar-bg);
-}
-form label{
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin:10px 4rem;
-    text-align: justify;
 }
 form input{
     height:3.2rem;
@@ -49,15 +48,18 @@ form textarea:focus{
 form input, form textarea{
     padding:0.5rem;
     font-size: 1.3rem;
+    text-indent: 0.5rem;
     border:none;
     outline:none;
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
+    border-left:4px solid var(--violet);
     font-family: 'Roboto,sans-serif';
 }
 form textarea{
     width:80%;
     margin:5px auto;
-    height:12rem;
+    height:10rem;
+    resize: none;
 }
 .submit-btn{
     font-size: 1.2rem;
@@ -78,12 +80,16 @@ form textarea{
     transform:scale(1.06);
 }
 
+#dark form textarea, #dark form input{
+    border-left:4px solid var(--rose-pink);
+}
+
 @media screen and (max-width:600px){
     .form-container h1{
         font-size: 2rem;
     }
     form{
-        width:26rem;
+        width:22rem;
     }
     .submit-btn{
         width:80%;
@@ -98,10 +104,9 @@ form textarea{
         font-size: 1.7rem;
     }
     form{
-        width:24rem;
+        width:fit-content;
     }
-    form label{
-        margin:12px 3rem;
+    .form-container p{
         font-size: 1.1rem;
     }
     form input{
