@@ -8,33 +8,40 @@
     background: var(--violet);
 }
 #dark .footer-container{
-    background:var(--rose-pink);
+    background: var(--dark-theme-vio);
 }
 .footer-container p{
     font-size: 1.3rem;
     padding:0.5rem;
-    margin:0.5rema auto;
+    margin:0.5rem auto;
     color:white;
 }
 /* icons for footer */
 .footer-container .fa-heart{
     color:#ca2222;
 }
-#dark .footer-container .fa-heart{
-    text-shadow: 0 0 4px white;
+.footer-container i{
+    font-size: 1.4rem;
 }
 .footer-container .fa-react{
-    color:#1ec7c7;
+    margin:0 !important;
+    color:#1ec7c7 !important;
 }
 
 @media screen and (max-width:700px){
     .footer-container p{
         font-size: 1.2rem;
     }
+    .footer-container i{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:500px){
     .footer-container p{
+        font-size: 1rem;
+    }
+    .footer-container i{
         font-size: 1rem;
     }
 }

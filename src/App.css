@@ -20,7 +20,7 @@
     --green:#1ec51e;
     --asparagus: #87B37A;
     --xanadu: #77867F;
-    --rose-pink:#ca1c41;
+    --dark-theme-vio:#9c44d7;
     --helio-gray: #B4AAC5;
     --white-bg:#f0ebeb;
     --golden: #e6990a;
@@ -88,13 +88,11 @@ h5 {
 /* highlighting headings */
 .heading-highlight{
     color:var(--violet);
-    text-shadow: 1px 2px 3px var(--light-violet);
 }
 
 /* highlighting headings dark theme */
 #dark .heading-highlight{
-    color:var(--rose-pink);
-    text-shadow: 1px 2px 3px var(--pink);
+    color:var(--dark-theme-vio);
 }
 
 /* heading styles */
@@ -112,15 +110,12 @@ h5 {
 /* heading styles for light theme */
 .component-headings{
     color:var(--bigtitles);
-    text-shadow: 1px 2px 3px grey;
 }
 /* heading styles for dark theme */
 #dark .component-headings{
     color:var(--helio-gray);
-    text-shadow: 1px 2px 2px white;
+
 }
-
-
 /* background for components in dark mode*/
 #dark .form-container, 
 #dark .project-wrapper,

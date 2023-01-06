@@ -47,7 +47,7 @@
 }
 
 #dark .banner-slogan-container span {
-    color: var(--rose-pink);
+    color: var(--dark-theme-vio);
 }
 
 .banner-buttons-container button {
@@ -63,7 +63,7 @@
 }
 
 #dark .banner-buttons-container button {
-    background: var(--rose-pink);
+    background: var(--dark-theme-vio);
 }
 
 .banner-buttons-container button:hover {
@@ -80,7 +80,7 @@
 #dark #resume-btn {
     background: transparent;
     color: #ffffff;
-    box-shadow: 0 0 4px var(--rose-pink);
+    box-shadow: 0 0 4px var(--dark-theme-vio);
 }
 /* image part */
 .banner-image-container {
@@ -160,7 +160,7 @@
 }
 
 #dark .banner-image-container::before {
-    background: var(--rose-pink);
+    background: var(--dark-theme-vio);
 }
 
 .banner-image-container:hover .banner-sticker p,

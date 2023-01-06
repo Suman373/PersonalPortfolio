@@ -14,13 +14,14 @@
     margin: 1.5rem auto;
     padding:0.5rem;
 }
-
+#dark .form-container p{
+    color:var(--helio-gray);
+}
 form{
     height:fit-content;
     width:30rem;
     padding:0.8rem;
     margin:2rem auto;
-    background: var(--body-bg);
     color:var(--violet);
     display:flex;
     flex-direction: column;
@@ -28,8 +29,8 @@ form{
     border-radius: 8px;
 }
 #dark form{
-    color:var(--rose-pink);
-    background: var(--navbar-bg);
+    color:var(--dark-theme-vio);
+    background: none;
 }
 form input{
     height:3.2rem;
@@ -42,7 +43,7 @@ form textarea:focus{
 }
 #dark form input:focus,
 #dark form textarea:focus{
-    box-shadow: 0 0 4px var(--rose-pink);
+    box-shadow: 0 0 4px var(--dark-theme-vio);
 }
 
 form input, form textarea{
@@ -52,8 +53,12 @@ form input, form textarea{
     border:none;
     outline:none;
     border-radius: 0.7rem;
+    /* border:1px solid var(--violet); */
     border-left:4px solid var(--violet);
-    font-family: 'Roboto,sans-serif';
+    font-family: 'Roboto',sans-serif;
+}
+#dark form input, #dark form textarea{
+    background:var(--white-bg);
 }
 form textarea{
     width:80%;
@@ -73,7 +78,7 @@ form textarea{
     background:var(--violet);
 }
 #dark .submit-btn{
-    background: var(--rose-pink);
+    background: var(--dark-theme-vio);
 }
 .submit-btn:hover{
     opacity: 0.9;
@@ -81,7 +86,7 @@ form textarea{
 }
 
 #dark form textarea, #dark form input{
-    border-left:4px solid var(--rose-pink);
+    border-left:4px solid var(--dark-theme-vio);
 }
 
 @media screen and (max-width:600px){
@@ -104,7 +109,7 @@ form textarea{
         font-size: 1.7rem;
     }
     form{
-        width:fit-content;
+        width:90vw;
     }
     .form-container p{
         font-size: 1.1rem;
@@ -113,7 +118,7 @@ form textarea{
         height:2.6rem;
     }
     form input,form textarea{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .submit-btn{
         font-size: 1.1rem;
