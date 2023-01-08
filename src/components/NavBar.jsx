@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useContext } from 'react';
 import '../styles/NavBar.css';
-import {ThemeContext} from '../App';
+import { ThemeContext } from '../App';
+import {IoMdArrowDropdown , IoMdArrowDropdownCircle} from 'react-icons/io';
 
 const NavBar = () => {
     // for the active link
@@ -10,12 +11,12 @@ const NavBar = () => {
     // for hamburger menu
     const [hamburgeropen, setHamburgerOpen] = useState(false);
 
-    const {theme,setTheme} = useContext(ThemeContext);
-    
+    const { theme, setTheme } = useContext(ThemeContext);
+
     const toggleTheme = () => {
         setTheme((th) => (th === "light" ? "dark" : "light"));
     }
-    
+
 
     return (
         <div className="navbar-wrapper">
@@ -62,25 +63,36 @@ const NavBar = () => {
                 </a>
 
                 <a
-                    href="#tech"
-                    className={activeLink === 'tech' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => setActiveLink('tech')}>
-                    Tech
-                </a>
-
-                <a
                     href="#experience"
                     className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
                     onClick={() => setActiveLink('experience')}>
                     Experience
                 </a>
 
-                <a
-                    href="#achievements"
-                    className={activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}
-                    onClick={() => setActiveLink('achievements')}>
-                    Achievements
-                </a>
+                <p id="more">More <span><IoMdArrowDropdown/></span>
+                    <div className="dropdown"> 
+                        <a
+                            href="#tech"
+                            className={activeLink === 'tech' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('tech')}>
+                            Tech
+                        </a>
+                        <a
+                            href="#achievements"
+                            className={activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('achievements')}>
+                            Achievements
+                        </a>
+                        <a
+                            href="#testimonials"
+                            className={activeLink === 'testimonials' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => setActiveLink('testimonials')}>
+                            Testimonials
+                        </a>
+                      
+                    </div>
+                </p>
+
                 {/* social callouts  */}
                 <div className="social-icon">
                     <a href="https://linkedin.com/in/sumanroy369" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
@@ -92,7 +104,7 @@ const NavBar = () => {
             <button
                 onClick={() => setHamburgerOpen(!hamburgeropen)}
                 className="hamburger-icon">
-                <i className={ hamburgeropen ? "fa-solid fa-xmark" : " fa-solid fa-bars"}></i>
+                <i className={hamburgeropen ? "fa-solid fa-xmark" : " fa-solid fa-bars"}></i>
             </button>
 
         </div> // parent wrapper div

@@ -13,7 +13,7 @@ const Banner = () => {
           </p>
           <h1>I'm <span>Suman</span>, <span>welcome</span> to my <span>portfolio website</span></h1>
           <p>
-            <i className="fa-solid fa-laptop-code"></i>
+            <i className="fa-solid fa-laptop-code"></i> {"  "}
             A passionate full-stack web developer.
           </p>
           <div className="banner-buttons-container">

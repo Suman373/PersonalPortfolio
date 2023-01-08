@@ -47,7 +47,7 @@ const Tech=()=>{
                         <div 
                             ref={myDesRef} 
                             className={despVisible ? "right-side show" : "right-side"}>
-                          <p>These are the languages,cloud hosting technologies, tools , etc I use while making my projects. I am proficient in them and always learning something new about them. I use MERN stack and have plans to learn serverless too.</p>
+                          <p>These are the programming language, scripting language, tools and technologies I use while building projects.I have experience in MERN stack. Right now am focused on sharpening my skills and work on real world project focused on solving problems.</p>
                         </div>
                     </div>
             </div>
