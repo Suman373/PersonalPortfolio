@@ -122,7 +122,8 @@ h5 {
 #dark .skills-wrapper,
 #dark .about-wrapper,
 #dark .stack,
-#dark .achievements-wrapper{
+#dark .achievements-wrapper,
+#dark .testimonials-wrapper{
     background: var(--dark-theme);
 }
 @media screen and (max-width:800px){

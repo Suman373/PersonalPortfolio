@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Scroller from './components/Scroller';
 import Achievements from './components/Achievements';
 import Experience from './components/Experience';
+import Testimonials from './components/Testimonials';
 
 export const ThemeContext = createContext(null);
 
@@ -42,6 +43,7 @@ function App() {
           <Tech/>
           <Experience/>
           <Achievements/>
+          <Testimonials/>
           <Contact/>
           <Footer/>
           <Scroller/>

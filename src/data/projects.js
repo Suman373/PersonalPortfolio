@@ -13,7 +13,7 @@ const projects = [
         title:"CryptoCatalogue",
         imgSrc:cryptocat,
         about:"A catalogue of all the trending cryptocurrencies and real-time information about them.",
-        demoLink:'https://cryptocatalogue.netlify.app.'
+        demoLink:'https://cryptocatalogue.netlify.app'
     },
 ]
 

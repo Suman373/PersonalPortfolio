@@ -1,16 +1,24 @@
 .scroller-btn{
-    outline:none;
     border:1px solid white;
     position:fixed;
     bottom:0.6rem;
     right:0.5rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background:var(--violet);
+    font-size: 1.1rem;
+    color:white;
+    height: 3rem;
+    width: 3rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
     transition: animation 200ms alternate;
     animation:jump 1000ms infinite;
+    box-shadow: 0 0 10px var(--violet);
 }
 #dark .scroller-btn{
     background: var(--dark-theme-vio);
+    box-shadow: 0 0 10px var(--dark-theme-vio);
 }
 .scroller-btn:hover{
     transform: scale(1.02);
@@ -22,25 +30,11 @@
         transform:translateY(0px);
     }
 }
-.scroller-btn i{
-    font-size: 1.1rem;
-    color:white;
-    padding:1rem 1rem;
-}
-#light .scroller-btn:hover{
-    box-shadow: 0 0 4px #000000;
-}
-#dark .scroller-btn:hover{
-    box-shadow: 0 0 4px #ffffff;
-}
 
-@media screen and (max-width:500px){
+@media screen and (max-width:512px){
     .scroller-btn{
-        height:2.6rem;
-        width:2.6rem;
-    }
-    .scroller-btn i{
-        font-size: 0.9rem;
-        margin:0 auto;
+        height:2.7rem;
+        width:2.7rem;
+        font-size: 1rem;
     }
 }
