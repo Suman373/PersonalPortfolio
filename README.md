@@ -1,5 +1,6 @@
 <h1 align="center">My Personal Portfolio</h1>
-![Banner](/src/assets/porfolio banner.png)
+
+![Image](https://user-images.githubusercontent.com/95040233/212661111-a3d5161a-fb11-46fe-972e-a862d8765596.png)
 
 ---
 
