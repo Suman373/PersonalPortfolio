@@ -1,5 +1,4 @@
 import saviee from '../assets/finance_banner.png';
-import picsl from '../assets/happiness.webp';
 import cryptocat from '../assets/ethbanner.png';
 
 const projects = [
