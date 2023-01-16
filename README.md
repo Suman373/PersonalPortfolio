@@ -1,29 +1,28 @@
-## Getting Started with Create React App
+<h1 align="center">My Personal Portfolio</h1>
+![Banner](/src/assets/porfolio banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### About
+This is the `repository` for my personal portfolio website.
+#### What is a portfolio website ? 
+ It is an online representation of work you have created, as well as your skills and experiences. It could be a website, blog, or even a video channel. It is generally an online mean of showcasing your profile to everyone, it can be of any theme, it can be minimalistic, professional, funky, animative, etc.
 
-In the project directory, you can run:
+ ### Inspiration 🤔
+After teaching myself web development basics I always wanted to make a personal website, but I didn't. I rather focused on learning more and make some projects. After months I finally made one to showcase my info, projects, skills and other work. If you are someone like me or from any domain, I would suggest you to make one for yourself, it is awesome to have a personal website.
 
-### `npm start`
+### Tech used  🛠
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="left">
+<img alt="JSX" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+<img alt="CSS" src="https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+<img alt="GH" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+<img alt="VSC" src="https://img.shields.io/badge/VSCode-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+[Click to view]("https://suman-roy.vercel.app")
+</br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
