@@ -21,6 +21,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+#dark .testimonial-box{
+    background: var(--white-bg);
+}
 .testimonial-box img{
     height: 7rem;
     width: 7rem;

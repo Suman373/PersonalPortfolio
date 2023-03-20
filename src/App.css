@@ -82,7 +82,7 @@ h5 {
     width: 10rem;
     border-radius: 1rem;
     margin: 0.2rem auto;
-    background: #449fbb;
+    background: #339ab9af;
 }
 
 /* highlighting headings */
@@ -141,19 +141,11 @@ h5 {
 
     .component-headings{
         font-size: 2rem;
-        text-shadow: 1px 1px 2px grey;
+        /* text-shadow: 1px 1px 2px grey; */
     }
 
     #dark .component-headings{
-        text-shadow: 1px 1px 2px white;
-    }
-
-    .heading-highlight{ 
-        text-shadow: 1px 1px 2px var(--light-violet);
-    }
-
-    #dark .heading-highlight{
-        text-shadow: 1px 1px 2px var(--pink);
+        /* text-shadow: 1px 1px 2px white; */
     }
 }   
 
