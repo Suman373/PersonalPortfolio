@@ -1,6 +1,6 @@
 <h1 align="center">My Personal Portfolio</h1>
 
-![Image](https://user-images.githubusercontent.com/95040233/212661111-a3d5161a-fb11-46fe-972e-a862d8765596.png)
+![image](https://github.com/Suman373/PersonalPortfolio/assets/95040233/63d07973-727e-427d-9da4-4422806e0f26)
 
 ---
 
