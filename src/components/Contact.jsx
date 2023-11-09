@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import '../styles/Contact.css';
-import {useNavigate} from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useInView } from "react-intersection-observer";
@@ -13,7 +12,7 @@ const Contact = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
         emailjs.sendForm(`${process.env.REACT_APP_EJS_SERVICE_ID}`
-        ,`${process.env.REACT_APP_EJS_TEMPLATE_ID}`,
+        ,`${process.env.RzEACT_APP_EJS_TEMPLATE_ID}`,
         ref.current,
         `${process.env.REACT_APP_EJS_USER_ID}`).then(function(response) {
           console.log('SUCCESS!', response.status, response.text);

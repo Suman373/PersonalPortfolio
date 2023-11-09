@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
 import './App.css';
-import {BrowserRouter as BRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import Skills from './components/Skills';
@@ -16,44 +15,35 @@ import Testimonials from './components/Testimonials';
 
 export const ThemeContext = createContext(null);
 
-function App() { 
+function App() {
 
-    const getTheme = ()=>{
-      return localStorage.getItem('theme') || 'light'; // default is light
-    }
+  const getTheme = () => {
+    return localStorage.getItem('theme') || 'light'; // default is light
+  }
 
   const [theme, setTheme] = useState(getTheme());
 
-  useEffect(()=>{
-      localStorage.setItem('theme',theme);
-  },[theme]);
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{theme, setTheme}}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className="App" id={theme}>
-      <BRouter>
-      <Routes>
-        <Route path="/" element={
-          <>
-          <NavBar/>
-          <Banner/>
-          <About/>
-          <Skills/>
-          <Projects/>
-          <Tech/>
-          <Experience/>
-          <Achievements/>
-          <Testimonials/>
-          <Contact/>
-          <Footer/>
-          <Scroller/>
-          </>
-        }>
-        </Route>
-      </Routes>
-      </BRouter>
+        <NavBar />
+        <Banner />
+        <About />
+        <Skills />
+        <Projects />
+        <Tech />
+        <Experience />
+        <Achievements />
+        <Testimonials />
+        <Contact />
+        <Footer />
+        <Scroller />
     </div>
-    </ThemeContext.Provider>
+    </ThemeContext.Provider >
   );
 }
 

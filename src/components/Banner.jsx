@@ -1,9 +1,31 @@
-import React from "react";
-import mypic from '../assets/myphoto.png';
+import React, { useEffect, useRef } from "react";
 import heroImg from '../assets/portfolio hero.png';
 import '../styles/Banner.css';
+import Typed from "typed.js";
 
 const Banner = () => {
+
+  // create the ref for the typewriter animation text
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(elementRef.current, {
+      strings: ["Welcome to my portfolio website",
+        "I am a self-taught developer",
+        "I like to build user-friendly full stack webapps",
+        "I am an aspiring software developer"],
+      typeSpeed: 100,
+      backSpeed: 30,
+      loop: true
+    });
+
+    // cleanup
+    return () => {
+      typed.destroy();
+    }
+  }, []);
+
+
   return (
     <>
       <div className="banner-wrapper" id="home">
@@ -12,7 +34,8 @@ const Banner = () => {
           <p className="bn-small-text">
             Hi there,
           </p>
-          <h1>I'm <span>Suman</span>, <span>welcome</span> to my <span>portfolio website</span></h1>
+          <h1>I'm Suman, <span ref={elementRef}></span></h1>
+          
           <p>
             <i className="fa-solid fa-laptop-code"></i> {"  "}
             A passionate self-taught full stack developer
@@ -20,7 +43,7 @@ const Banner = () => {
           <div className="banner-buttons-container">
             <button><a href="#contact">Let's talk ✉</a></button>
             <button id="resume-btn">Resume ↗</button>
-        </div>
+          </div>
         </section>
 
         <section className="banner-image-container">
@@ -31,7 +54,7 @@ const Banner = () => {
           {/* <img src={mypic} alt="Profile banner" /> */}
           <img src={heroImg} alt="" />
           <div className="cover">
-              <p>Web Dev</p>
+            <p>Web Dev</p>
           </div>
         </section>
 
