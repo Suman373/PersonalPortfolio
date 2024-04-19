@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/Project.css';
 
-const Project = ({cardVisible,projectItem}) => {
+const Project = ({projectItem}) => {
     return (
         <>
-            <div className={cardVisible ? "project-card show" : "project-card"}>
+            <div className="project-card">
                 <div className="project-title-container">
                     <h3>{projectItem.title}</h3>
                 </div>

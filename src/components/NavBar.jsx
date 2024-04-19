@@ -25,11 +25,11 @@ const NavBar = () => {
                 <div className="logo-container">
                     <h1><a href="/">&lt;SR/&gt;</a></h1>
                 </div>
-                <div className="toggle-btn" >
+                {/* <div className="toggle-btn" >
                     <i onClick={toggleTheme} className={theme === "dark" ? "fa-solid fa-toggle-on" : "fa-solid fa-toggle-off"}
                     >
                     </i>
-                </div>
+                </div> */}
             </div>
 
             {/* the right portion */}

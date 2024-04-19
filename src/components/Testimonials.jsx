@@ -1,29 +1,22 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import '../styles/Testimonials.css';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 import testimonials from '../data/testimonials';
 import { BsLinkedin } from 'react-icons/bs';
-
-
-const items = [...testimonials.map((item, index) => {
-    return (
-        <div
-            className="item testimonial-box"
-            data-value={item.dataVal}
-            key={index}>
-            <img src={item.personImg} alt="Person photo" />
-            <p className='name'>{item.personName}</p>
-            <p className='txt'><span>"</span> {item.personTxt} <span>"</span></p>
-            <p className="position">{item.personDesignation}</p>
-            <a href={item.personLinkedin} className="social"><BsLinkedin /></a>
-        </div>
-    )
-
-})];
+import Slider from 'react-slick';
+import { FaQuoteLeft,FaQuoteRight  } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
 
     const { ref: myTitleRef, inView: titleVisible } = useInView();
 
@@ -33,18 +26,26 @@ const Testimonials = () => {
                 My <span className="heading-highlight">Testimonials</span>
             </h2>
             <div className="underline"></div>
-           <div style={{height:'100%',display:'grid',placeContent:'center'}}>
-           <div className="testimonial-carousel">
-                <AliceCarousel
-                    items={items}
-                    // responsive={responsive}
-                    autoPlay
-                    disableButtonsControls
-                    infinite
-                    mouseTracking
-                    autoPlayInterval={2500} />
+            <span id='quote-icon1'><FaQuoteLeft/></span>
+            <span id='quote-icon2'><FaQuoteRight/></span>
+            <div className="testimonial-carousel">
+                <Slider {...settings}>
+                    {
+                        testimonials.map((item, index) => (
+                            <div
+                                className="item testimonial-box"
+                                data-value={item.dataVal}
+                                key={index}>
+                                <img src={item.personImg} alt="Person photo" />
+                                <p className='name'>{item.personName}</p>
+                                <p className='txt'><span>"</span> {item.personTxt} <span>"</span></p>
+                                <p className="position">{item.personDesignation}</p>
+                                <a href={item.personLinkedin} className="social"><BsLinkedin /></a>
+                            </div>
+                        ))
+                    }
+                </Slider>
             </div>
-           </div>
         </div>
     )
 }

@@ -25,9 +25,10 @@
     --white-bg:#f0ebeb;
     --golden: #e6990a;
     --pink:#fd4592;
-    --body-bg: #dddddd;
+    --body-bg: #fbfbfb;
     --dark-theme: #1f1d1f;
     --red:#ca1a1a;
+    --alternate-bg:white;
 }
 
 html {
@@ -65,8 +66,8 @@ h5 {
     width: 100vw;
     overflow-x: hidden;
     background: black;
-    position: absolute;
-    z-index: -200;
+    position: relative;
+    /* z-index: -200; */
 }
 
 #light {

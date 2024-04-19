@@ -12,17 +12,15 @@ import Scroller from './components/Scroller';
 import Achievements from './components/Achievements';
 import Experience from './components/Experience';
 import Testimonials from './components/Testimonials';
+import Cursor from './components/Cursor';
 
 export const ThemeContext = createContext(null);
 
 function App() {
-
   const getTheme = () => {
-    return localStorage.getItem('theme') || 'light'; // default is light
+    return 'dark';
   }
-
   const [theme, setTheme] = useState(getTheme());
-
   useEffect(() => {
     localStorage.setItem('theme', theme);
   }, [theme]);
@@ -30,6 +28,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className="App" id={theme}>
+        <Cursor/>
         <NavBar />
         <Banner />
         <About />

@@ -29,7 +29,6 @@ const Banner = () => {
   return (
     <>
       <div className="banner-wrapper" id="home">
-
         <section className="banner-slogan-container">
           <p className="bn-small-text">
             Hi there,
@@ -52,7 +51,7 @@ const Banner = () => {
             <p>Technical Blogger</p>
           </div>
           {/* <img src={mypic} alt="Profile banner" /> */}
-          <img src={heroImg} alt="" />
+          <img src={heroImg} alt="hero" />
           <div className="cover">
             <p>Web Dev</p>
           </div>

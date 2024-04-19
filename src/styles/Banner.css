@@ -38,7 +38,6 @@
 .banner-slogan-container h1 {
     font-size: 3rem;
     color: var(--bigtitles);
-    text-shadow: 1px 2px 3px grey;
 }
 
 #dark .banner-slogan-container h1 {
@@ -91,6 +90,7 @@
     height: 100%;
     width: 40rem;
     /* background: navajowhite; */
+    z-index: 1;
 }
 .banner-sticker p {
     font-size: 1.2rem;

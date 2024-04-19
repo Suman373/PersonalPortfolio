@@ -3,7 +3,6 @@
     width:100vw;
     overflow:hidden;
     position: relative;
-    background: transparent;
 }
 .stack-container h3{
     font-size: 2rem;
@@ -36,14 +35,11 @@
 .big-flex-box .left-side img{
     height: 5rem;
     width:5rem;
-    border-radius: 50%;
-    background:var(--white-bg);
-    padding:0.9rem;
-    box-shadow:  0 0 10px var(--helio-gray) ;
+    object-fit:contain;
+    transition: transform 1000ms;
 }
-#dark .big-flex-box .left-side img{
-    box-shadow: 0 0 3px #ffffff;
-    /* background:var(--helio-gray); */
+.big-flex-box .left-side img:hover{
+    transform: rotateZ(360deg);
 }
 /* some more info */
 .big-flex-box .right-side{
