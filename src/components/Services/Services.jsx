@@ -1,8 +1,6 @@
 import React from "react";
-import '../styles/Skills.css'
-import illusFrontend from '../assets/illusFrontend.png';
-import illusBackend from '../assets/illusBackend.png';
-import illusDatabase from '../assets/illusDatabase.png';
+import './Services.css'
+import { illusFrontend,illusBackend,illusDatabase } from "../../assets";
 import { useInView } from "react-intersection-observer";
 
 const Skills = () => {

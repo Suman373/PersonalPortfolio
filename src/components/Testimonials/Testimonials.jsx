@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import '../styles/Testimonials.css';
-import testimonials from '../data/testimonials';
+import './Testimonials.css';
+import testimonials from '../../data/testimonials';
 import { BsLinkedin } from 'react-icons/bs';
 import Slider from 'react-slick';
 import { FaQuoteLeft,FaQuoteRight  } from "react-icons/fa";

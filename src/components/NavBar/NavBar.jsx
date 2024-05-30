@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useContext } from 'react';
-import '../styles/NavBar.css';
-import { ThemeContext } from '../App';
-import {IoMdArrowDropdown , IoMdArrowDropdownCircle} from 'react-icons/io';
+import './NavBar.css';
+import { ThemeContext } from '../../App';
+import {IoMdArrowDropdown } from 'react-icons/io';
 
 const NavBar = () => {
     // for the active link

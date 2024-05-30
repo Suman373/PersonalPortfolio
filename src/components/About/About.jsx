@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import '../styles/About.css';
+import './About.css';
 
 const About = () => {
 

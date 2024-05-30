@@ -1,6 +1,6 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import '../styles/Scroller.css';
+import { useState } from 'react';
+import './Scroller.css';
 
 const Scroller = ()=>{
 

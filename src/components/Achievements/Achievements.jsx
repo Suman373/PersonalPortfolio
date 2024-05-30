@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import '../styles/Achievements.css';
+import './Achievements.css';
 
 const Achievements=()=>{
     const {ref: myTitleRef , inView : titleVisible} = useInView();

@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
-import projects from "../data/projects";
-import '../styles/Projects.css';
-import Project from "./Project";
+import projects from "../../data/projects";
+import './Projects.css';
+import Project from "../Project/Project";
 
 const Projects = () => {
 

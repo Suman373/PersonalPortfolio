@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../styles/Cursor.css';
+import './Cursor.css';
 // this code does not belong to me
 const Cursor = () => {
  

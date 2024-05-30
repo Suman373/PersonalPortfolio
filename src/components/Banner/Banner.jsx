@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import heroImg from '../assets/portfolio hero.png';
-import '../styles/Banner.css';
+import { heroImg } from "../../assets";
+import './Banner.css';
 import Typed from "typed.js";
 
 const Banner = () => {

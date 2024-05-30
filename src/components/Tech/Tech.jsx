@@ -1,14 +1,5 @@
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import js from '../assets/js.png';
-import react from '../assets/react.png';
-import sass from '../assets/sass.png';
-import nodejs from '../assets/nodejs.png';
-import express from '../assets/express.png';
-import mongodb from '../assets/mongodb.png';
-import git from '../assets/git.png';
-import github from '../assets/github.png';
-import '../styles/Tech.css';
+import { html,css,js,react,sass,nodejs,express,mongodb,git,github } from '../../assets';
+import './Tech.css';
 import { useInView } from 'react-intersection-observer';
 
 const Tech=()=>{

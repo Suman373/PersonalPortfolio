@@ -5,10 +5,10 @@
     padding:1rem;
     overflow: hidden;
     text-align: center;
-    background: var(--violet);
 }
 #dark .footer-container{
-    background: var(--dark-theme-vio);
+    /* background: var(--dark-theme-vio); */
+    border-top: 1px solid var(--dark-theme-vio);;
 }
 .footer-container p{
     font-size: 1.3rem;

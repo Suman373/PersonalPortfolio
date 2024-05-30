@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import '../styles/Contact.css';
+import './Contact.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useInView } from "react-intersection-observer";

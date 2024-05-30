@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import '../styles/Experience.css';
+import './Experience.css';
 
 const Experience = () => {
 
