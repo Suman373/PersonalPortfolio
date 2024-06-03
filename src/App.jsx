@@ -28,7 +28,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className="App" id={theme}>
-        <Cursor/>
+        {/* <Cursor/> */}
         <Navbar/>
         <Banner />
         <About />

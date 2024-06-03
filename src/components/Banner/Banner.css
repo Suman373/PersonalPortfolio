@@ -14,6 +14,7 @@
     flex-wrap: wrap-reverse;
     gap: 0.5rem;
     background: transparent;
+    user-select: none;
 }
 .banner-wrapper a {
     color: #ffffff;
@@ -93,13 +94,13 @@
     z-index: 1;
 }
 .banner-sticker p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1.2rem;
-    border-radius: 0.5rem;
-    color: var(--bigtitles);
+    font-weight: 500;
+    border-radius: 2rem;
+    color: #000;
     position: absolute;
     border: 1px solid #ffffff;
-    box-shadow: 0 0 2px #ffffff inset;
     background: var(--banner-translucent);
     overflow: hidden;
 }
@@ -137,19 +138,18 @@
 }
 
 .cover p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1.2rem;
     width: 17.5rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     position: relative;
-    color: var(--bigtitles);
+    color: #000;
     overflow: hidden;
     margin: 0 auto;
     margin-top: -2rem;
     z-index: 14;
     background: var(--banner-translucent);
     border: 1px solid #ffffff;
-    box-shadow: 0 0 2px #ffffff inset;
 }
 
 .banner-image-container::before {

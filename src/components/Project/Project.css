@@ -7,7 +7,28 @@
     position:relative;
     display: grid;
     place-content: center;
+    overflow: hidden;
     opacity: 1;
+}
+
+.redirects{
+    height: 22rem;
+    width: 22rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    background: #000000a1;
+    bottom: -22rem;
+}
+.redirects>a{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.project-card:hover .redirects{
+    transition: all 400ms ease;
+    bottom: 0;
 }
 
 .project-title-container{

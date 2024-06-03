@@ -11,11 +11,13 @@ import "slick-carousel/slick/slick-theme.css";
 const Testimonials = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        autoPlay:true,
+        autoPlaySpeed:2000,
+        slidesToScroll: 1,
     };
 
     const { ref: myTitleRef, inView: titleVisible } = useInView();

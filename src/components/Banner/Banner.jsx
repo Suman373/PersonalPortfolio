@@ -11,11 +11,10 @@ const Banner = () => {
   useEffect(() => {
     const typed = new Typed(elementRef.current, {
       strings: ["Welcome to my portfolio website",
-        "I am a self-taught developer",
-        "I like to build user-friendly full stack webapps",
-        "I am an aspiring software developer"],
-      typeSpeed: 100,
-      backSpeed: 30,
+        "a self-taught developer",
+        "I build web and mobile apps",],
+      typeSpeed: 60,
+      backSpeed: 28,
       loop: true
     });
 
@@ -47,13 +46,13 @@ const Banner = () => {
 
         <section className="banner-image-container">
           <div className="banner-sticker">
-            <p>Open for freelance work</p>
             <p>Technical Blogger</p>
+            <p>CS Undergrad</p>
           </div>
           {/* <img src={mypic} alt="Profile banner" /> */}
           <img src={heroImg} alt="hero" />
           <div className="cover">
-            <p>Web Dev</p>
+            <p>Software Developer</p>
           </div>
         </section>
 

@@ -1,6 +1,10 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto', sans-serif;
+   font-family: "Space Grotesk", sans-serif;
+*/
+
+/*// <weight>: Use a value from 300 to 700*/
 
 /* reset */
 *,
@@ -44,9 +48,9 @@ button {
 
 body {
     overflow-x: hidden;
-    width:100rem;
+    width:100vw;
     background: var(--body-bg);
-    font-family: 'Roboto', sans-serif;
+    cursor: url('assets/cursor.png'),auto;
 }
 
 /* default styling for the headings */
@@ -57,6 +61,11 @@ h4,
 h5 {
     margin: 0;
     padding: 0;
+    font-family: "Space Grotesk",sans-serif;
+}
+/* default for other texts */
+p,li,a{
+    font-family: 'Roboto',sans-serif;
 }
 
 /* For the App div  */

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Project.css';
+import { FaEye, FaGithub } from 'react-icons/fa';
 
-const Project = ({projectItem}) => {
+const Project = ({ projectItem }) => {
     return (
         <>
             <div className="project-card">
@@ -9,16 +10,18 @@ const Project = ({projectItem}) => {
                     <h3>{projectItem.title}</h3>
                 </div>
                 <div className="banner-container">
-                    <a href={projectItem.demoLink}
-                        target="_blank">
-                        <img src={projectItem.imgSrc}
-                            alt="" />
-                    </a>
+                    <img src={projectItem.imgSrc}
+                        alt="" />
                 </div>
                 <div className="info-container">
                     <p>{projectItem.about}</p>
                 </div>
+                <div className="redirects">
+                    <a href="#"><FaGithub /></a>
+                    <a href={projectItem.demoLink} target="_blank"><FaEye /></a>
+                </div>
             </div>
+
         </>
     )
 }
