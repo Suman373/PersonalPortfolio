@@ -9,9 +9,12 @@ export {default as mongodb} from '../assets/mongodb.png';
 export {default as git} from '../assets/git.png';
 export {default as github} from '../assets/github.png';
 export {default as heroImg} from '../assets/portfolio hero.png';
-export {default as illusFrontend} from '../assets/illusFrontend.png';
-export {default as illusBackend} from '../assets/illusBackend.png';
-export {default as illusDatabase} from '../assets/illusDatabase.png';
-
-
+export {default as illusFrontend} from '../assets/fe.png';
+export {default as illusBackend} from '../assets/be.png';
+export {default as illusMobile} from '../assets/md.png';
+export {default as Saviee} from '../assets/saviee.png';
+export {default as Blossom} from '../assets/blossom.png';
+export {default as Artterra} from '../assets/artterra.png';
+export {default as Wordle} from '../assets/wordle.png';
+export {default as CryptoCatalogue} from '../assets/cryptocatalogue.png';
 

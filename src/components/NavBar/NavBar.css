@@ -26,11 +26,8 @@
 /* logo */
 .left .logo-container h1 a{   
     font-size: 2.2rem;
-    color:var(--green);
+    color:var(--asparagus);
     font-family: "Space Grotesk",sans-serif;
-}
-#dark .left .logo-container h1 a{
-    color:var(--green);
 }
 
 /* toggle bg */

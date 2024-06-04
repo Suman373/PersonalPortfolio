@@ -7,14 +7,13 @@
     min-height:100vh;
     width:100vw;
     overflow:hidden;
-    background: var(--alternate-bg);
 }
 .form-container p{
     font-size: 1.4rem;
     margin: 1.5rem auto;
     padding:0.5rem;
 }
-#dark .form-container p{
+.form-container p{
     color:var(--helio-gray);
 }
 form{
@@ -22,15 +21,10 @@ form{
     width:35rem;
     padding:0.8rem;
     margin:2rem auto;
-    color:var(--violet);
     display:flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 8px;
-}
-#dark form{
-    color:var(--dark-theme-vio);
-    background: none;
 }
 form input{
     height:3.2rem;
@@ -51,14 +45,10 @@ form input, form textarea{
     font-size: 1.3rem;
     text-indent: 0.5rem;
     border:none;
-    outline:none;
-    border-radius: 0.4rem;
-    /* border:1px solid var(--violet); */
-    border-left:4px solid var(--violet);
     font-family: 'Roboto',sans-serif;
-}
-#dark form input, #dark form textarea{
-    background:var(--white-bg);
+    background: transparent;
+    border-bottom: 2px solid var(--helio-gray);
+    color: var(--helio-gray);
 }
 form textarea{
     width:80%;
@@ -83,10 +73,6 @@ form textarea{
 .submit-btn:hover{
     opacity: 0.9;
     transform:scale(1.06);
-}
-
-#dark form textarea, #dark form input{
-    border-left:4px solid var(--dark-theme-vio);
 }
 
 @media screen and (max-width:600px){

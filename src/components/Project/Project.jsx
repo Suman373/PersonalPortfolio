@@ -17,8 +17,8 @@ const Project = ({ projectItem }) => {
                     <p>{projectItem.about}</p>
                 </div>
                 <div className="redirects">
-                    <a href="#"><FaGithub /></a>
-                    <a href={projectItem.demoLink} target="_blank"><FaEye /></a>
+                    <a href={projectItem?.githubLink} target='_blank'><FaGithub /></a>
+                    <a href={'#'} target="_blank"><FaEye /></a>
                 </div>
             </div>
 

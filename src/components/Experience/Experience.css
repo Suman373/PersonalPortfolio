@@ -1,11 +1,18 @@
 .experience-wrapper{
     min-height:100vh;
     width:100%;
-    background:var(--white-bg);
 }
+/* list wrapper css .show class is in Achievements css */
 .list-wrapper ul{
     text-align: left;
     padding:0.8rem;
+}
+.list-wrapper ul li{padding-left: 1rem;}
+.list-wrapper ul>li::marker{
+    content: '◽';
+}
+.list-wrapper ul>li>li::marker {
+    content: '▫️';
 }
 .list-wrapper .position{
     font-weight: 800;
@@ -14,7 +21,14 @@
     margin:0.8rem 0;
     font-style: oblique;
 }
-
-#dark .experience-wrapper{
-    background: var(--dark-theme);
+.org-underline{
+    height: 2px;
+    width: 0;
+    background: var(--asparagus);
+    animation: lineMove ease 3200ms infinite alternate-reverse; 
+}
+@keyframes lineMove {
+   to{
+        width: 8rem;
+    }
 }

@@ -36,7 +36,7 @@ const Banner = () => {
           
           <p>
             <i className="fa-solid fa-laptop-code"></i> {"  "}
-            A passionate self-taught full stack developer
+            Transforming businesses digitally with Tech
           </p>
           <div className="banner-buttons-container">
             <button><a href="#contact">Let's talk ✉</a></button>

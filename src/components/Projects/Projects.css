@@ -7,11 +7,12 @@
 }
 .project-container{
     min-height: 100vh;
+    margin-top: 2rem;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     overflow: hidden;
     padding: 1rem;
 }

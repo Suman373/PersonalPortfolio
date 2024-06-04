@@ -1,25 +1,26 @@
 .project-card{
-    height:22rem;
-    width:22rem;
-    background:#ffffff;
-    border-radius: 0.7rem;
+    height:17rem;
+    width:18rem;
+    border-radius: 0.8rem;
     box-shadow: 0 0 5px var(--helio-gray);
     position:relative;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     opacity: 1;
 }
 
 .redirects{
-    height: 22rem;
-    width: 22rem;
+    height: 17rem;
+    width: 18rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:1rem;
-    background: #000000a1;
+    background: #000000a1; 
     bottom: -22rem;
 }
 .redirects>a{
@@ -39,36 +40,32 @@
     width:100%;
 }
 .project-card h3{
-    color:var(--bigtitles);
+    color:var(--helio-gray);
     width:fit-content;
     font-size: 1.2rem;
     margin: 0 auto;
     border:none;
-    background: #ffffff;
+    background:var(--app-bg);
     padding:0.5rem;
     border-radius: 0.5rem;
 }
 .banner-container img{
     padding:0.4rem;
-    height:14rem;
+    height:auto;
     width:80%;
-    border-radius: 1rem;
-    cursor: pointer;
+    border-radius: 0.7rem;
+    object-fit: contain;
+    box-shadow:  0 0 2px 10px #20202235;
 }
 .info-container{
     padding:1rem;
     width:80%;
     border-radius: 0.5rem;
     margin:0 auto;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
-    color:var(--bigtitles);
+    color: var(--helio-gray);
     position:relative;
-}
-/* dark themed project card */
-#dark .project-card,
-#dark .project-card h3{
-    background: var(--white-bg);
 }
 @media screen and (max-width:700px){
     .project-card{

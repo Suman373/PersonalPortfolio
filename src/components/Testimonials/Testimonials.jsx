@@ -25,7 +25,7 @@ const Testimonials = () => {
     return (
         <div className='testimonials-wrapper' id="testimonials">
             <h2 ref={myTitleRef} className={titleVisible ? "component-headings show" : "component-headings"}>
-                My <span className="heading-highlight">Testimonials</span>
+                My <span className="heading-highlight">Testimonials.</span>
             </h2>
             <div className="underline"></div>
             <span id='quote-icon1'><FaQuoteLeft/></span>
