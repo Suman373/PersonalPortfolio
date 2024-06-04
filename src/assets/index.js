@@ -16,5 +16,5 @@ export {default as Saviee} from '../assets/saviee.png';
 export {default as Blossom} from '../assets/blossom.png';
 export {default as Artterra} from '../assets/artterra.png';
 export {default as Wordle} from '../assets/wordle.png';
-export {default as CryptoCatalogue} from '../assets/cryptocatalogue.png';
+export {default as CryptoCatalogue} from '../assets/crypto.png';
 
