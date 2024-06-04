@@ -97,6 +97,9 @@
 }
 @media screen and (max-width:530px){
 
+    .testimonial-carousel{
+        padding:1rem;
+    }
     .testimonial-box img{
         height: 8rem;
         width: 8rem;
@@ -107,13 +110,14 @@
     #quote-icon1, #quote-icon2{
         font-size: 2rem;
     }
+    #quote-icon2{
+        top:80%;
+        right:-65%;
+    }
     .testimonial-box .txt{
         font-size: 1.1rem;
     }
     
 }
 
-@media screen and (max-width:480px){
-
-}
 
