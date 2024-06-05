@@ -4,7 +4,7 @@
     position: relative;
 }
 .testimonial-carousel{
-    height: fit-content;
+    min-height: fit-content;
     padding: 10rem;
 }
 .testimonial-box{
@@ -95,7 +95,7 @@
         right:-50%;
     }
 }
-@media screen and (max-width:530px){
+@media screen and (max-width:540px){
 
     .testimonial-carousel{
         padding:1rem;
@@ -110,8 +110,11 @@
     #quote-icon1, #quote-icon2{
         font-size: 2rem;
     }
+    #quote-icon1{
+        top:30%;
+    }
     #quote-icon2{
-        top:80%;
+        top:60%;
         right:-65%;
     }
     .testimonial-box .txt{

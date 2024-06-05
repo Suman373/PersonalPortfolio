@@ -62,10 +62,6 @@
     cursor: pointer;
     color: #ffffff;
     border-radius: 0.6rem;
-    background: var(--violet);
-}
-
-#dark .banner-buttons-container button {
     background: var(--dark-theme-vio);
 }
 
@@ -76,15 +72,10 @@
 
 #resume-btn {
     background: transparent;
-    color: var(--violet);
-    box-shadow: 0 0 4px var(--violet);
-}
-
-#dark #resume-btn {
-    background: transparent;
     color: #ffffff;
     box-shadow: 0 0 4px var(--dark-theme-vio);
 }
+
 /* image part */
 .banner-image-container {
     position: relative;
@@ -98,10 +89,12 @@
     padding: 1.2rem;
     font-weight: 500;
     border-radius: 2rem;
-    color: #000;
+    color: #fff;
     position: absolute;
-    border: 1px solid #ffffff;
-    background: var(--banner-translucent);
+    border: none;
+    box-shadow: 0 0 7px 4px #2c2a2a56;
+    background:#00000059;
+    backdrop-filter: blur(10px);
     overflow: hidden;
 }
 .banner-sticker p:nth-child(1) {
@@ -117,13 +110,13 @@
 .cover p::before{
     content:"";
     position: absolute;
-    height:0.2rem;
+    height:2px;
     width:10rem;
     background-color:#ffffff;
     top:50%;
     left:0;
     transition: animation 200ms;
-    animation: sticker-shine 3000ms alternate  infinite;
+    animation: sticker-shine 5000ms alternate-reverse  infinite;
     transform: translateX(-100%) skewY(30deg);
 }
 @keyframes sticker-shine {
@@ -143,13 +136,15 @@
     width: 17.5rem;
     border-radius: 2rem;
     position: relative;
-    color: #000;
+    color: #fff;
     overflow: hidden;
     margin: 0 auto;
     margin-top: -2rem;
     z-index: 14;
-    background: var(--banner-translucent);
-    border: 1px solid #ffffff;
+    border:none;
+    box-shadow: 0 0 7px 4px #2c2a2a56;
+    background:#00000059;
+    backdrop-filter: blur(10px);
 }
 
 .banner-image-container::before {

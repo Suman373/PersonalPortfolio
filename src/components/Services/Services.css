@@ -1,7 +1,6 @@
 
 .skills-wrapper{
     min-height:100vh;
-    font-family:'Roboto' ;
     width:100vw;
     overflow: hidden;
     position: relative;
@@ -22,7 +21,6 @@
     align-items: center;
     gap:1.5rem;
     flex-wrap: wrap;
-    background: var(--white);
 }
 
 .Card{
@@ -96,19 +94,19 @@
     }
     .Card{
         height:18rem;
-        width:19rem;
+        width:18rem;
+        margin: 0;
     }
     .Card-inner h3 {
         font-size:1.2rem;
-        margin:5px auto;
-        padding:0.5rem;
     }
     .Card-inner p{
         font-size:1.025rem;
     }
     .skills-images img{
-        height:7rem;
-        width:7rem;
+        height:10rem;
+        width:10rem;
+        object-fit: fill;
     }
     
 }

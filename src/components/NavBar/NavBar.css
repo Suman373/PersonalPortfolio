@@ -186,11 +186,7 @@
         left:-25%;
         z-index: 30;
         transform: scale(1.1);
-        background:var(--navbar-bg);
-    }
-    #dark .right .social-icon{
         background: var(--dark-theme);
-        box-shadow: 0 0 5px var(--helio-gray);
     }
     .right .fa-brands{
         font-size: 1.5rem;
@@ -216,7 +212,7 @@
     /* display none for showing only toggle btn */
 
     .right .social-icon{
-        left:-45%;
+        left:-48%;
     }
     .right .fa-brands{
         padding:5px;
@@ -277,7 +273,7 @@
 }
 @media screen and (max-width:400px){
     .right .social-icon{
-        left:-60%;
+        left:-58%;
     }
 }
 @media screen and (max-width:300px){
